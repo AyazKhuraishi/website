@@ -1,0 +1,64 @@
+/* Miscellaneous */
+
+@import 'utils';
+
+/* Menu button */
+.menu-button {
+  background-color: #EAEAEA;
+  position: fixed;
+  font-size: 20px;
+  top: 3px;
+  right: 3px;
+  z-index: 2;
+  @extend %item-hover-animation;
+}
+
+.menu-button:hover {
+  background-color: #DBDBDB;
+  @extend %item-hover-animation;
+}
+
+/* Navbar item selected */
+.item-selected {
+  background-color: #DBDBDB;
+}
+
+/* Blurred and not blurred */
+.blurred {
+  @include filter (blur(30px));
+  @extend %navbar-toggle-animation;
+}
+
+.not-blurred {
+  @extend %navbar-toggle-animation;
+}
+
+/* Titles, subtitles and other typography */
+.section-title {
+  font-weight: 300;
+  font-size: 34px;
+  text-align: center;
+  padding-bottom: 10px;
+  @extend %title;
+}
+
+.section-subtitle {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.section-text-title {
+  font-size: 25px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  @extend %title;
+}
+
+.section-text {
+  font-size: 15px;
+  font-weight: 300;
+  @extend %text;
+}

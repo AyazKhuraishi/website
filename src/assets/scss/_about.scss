@@ -1,0 +1,30 @@
+/* About section */
+
+@import 'utils';
+
+/* Section background */
+.about {
+  background-color: #F5F5F5;
+}
+
+/* Section text */
+.about-text {
+  padding-right: 70px;
+}
+
+/* Paragraph padding */
+.about-text-column {
+  p {
+    padding-bottom: 10px;
+  }
+}
+
+/* Image */
+.about-text-image {
+  width: 100%;
+  height: auto;
+  float: right;
+  padding: 10px;
+  border: 1px solid gray;
+  box-shadow: $shadow-3;
+}

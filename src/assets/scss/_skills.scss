@@ -1,0 +1,36 @@
+/* Skills section */
+
+@import 'utils';
+
+/* Section background */
+.skills {
+  background-color: #F0F0F0;
+}
+
+/* Section text */
+.skills-text {
+  padding-right: 70px;
+
+  p {
+    padding-bottom: 10px;
+  }
+}
+
+/* Progress bar column */
+.bars {
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    @extend %title;
+  }
+}
+
+/* Progress bar with text */
+.bar {
+  padding-bottom: 10px;
+}
+
+/* Progress bar icon */
+.bar-icon {
+  font-size: 35px;
+}
