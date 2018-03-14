@@ -11,7 +11,7 @@ export default class Bar extends React.Component {
           percent={this.props.progress}
           status={'success'}
           className={'bar'}
-          symbolClassName={'bar-icon'}
+          symbolClassName={`bar-icon ${this.props.extraClasses || ''}`}
           theme={{
             success: {
               symbol: this.props.icon,
@@ -25,10 +25,11 @@ export default class Bar extends React.Component {
 }
 
 Bar.propTypes = {
-  text: PropTypes.string,
-  progress: PropTypes.number,
+  text: PropTypes.string.isRequired,
+  progress: PropTypes.number.isRequired,
+  extraClasses: PropTypes.string,
   icon: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.string
+    PropTypes.node.isRequired,
+    PropTypes.string.isRequired
   ])
 }

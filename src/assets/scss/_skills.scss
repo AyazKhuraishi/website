@@ -4,7 +4,7 @@
 
 /* Section background */
 .skills {
-  background-color: #F0F0F0;
+  background-color: #FCFCFC;
 }
 
 /* Section text */
@@ -33,4 +33,17 @@
 /* Progress bar icon */
 .bar-icon {
   font-size: 35px;
+
+  /* Icon centering */
+  .js {
+    padding-left: 6px;
+  }
+
+  .html {
+    padding-left: 8px;
+  }
+
+  .react {
+    padding-left: 3px;
+  }
 }

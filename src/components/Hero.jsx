@@ -41,14 +41,14 @@ export default class Hero extends React.Component {
                   }}
                   onTypingDone={this.typingDone}
                 >
-                  {typingTexts[0]}
-                  <Typist.Backspace count={typingTexts[0].length} delay={typingDelay} />
-                  {typingTexts[1]}
-                  <Typist.Backspace count={typingTexts[1].length} delay={typingDelay} />
-                  {typingTexts[2]}
-                  <Typist.Backspace count={typingTexts[2].length} delay={typingDelay} />
-                  {typingTexts[3]}
-                  <Typist.Backspace count={typingTexts[3].length} delay={typingDelay} />
+                  echo "{typingTexts[0]}"
+                  <Typist.Backspace count={typingTexts[0].length + 1} delay={typingDelay} /> {/* Adding 1 character to remove quote */}
+                  {typingTexts[1]}"
+                  <Typist.Backspace count={typingTexts[1].length + 1} delay={typingDelay} />
+                  {typingTexts[2]}"
+                  <Typist.Backspace count={typingTexts[2].length + 1} delay={typingDelay} />
+                  {typingTexts[3]}"
+                  <Typist.Backspace count={typingTexts[3].length + 8} delay={typingDelay} /> {/* Adding 8 characters due to echo "{}" */}
                 </Typist>
                 : ''
             }

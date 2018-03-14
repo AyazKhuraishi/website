@@ -21,6 +21,7 @@ export default class About extends React.Component {
                 <p>When it comes to programming, I'm quite a competent developer despite being self-taught and only having done freelance in the past. I am also proficient in three languages (<span className={'flag-icon flag-icon-fi'}/>, <span className={'flag-icon flag-icon-se'}/> and <span className={'flag-icon flag-icon-gb'}/>) and as such tend to write documentation for the projects I contribute to.</p>
                 <p>I have created quite a few programs on my own, such as <a href={'https://github.com/linuswillner/LiveSoundBoard'}>Live Sound Board</a> and <a href={'https://github.com/linuswillner/Weather-Observatory'}>Weather Observatory</a>, ranging from websites to full-fledged desktop applications. Some of the major projects I have contributed to are <a href={'https://github.com/TheSharks/WildBeast'}>WildBeast</a> and <a href={'https://github.com/ArekSredzki/electron-release-server'}>electron-release-server</a>.</p>
                 <p>Open source software is close to my ❤️ and I'm always looking for opportunities to help out. If you feel that I could help you with something, please keep on reading!</p>
+                <p className={'signature'}>- LW</p>
               </div>
             </div>
             <div className={'column'}>

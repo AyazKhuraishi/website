@@ -3,6 +3,7 @@ import React from 'react'
 // Misc components
 import Navbar from '../components/Navbar'
 import MenuButton from '../components/MenuButton'
+import Divider from '../components/Divider'
 
 // Sections
 import Hero from '../components/Hero'
@@ -18,6 +19,7 @@ export default class Main extends React.Component {
         <Navbar/>
         <Hero/>
         <About/>
+        <Divider/>
         <Skills/>
         <Experience/>
       </div>

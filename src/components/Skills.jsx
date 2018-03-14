@@ -15,9 +15,9 @@ export default class Skills extends React.Component {
             </div>
             <div className={'column bars'}>
               <Bar text={'Node.js'} progress={90} icon={<i className={'fab fa-node'}/>} />
-              <Bar text={'JavaScript'} progress={80} icon={<i className={'fab fa-js-square'}/>} />
-              <Bar text={'HTML/CSS'} progress={70} icon={<i className={'fab fa-html5'}/>} />
-              <Bar text={'React'} progress={60} icon={<i className={'fab fa-react'}/>} />
+              <Bar text={'JavaScript'} progress={80} icon={<i className={'fab fa-js-square js'}/>} />
+              <Bar text={'HTML/CSS'} progress={70} icon={<i className={'fab fa-html5 html'}/>} />
+              <Bar text={'React'} progress={60} icon={<i className={'fab fa-react react'}/>} />
             </div>
           </div>
         </div>

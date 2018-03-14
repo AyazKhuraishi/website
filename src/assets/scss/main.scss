@@ -5,7 +5,7 @@
 @import '~react-sweet-progress/lib/style.css'; /* react-sweet-progress */
 @import '~flag-icon-css/css/flag-icon.css'; /* Flag icons */
 @import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css'); /* Font-Awesome */
-@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Mono:100|Fira+Sans|Merriweather:300,400|Roboto:100,300,400'); /* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Mono:100|Fira+Mono|Merriweather:300,400|Roboto:100,300,400|Bilbo+Swash+Caps'); /* Google Fonts */
 
 /* Local modules */
 
@@ -29,8 +29,16 @@
   font-family: 'Merriweather', serif;
 }
 
-%monospace {
+%monospace-prefix {
   font-family: 'Roboto Mono', monospace;
+}
+
+%monospace-command {
+  font-family: 'Fira Mono', monospace;
+}
+
+%handwriting {
+  font-family: 'Bilbo Swash Caps', cursive;
 }
 
 /* Animations */

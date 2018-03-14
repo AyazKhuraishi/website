@@ -4,7 +4,7 @@
 
 /* Section background */
 .about {
-  background-color: #F5F5F5;
+  background-color: #FCFCFC;
 }
 
 /* Section text */
@@ -27,4 +27,10 @@
   padding: 10px;
   border: 1px solid gray;
   box-shadow: $shadow-3;
+}
+
+/* Signature */
+.signature {
+  font-size: 55px;
+  @extend %handwriting;
 }
