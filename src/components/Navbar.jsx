@@ -1,6 +1,8 @@
+// Navbar
 import React from 'react'
 import PropTypes from 'prop-types'
-import { dispatcher } from '../backend/dispatcher'
+import { dispatcher, emitOne } from '../backend/dispatcher'
+import { config } from '../config'
 import scrollIntoView from 'scroll-into-view'
 
 const styles = {
@@ -21,17 +23,9 @@ const styles = {
   }
 }
 
-const navbarItems = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Experience', href: '#experience' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Contact', href: '#contact' }
-]
-
 class Item extends React.Component {
   handleClick (link) {
+    emitOne('NAVBAR_ITEM_CLICK')
     scrollIntoView(document.getElementById(link.substring(1))) // Substring for DOM ID removal
   }
 
@@ -55,7 +49,7 @@ export default class Navbar extends React.Component {
   }
 
   handleSelect (itemName) {
-    let selectedButton = navbarItems.map(i => i.name).indexOf(itemName)
+    let selectedButton = config.navbar.navbarItems.map(i => i.name).indexOf(itemName)
     this.setState({ selectedIndex: selectedButton })
   }
 
@@ -67,10 +61,10 @@ export default class Navbar extends React.Component {
     return (
       <div className={'navbar tabs is-centered'} style={this.state.hidden ? styles.navbarHidden : styles.navbarOverrides}>
         <ul style={styles.listOverrides}>
-          {navbarItems.map(item => {
+          {config.navbar.navbarItems.map(item => {
             return (
               <li
-                className={this.state.selectedIndex === navbarItems.map(i => i.name).indexOf(item.name) ? 'item-selected' : ''}
+                className={this.state.selectedIndex === config.navbar.navbarItems.map(i => i.name).indexOf(item.name) ? 'item-selected' : ''}
                 key={item.name}
                 onClick={() => this.handleSelect(item.name)}
               >

@@ -1,3 +1,4 @@
+// About section
 import React from 'react'
 
 const styles = {

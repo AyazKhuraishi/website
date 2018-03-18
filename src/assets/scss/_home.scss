@@ -51,6 +51,7 @@
   @extend %monospace-command;
 }
 
+/* Add Bash identifiers before typing text */
 .subtitle-typing:before {
   content: "admin@lw:~$ ";
   color: #C0C0C0;

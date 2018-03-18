@@ -44,6 +44,7 @@
   "dependencies": {
     "bulma": "^0.6.2",
     "bulma-divider": "^1.0.1",
+    "disable-scroll": "^0.4.0",
     "flag-icon-css": "^3.0.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",

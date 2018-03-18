@@ -1,4 +1,7 @@
+/* Main Sass file */
+
 /* Global modules */
+
 @import '~bulma/bulma.sass'; /* Bulma */
 @import '~bulma-divider/dist/bulma-divider.sass'; /* Bulma divider */
 @import '~react-typist/dist/Typist.css'; /* react-typist cursor blink */
@@ -13,7 +16,9 @@
 @import 'home';
 @import 'about';
 @import 'skills';
-@import 'experience';
+@import 'projects';
+@import 'contact';
+@import 'footer';
 
 /* Typography */
 

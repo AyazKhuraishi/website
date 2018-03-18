@@ -5,6 +5,7 @@
 /* Divider */
 .divider {
   background-color: #FCFCFC;
+  height: .2rem;
   margin: 0; /* Remove margin for background color support */
 }
 
@@ -37,6 +38,12 @@
 
 .not-blurred {
   @extend %navbar-toggle-animation;
+}
+
+/* Center fix for grouped buttons */
+.center-fix {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Titles, subtitles and other typography */

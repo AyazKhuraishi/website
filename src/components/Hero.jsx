@@ -1,14 +1,7 @@
+// Hero section (Top of page)
 import React from 'react'
 import Typist from 'react-typist'
-
-const typingTexts = [
-  'Student',
-  'Tech geek',
-  'Freelance developer',
-  'Aspiring software engineer'
-]
-
-const typingDelay = 1000
+import { config } from '../config'
 
 export default class Hero extends React.Component {
   constructor (props) {
@@ -20,10 +13,13 @@ export default class Hero extends React.Component {
   typingDone () {
     setTimeout(() => {
       this.setState({ typing: false }, () => { this.setState({ typing: true }) })
-    }, typingDelay)
+    }, config.hero.typingDelay)
   }
 
   render () {
+    const texts = config.hero.typingTexts
+    const delay = config.hero.typingDelay
+
     return (
       <div className={'hero banner is-fullheight'} id={'home'}>
         <div className={'hero-body'}>
@@ -41,14 +37,14 @@ export default class Hero extends React.Component {
                   }}
                   onTypingDone={this.typingDone}
                 >
-                  echo "{typingTexts[0]}"
-                  <Typist.Backspace count={typingTexts[0].length + 1} delay={typingDelay} /> {/* Adding 1 character to remove quote */}
-                  {typingTexts[1]}"
-                  <Typist.Backspace count={typingTexts[1].length + 1} delay={typingDelay} />
-                  {typingTexts[2]}"
-                  <Typist.Backspace count={typingTexts[2].length + 1} delay={typingDelay} />
-                  {typingTexts[3]}"
-                  <Typist.Backspace count={typingTexts[3].length + 8} delay={typingDelay} /> {/* Adding 8 characters due to echo "{}" */}
+                  echo "{texts[0]}"
+                  <Typist.Backspace count={texts[0].length + 1} delay={delay} /> {/* Adding 1 character to remove quote */}
+                  {texts[1]}"
+                  <Typist.Backspace count={texts[1].length + 1} delay={delay} />
+                  {texts[2]}"
+                  <Typist.Backspace count={texts[2].length + 1} delay={delay} />
+                  {texts[3]}"
+                  <Typist.Backspace count={texts[3].length + 8} delay={delay} /> {/* Adding 8 characters due to echo "thing" */}
                 </Typist>
                 : ''
             }

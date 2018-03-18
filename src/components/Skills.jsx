@@ -1,3 +1,4 @@
+// Skills section
 import React from 'react'
 import Bar from './Bar'
 
