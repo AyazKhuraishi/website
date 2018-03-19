@@ -62,26 +62,25 @@
 
   .inner:hover {
     background-color: #DBDBDB;
+    border-color: #B5B5B5 !important;
     @extend %item-hover-animation;
   }
 }
 
-/* Hacks to enable animated toggle for the dropdown */
-.dropdown-menu {
-  display: block !important;
-}
-
+/* Dropdown content */
 .dropdown-inner {
   padding-top: 0;
   padding-bottom: 0;
   background-color: #F0F0F0;
 }
 
+/* Dropdown content container */
 .dropdown-container {
   min-width: 0;
   max-width: 45px;
 }
 
+/* Dropdown item */
 .item {
   font-size: 20px;
   padding-left: 10px;
@@ -92,4 +91,16 @@
   background-color: #DBDBDB;
   cursor: pointer;
   @extend %item-hover-animation;
+}
+
+/* Hack to disable focusing on the dropdown button */
+button:focus {
+  outline-style: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+/* Hack to enable animated toggle for the dropdown */
+.dropdown-menu {
+  display: block !important;
 }
