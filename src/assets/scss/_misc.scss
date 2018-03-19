@@ -9,27 +9,6 @@
   margin: 0; /* Remove margin for background color support */
 }
 
-/* Menu button */
-.menu-button {
-  background-color: #EAEAEA;
-  position: fixed;
-  font-size: 20px;
-  top: 3px;
-  right: 3px;
-  z-index: 2;
-  @extend %item-hover-animation;
-}
-
-.menu-button:hover {
-  background-color: #DBDBDB;
-  @extend %item-hover-animation;
-}
-
-/* Navbar item selected */
-.item-selected {
-  background-color: #DBDBDB;
-}
-
 /* Blurred and not blurred */
 .blurred {
   @include filter (blur(100px));

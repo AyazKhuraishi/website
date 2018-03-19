@@ -3,6 +3,7 @@ import React from 'react'
 
 // Misc components
 import Navbar from '../components/Navbar'
+import LangButton from '../components/LangButton'
 import MenuButton from '../components/MenuButton'
 import Divider from '../components/Divider'
 
@@ -18,6 +19,7 @@ export default class Main extends React.Component {
   render () {
     return (
       <div>
+        <LangButton/>
         <MenuButton/>
         <Navbar/>
         <Hero/>

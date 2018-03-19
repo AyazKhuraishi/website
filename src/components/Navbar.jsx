@@ -14,8 +14,9 @@ const styles = {
   navbarHidden: {
     marginBottom: 0,
     opacity: 0,
-    pointerEvents: 'none', // Prevent link clicking (Because it's still there, not just visible)
-    top: window.innerWidth < 685 ? '25%' : 0
+    top: window.innerWidth < 685 ? '25%' : 0,
+    backgroundColor: window.innerWidth < 685 ? 'transparent' : '#F0F0F0',
+    pointerEvents: 'none' // Prevent link clicking (Because it's still there, just not visible)
   },
   listOverrides: {
     borderBottom: 0,

@@ -2,27 +2,6 @@
 
 @import 'utils';
 
-/* Navbar */
-.navbar {
-  position: fixed;
-  overflow: hidden;
-  width: 100%;
-  opacity: 1;
-  z-index: 1;
-  @extend %navbar-toggle-animation;
-
-  li {
-    font-size: 20px;
-    @extend %large-title;
-    @extend %item-hover-animation;
-  }
-
-  li:hover {
-    background-color: #DBDBDB;
-    @extend %item-hover-animation;
-  }
-}
-
 /* Section background */
 .banner {
   background-color: #F0F0F0;

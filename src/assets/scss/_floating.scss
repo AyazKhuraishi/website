@@ -1,0 +1,95 @@
+/* Floating buttons and components */
+
+@import 'utils';
+
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  opacity: 1;
+  z-index: 1;
+  @extend %navbar-toggle-animation;
+
+  li {
+    font-size: 20px;
+    @extend %large-title;
+    @extend %item-hover-animation;
+  }
+
+  li:hover {
+    background-color: #DBDBDB;
+    @extend %item-hover-animation;
+  }
+}
+
+/* Navbar item selected */
+.item-selected {
+  background-color: #DBDBDB;
+}
+
+/* Menu button */
+
+.menu-button {
+  background-color: #EAEAEA;
+  position: fixed;
+  font-size: 20px;
+  top: 3px;
+  right: 3px;
+  z-index: 2;
+  @extend %item-hover-animation;
+}
+
+.menu-button:hover {
+  background-color: #DBDBDB;
+  @extend %item-hover-animation;
+}
+
+/* Lang selector */
+
+.lang-button {
+  position: fixed;
+  top: 3px;
+  left: 5px;
+  z-index: 3;
+  
+  .inner {
+    background-color: #EAEAEA;
+    font-size: 20px;
+    @extend %item-hover-animation;
+  }
+
+  .inner:hover {
+    background-color: #DBDBDB;
+    @extend %item-hover-animation;
+  }
+}
+
+/* Hacks to enable animated toggle for the dropdown */
+.dropdown-menu {
+  display: block !important;
+}
+
+.dropdown-inner {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #F0F0F0;
+}
+
+.dropdown-container {
+  min-width: 0;
+  max-width: 45px;
+}
+
+.item {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.item:hover {
+  background-color: #DBDBDB;
+  cursor: pointer;
+  @extend %item-hover-animation;
+}
