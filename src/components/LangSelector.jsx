@@ -1,7 +1,9 @@
+// Lang selector dropdown
 import React from 'react'
 import PropTypes from 'prop-types'
 import { emitOne } from '../backend/dispatcher'
 
+// Animation overrides for the lang selector
 const styles = {
   dropdownOverrides: {
     opacity: 1,

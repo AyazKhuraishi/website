@@ -5,6 +5,7 @@ import { dispatcher, emitOne } from '../backend/dispatcher'
 import { config } from '../config'
 import scrollIntoView from 'scroll-into-view'
 
+// On low device widths, display a different style of menu
 const styles = {
   navbarOverrides: {
     marginBottom: 0,

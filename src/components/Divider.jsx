@@ -2,6 +2,7 @@
 import React from 'react'
 import { dispatcher } from '../backend/dispatcher'
 
+// On low device widths, hide margins on menu toggle
 const styles = {
   show: {
     opacity: 1,

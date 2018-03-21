@@ -1,3 +1,4 @@
+// Lang selector button
 import React from 'react'
 import PropTypes from 'prop-types'
 import LangSelector from './LangSelector'

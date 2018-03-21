@@ -2,6 +2,14 @@
 import React from 'react'
 import Bar from './Bar'
 
+// On low device widths, center text for better UX
+const styles = {
+  columnOverrides: {
+    textAlign: window.innerWidth < 770 ? 'center' : 'left',
+    paddingRight: window.innerWidth < 770 ? '12px' : '70px'
+  }
+}
+
 export default class Skills extends React.Component {
   render () {
     return (
@@ -9,7 +17,7 @@ export default class Skills extends React.Component {
         <div className={'container'}>
           <h1 className={'title section-title'}>{window.i18n`skills.title`}</h1>
           <div className={'columns'}>
-            <div className={'column section-text skills-text'}>
+            <div className={'column section-text skills-text'} style={styles.columnOverrides}>
               <p>{window.i18n`skills.p1`}</p>
               <p>{window.i18n`skills.p2`}</p>
               <p>{window.i18n`skills.p3.l1`}<a href={'https://github.com/linuswillner'}>{window.i18n`skills.p3.l2`}</a>{window.i18n`skills.p3.l3`}</p>
