@@ -23,15 +23,9 @@ jobs:
       image: circleci/classic:latest
     steps:
       - checkout
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
       - run:
           name: NPM install
           command: npm install
-      - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-          paths:
-            - node_modules
       - run:
           name: Compile to production
           command: npm run build
