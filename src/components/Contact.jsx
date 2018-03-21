@@ -20,16 +20,16 @@ export default class Contact extends React.Component {
     return (
       <section className={'section contact'} id={'contact'}>
         <div className={'container'}>
-          <h1 className={'title section-title'}>CONTACT</h1>
+          <h1 className={'title section-title'}>{window.i18n`contact.title`}</h1>
           <div className={'columns'}>
             <div className={'column section-text contact-text'}>
               <div className={'contact-pre'}>
-                <p>If you want to reach out to me for any sort of inquiry, be it formal or not, email is usually the best way to do that.<br/>I read my email frequently and will answer to the best of my ability.</p>
-                <p>For more informal conversation in the form of instant messaging, my DMs on <a href={'https://discordapp.com'}>Discord</a> are open.</p>
-                <p>Finally, if you want to just see what I'm up to, I've left some links to my social media here as well.</p>
+                <p>{window.i18n`contact.p1.l1`}<br/>{window.i18n`contact.p1.l2`}</p>
+                <p>{window.i18n`contact.p2.l1`}<a href={'https://discordapp.com'}>{window.i18n`contact.p2.l2`}</a>{window.i18n`contact.p2.l3`}</p>
+                <p>{window.i18n`contact.p3`}</p>
               </div>
               <div className={'contact-methods'}>
-                <h2 className={'contact-method'}>Email: <b>hello@linuswillner.me</b></h2>
+                <h2 className={'contact-method'}>{window.i18n`contact.email`}: <b>hello@linuswillner.me</b></h2>
                 <h2 className={'contact-method'}>Discord: <b>LWTech#0005</b></h2>
                 <p className={'field'}>
                   {

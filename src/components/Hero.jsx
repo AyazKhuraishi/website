@@ -17,7 +17,7 @@ export default class Hero extends React.Component {
   }
 
   render () {
-    const texts = config.hero.typingTexts
+    const texts = window.i18n`hero.typingTexts`
     const delay = config.hero.typingDelay
 
     return (

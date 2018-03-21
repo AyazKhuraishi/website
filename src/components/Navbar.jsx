@@ -50,7 +50,7 @@ export default class Navbar extends React.Component {
   }
 
   handleSelect (itemName) {
-    let selectedButton = config.navbar.navbarItems.map(i => i.name).indexOf(itemName)
+    let selectedButton = window.i18n`navbar.items`.map(i => i.name).indexOf(itemName)
     this.setState({ selectedIndex: selectedButton })
   }
 
@@ -62,20 +62,22 @@ export default class Navbar extends React.Component {
     return (
       <div className={'navbar tabs is-centered'} style={this.state.hidden ? styles.navbarHidden : styles.navbarOverrides}>
         <ul style={styles.listOverrides}>
-          {config.navbar.navbarItems.map(item => {
-            return (
-              <li
-                className={this.state.selectedIndex === config.navbar.navbarItems.map(i => i.name).indexOf(item.name) ? 'item-selected' : ''}
-                key={item.name}
-                onClick={() => this.handleSelect(item.name)}
-              >
-                <Item
-                  text={item.name}
-                  link={item.href}
-                />
-              </li>
-            )
-          })}
+          {
+            window.i18n`navbar.items`.map(item => {
+              return (
+                <li
+                  className={this.state.selectedIndex === window.i18n`navbar.items`.map(i => i.name).indexOf(item.name) ? 'item-selected' : ''}
+                  key={item.name}
+                  onClick={() => this.handleSelect(item.name)}
+                >
+                  <Item
+                    text={item.name}
+                    link={item.href}
+                  />
+                </li>
+              )
+            })
+          }
         </ul>
       </div>
     )

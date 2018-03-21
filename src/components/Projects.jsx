@@ -8,10 +8,10 @@ export default class Projects extends React.Component {
     return (
       <section className={'section projects'} id={'projects'}>
         <div className={'container'}>
-          <h1 className={'title section-title'}>PROJECTS</h1>
+          <h1 className={'title section-title'}>{window.i18n`projects.title`}</h1>
           <div className={'tile is-ancestor'}>
             {
-              config.projects.cards.map(card => {
+              window.i18n`projects.cards`.map(card => {
                 return (
                   <ProjectCard
                     key={card.title}
@@ -26,7 +26,7 @@ export default class Projects extends React.Component {
               })
             }
           </div>
-          <h2 className={'subtitle section-subtitle'}>This is a showcase of projects I have created or contributed to. For the full list, see my <a href={'https://github.com/linuswillner'}>GitHub page</a>.</h2>
+          <h2 className={'subtitle section-subtitle'}>{window.i18n`projects.p1.l1`}<a href={'https://github.com/linuswillner'}>{window.i18n`projects.p1.l2`}</a>.</h2>
         </div>
       </section>
     )

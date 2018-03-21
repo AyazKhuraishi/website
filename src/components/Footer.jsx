@@ -50,8 +50,8 @@ export default class Footer extends React.Component {
       <footer className={'footer page-footer'}>
         <div className={'container'}>
           <div className={'footer-text section-text'}>
-            <p>Copyright (c) 2018 Linus Willner. All rights reserved.</p>
-            <p>Achieved with <Link type={'react'}>React</Link>, <Link type={'sass'}>Sass</Link> and <Link type={'bulma'}>Bulma</Link>. Engineered with ❤️ in Loviisa, Finland.</p>
+            <p>{window.i18n`footer.copyright`}</p>
+            <p>{window.i18n`footer.tech.l1`}<Link type={'react'}>{window.i18n`footer.tech.l2`}</Link>, <Link type={'sass'}>{window.i18n`footer.tech.l3`}</Link> {window.i18n`footer.tech.l4`} <Link type={'bulma'}>{window.i18n`footer.tech.l5`}</Link>. {window.i18n`footer.location`}</p>
           </div>
         </div>
       </footer>

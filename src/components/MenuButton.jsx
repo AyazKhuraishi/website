@@ -35,11 +35,22 @@ export default class MenuButton extends React.Component {
       this.handleClick()
     })
 
+    dispatcher.once('CLOSE_ANY_OPEN_DIALOG', () => {
+      if (this.state.hidden === false) this.handleClick()
+    })
+
     return (
       <div>
-        <a className={'button menu-button'} onClick={this.handleClick}>
-          <span className={'icon is-small'}>
-            <i className={`fas ${this.state.hidden ? 'fa-bars' : 'fa-times'}`} />
+        <a
+          className={'button menu-button'}
+          data-button={'menu'}
+          onClick={this.handleClick}
+        >
+          <span
+            className={'icon is-small'}
+            data-button={'menu'}
+          >
+            <i className={`fas ${this.state.hidden ? 'fa-bars' : 'fa-times'}`} data-button={'menu'} />
           </span>
         </a>
       </div>
