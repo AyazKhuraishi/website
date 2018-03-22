@@ -2,6 +2,58 @@
 
 @import 'utils';
 
+/* Scroll hint */
+
+/* Scroll hint pre-animation phase */
+.hidden {
+  @include transform (translateY(100%) !important);
+}
+
+/* Scroll hint button */
+.scroll-hint {
+  position: fixed;
+  bottom: -12px;
+  left: 50%;
+  height: 70px;
+  width: 50px;
+  z-index: 1;
+  border: 1.7px solid #4A4A4A;
+  background-color: #F0F0F0;
+  border-radius: 10px;
+  @include transform (translateX(-50%));
+
+  .hint-content {
+    font-size: 37px;
+    text-align: center;
+  }
+}
+
+.scroll-hint:hover {
+  cursor: pointer;
+}
+
+/* Button slide up animation */
+.show {
+  animation-name: show;
+  animation-duration: 1s;
+
+  @keyframes show {
+    from { transform: translate(-50%, 100%); }
+    to { transform: translate(-50%, 0%); }
+  }
+}
+
+/* Button slide down animation */
+.hide {
+  animation-name: hide;
+  animation-duration: 1s;
+
+  @keyframes hide {
+    from { transform: translate(-50%, 0%); }
+    to { transform: translate(-50%, 100%); }
+  }
+}
+
 /* Navbar */
 
 .navbar {

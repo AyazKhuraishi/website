@@ -7,6 +7,11 @@
   transition: $transition;
 }
 
+@mixin transform ($transform) {
+  -webkit-transform: $transform;
+  transform: $transform;
+}
+
 @mixin filter ($filter) {
   -webkit-filter: $filter;
   -moz-filter: $filter;

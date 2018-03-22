@@ -1,16 +1,17 @@
 // Contact section
 import React from 'react'
 import PropTypes from 'prop-types'
+import Link from './Link'
 import { config } from '../config'
 
 class SocialMediaIcon extends React.Component {
   render () {
     return (
-      <a className={'button social is-medium'} href={this.props.link} target={'_blank'}>
+      <Link className={'button social is-medium'} to={this.props.link}>
         <span className={'icon'}>
           <i className={this.props.iconClassName}></i>
         </span>
-      </a>
+      </Link>
     )
   }
 }
@@ -25,7 +26,7 @@ export default class Contact extends React.Component {
             <div className={'column section-text contact-text'}>
               <div className={'contact-pre'}>
                 <p>{window.i18n`contact.p1.l1`}<br/>{window.i18n`contact.p1.l2`}</p>
-                <p>{window.i18n`contact.p2.l1`}<a href={'https://discordapp.com'}>{window.i18n`contact.p2.l2`}</a>{window.i18n`contact.p2.l3`}</p>
+                <p>{window.i18n`contact.p2.l1`}<Link to={'https://discordapp.com'}>{window.i18n`contact.p2.l2`}</Link>{window.i18n`contact.p2.l3`}</p>
                 <p>{window.i18n`contact.p3`}</p>
               </div>
               <div className={'contact-methods'}>

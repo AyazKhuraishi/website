@@ -1,5 +1,6 @@
 // About section
 import React from 'react'
+import Link from './Link'
 
 // On low device widths, hide certain elements to improve UX
 const styles = {
@@ -28,7 +29,7 @@ export default class About extends React.Component {
                 <p>{window.i18n`about.p1`}</p>
                 <p>{window.i18n`about.p2`}</p>
                 <p>{window.i18n`about.p3`}</p>
-                <p>{window.i18n`about.p4.l1`}<a href={'https://github.com/linuswillner/LiveSoundBoard'}>Live Sound Board</a>{window.i18n`about.p4.l2`}<a href={'https://github.com/linuswillner/Weather-Observatory'}>Weather Observatory</a>{window.i18n`about.p4.l3`}<a href={'https://github.com/TheSharks/WildBeast'}>WildBeast</a>{window.i18n`about.p4.l4`}<a href={'https://github.com/ArekSredzki/electron-release-server'}>electron-release-server</a>.</p>
+                <p>{window.i18n`about.p4.l1`}<Link to={'https://github.com/linuswillner/LiveSoundBoard'}>Live Sound Board</Link>{window.i18n`about.p4.l2`}<Link to={'https://github.com/linuswillner/Weather-Observatory'}>Weather Observatory</Link>{window.i18n`about.p4.l3`}<Link to={'https://github.com/TheSharks/WildBeast'}>WildBeast</Link>{window.i18n`about.p4.l4`}<Link to={'https://github.com/ArekSredzki/electron-release-server'}>electron-release-server</Link>.</p>
                 <p>{window.i18n`about.p5`}</p>
                 <p className={'signature'}>- LW</p>
               </div>

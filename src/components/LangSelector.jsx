@@ -15,7 +15,8 @@ const styles = {
     opacity: 0,
     transition: 'all 300ms',
     WebkitTransition: 'all 300ms',
-    transitionTimingFunction: 'ease-in-out'
+    transitionTimingFunction: 'ease-in-out',
+    pointerEvents: 'none'
   }
 }
 

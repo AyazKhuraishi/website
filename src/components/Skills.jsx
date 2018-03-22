@@ -1,6 +1,7 @@
 // Skills section
 import React from 'react'
 import Bar from './Bar'
+import Link from './Link'
 
 // On low device widths, center text for better UX
 const styles = {
@@ -20,7 +21,7 @@ export default class Skills extends React.Component {
             <div className={'column section-text skills-text'} style={styles.columnOverrides}>
               <p>{window.i18n`skills.p1`}</p>
               <p>{window.i18n`skills.p2`}</p>
-              <p>{window.i18n`skills.p3.l1`}<a href={'https://github.com/linuswillner'}>{window.i18n`skills.p3.l2`}</a>{window.i18n`skills.p3.l3`}</p>
+              <p>{window.i18n`skills.p3.l1`}<Link to={'https://github.com/linuswillner'}>{window.i18n`skills.p3.l2`}</Link>{window.i18n`skills.p3.l3`}</p>
             </div>
             <div className={'column bars'}>
               <Bar text={'Node.js'} progress={90} icon={<i className={'fab fa-node'}/>} />

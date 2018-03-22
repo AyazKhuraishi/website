@@ -1,6 +1,7 @@
 // Projects section
 import React from 'react'
 import ProjectCard from './ProjectCard'
+import Link from './Link'
 import { config } from '../config'
 
 export default class Projects extends React.Component {
@@ -26,7 +27,7 @@ export default class Projects extends React.Component {
               })
             }
           </div>
-          <h2 className={'subtitle section-subtitle'}>{window.i18n`projects.p1.l1`}<a href={'https://github.com/linuswillner'}>{window.i18n`projects.p1.l2`}</a>.</h2>
+          <h2 className={'subtitle section-subtitle'}>{window.i18n`projects.p1.l1`}<Link to={'https://github.com/linuswillner'}>{window.i18n`projects.p1.l2`}</Link>.</h2>
         </div>
       </section>
     )

@@ -18,7 +18,8 @@ export default class MenuButton extends React.Component {
     // Blur background
     // This is a wee bit hacky, but it works as intended (Toggling does not trigger transitions)
     if (window.innerWidth < 685) {
-      let elements = getElementsById(config.common.sections) // List of elements to blur
+      let sections = getElementsById(config.common.sections) // List of elements to blur
+      let elements = sections.concat(getElementsById(config.common.additionals))
       if (!this.state.hidden === false) {
         disableScroll.on()
         elements.map(el => { el.classList.add('blurred'); el.classList.remove('not-blurred') })

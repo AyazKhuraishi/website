@@ -37,6 +37,7 @@ class Link extends React.Component {
         className={this.determineClassName()}
         href={this.determineLink()}
         target={'_blank'}
+        tabIndex={'-1'}
       >
         {this.props.children}
       </a>

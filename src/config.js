@@ -10,6 +10,10 @@ export const config = {
       'skills',
       'projects',
       'contact'
+    ],
+    // Additional elements to blur
+    additionals: [
+      'scroll-hint'
     ]
   },
   // Hero section

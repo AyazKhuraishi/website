@@ -1,16 +1,17 @@
 // Project card
 import React from 'react'
 import PropTypes from 'prop-types'
+import Link from './Link'
 
 class GitHubButton extends React.Component {
   render () {
     return (
-      <a className={`button ${this.props.centerFix ? 'center-fix' : ''}`} href={this.props.link} target={'_blank'}>
+      <Link className={`button ${this.props.centerFix ? 'center-fix' : ''}`} to={this.props.link}>
         <span className={'icon'}>
           <i className={'fab fa-github'}></i>
         </span>
         <span>GitHub</span>
-      </a>
+      </Link>
     )
   }
 }
@@ -18,12 +19,12 @@ class GitHubButton extends React.Component {
 class WebsiteButton extends React.Component {
   render () {
     return (
-      <a className={`button ${this.props.centerFix ? 'center-fix' : ''}`} href={this.props.link} target={'_blank'}>
+      <Link className={`button ${this.props.centerFix ? 'center-fix' : ''}`} to={this.props.link}>
         <span className={'icon'}>
           <i className={'fas fa-globe'}></i>
         </span>
         <span>Website</span>
-      </a>
+      </Link>
     )
   }
 }
