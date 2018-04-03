@@ -15,8 +15,9 @@ module.exports = {
       'Opiskelija',
       'Tekniikkanörtti',
       'Freelance-kehittäjä',
-      'Tuleva ohjelmistokehittäjä'
-    ]
+      'Tuleva ohjelmistoinsinööri'
+    ],
+    typingTextLowWidth: 'Suomalainen opiskelija, freelance-kehittäjä ja tuleva ohjelmistoinsinööri'
   },
   about: { // About
     title: 'TIETOJA',
@@ -70,7 +71,7 @@ module.exports = {
     email: `Sähköposti`
   },
   footer: {
-    copyright: `Copyright (c) 2018 Linus Willner. Kaikki oikeudet pidätetään.`,
+    copyright: `Copyright (c) ${new Date().getFullYear()} Linus Willner. Kaikki oikeudet pidätetään.`,
     tech: {
       l1: `Toteutettu `,
       l2: `Reactilla`,

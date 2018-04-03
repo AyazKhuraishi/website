@@ -15,8 +15,9 @@ module.exports = {
       'Studerande',
       'Tekniknörd',
       'Freelance-programmerare',
-      'Kommande programutvecklare'
-    ]
+      'Blivande programutvecklare'
+    ],
+    typingTextLowWidth: 'Studerande, freelance-programmerare och blivande programutvecklare från Finland'
   },
   about: { // About
     title: 'OM MIG',
@@ -70,7 +71,7 @@ module.exports = {
     email: `E-post`
   },
   footer: {
-    copyright: `Copyright (c) 2018 Linus Willner. Alla rättigheter reserverade.`,
+    copyright: `Copyright (c) ${new Date().getFullYear()} Linus Willner. Alla rättigheter reserverade.`,
     tech: {
       l1: `Byggt med `,
       l2: `React`,

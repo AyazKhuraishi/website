@@ -6,7 +6,10 @@ import { config } from '../config'
 export default class Hero extends React.Component {
   constructor (props) {
     super(props)
-    this.state = { typing: true }
+    this.state = {
+      typing: window.innerWidth > 770,
+      typingEnabled: window.innerWidth > 770
+    }
     this.typingDone = this.typingDone.bind(this)
   }
 
@@ -26,7 +29,7 @@ export default class Hero extends React.Component {
           <div className={'container has-text-centered'}>
             <h1 className={'large-title'}>Linus Willner</h1>
             {
-              this.state.typing
+              this.state.typingEnabled && this.state.typing
                 ? <Typist
                   className={'subtitle-typing'}
                   avgTypingDelay={90}
@@ -46,6 +49,11 @@ export default class Hero extends React.Component {
                   {texts[3]}"
                   <Typist.Backspace count={texts[3].length + 8} delay={delay} /> {/* Adding 8 characters due to echo "thing" */}
                 </Typist>
+                : ''
+            }
+            {
+              this.state.typingEnabled === false
+                ? <h2 className={'subtitle-lowwidth'}>{window.i18n`hero.typingTextLowWidth`}</h2>
                 : ''
             }
           </div>

@@ -36,3 +36,11 @@
   color: #C0C0C0;
   @extend %monospace-prefix;
 }
+
+.subtitle-lowwidth {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 23px;
+  text-align: center;
+  padding-bottom: 10px;
+}

@@ -16,7 +16,8 @@ module.exports = {
       'Tech geek',
       'Freelance developer',
       'Aspiring software engineer'
-    ]
+    ],
+    typingTextLowWidth: 'Student, freelance developer and aspiring software engineer from Finland'
   },
   about: { // About
     title: 'ABOUT ME',
@@ -70,7 +71,7 @@ module.exports = {
     email: `Email`
   },
   footer: {
-    copyright: `Copyright (c) 2018 Linus Willner. All rights reserved.`,
+    copyright: `Copyright (c) ${new Date().getFullYear()} Linus Willner. All rights reserved.`,
     tech: {
       l1: `Achieved with `,
       l2: `React`,
