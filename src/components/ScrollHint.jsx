@@ -8,6 +8,7 @@ export default class ScrollHint extends React.Component {
     this.state = { animationDone: false, hover: false, scrolled: false }
     this.toggleHover = this.toggleHover.bind(this)
     this.handleScroll = this.handleScroll.bind(this)
+    this.decideClassName = this.decideClassName.bind(this)
   }
 
   toggleHover () {
@@ -20,24 +21,32 @@ export default class ScrollHint extends React.Component {
   }
 
   handleScroll () {
-    if (this.state.scrolled && window.pageYOffset === 0) this.setState({ scrolled: false })
-    else if (!this.state.scrolled) this.setState({ scrolled: true })
+    if (!this.state.scrolled) this.setState({ scrolled: true })
+  }
+
+  decideClassName () {
+    let state = this.state
+    let className = ''
+
+    // This is quite verbose, but should be easier to understand than a switch
+    if (!state.scrolled && !state.animationDone) className = 'out-of-viewport' // Page is untouched
+    else if (!state.scrolled && state.animationDone) className = 'show' // Page is untouched and animation finishes
+    else if (state.scrolled && state.animationDone) className = 'out-of-viewport hide' // Page is scrolled when the animation has finished
+    else if (state.scrolled && !state.animationDone) className = 'out-of-viewport' // Page has already been scrolled but the animation has not finished
+
+    return className
   }
 
   render () {
     window.onscroll = () => { this.handleScroll() }
-    setTimeout(() => { this.setState({ animationDone: true }) }, 3500)
+    setTimeout(() => {
+      // Prevent the hide animation if the page has already been scrolled by pretending the animation did not finish
+      if (!this.state.scrolled && !this.state.animationDone) this.setState({ animationDone: true })
+    }, 3500)
 
-    // Animation clarified:
-    // When page is scrolled, hide and keep arrow hidden
-    // When initial animation is done, slide the arrow in, before that keep it hidden
     return (
       <div
-        className={`
-          scroll-hint
-          ${this.state.scrolled ? 'hidden hide' : ''}
-          ${this.state.animationDone ? 'show' : 'hidden'}
-        `}
+        className={`scroll-hint ${this.decideClassName()}`}
         id={'scroll-hint'}
         onMouseEnter={this.toggleHover}
         onMouseLeave={this.toggleHover}
