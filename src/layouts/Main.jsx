@@ -26,6 +26,7 @@ global.i18n = i18n // Translation function
 
 export default class Main extends React.Component {
   globalClickHandler (e) {
+    // Closes any open dialogs when a non-button element is clicked (Improves UX)
     let targetIsButton = e.target.dataset.button
     if (!targetIsButton) emitOne('CLOSE_ANY_OPEN_DIALOG')
   }

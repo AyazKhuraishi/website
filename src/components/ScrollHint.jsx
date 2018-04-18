@@ -38,7 +38,8 @@ export default class ScrollHint extends React.Component {
   }
 
   render () {
-    window.onscroll = () => { this.handleScroll() }
+    window.onscroll = this.handleScroll
+
     setTimeout(() => {
       // Prevent the hide animation if the page has already been scrolled by pretending the animation did not finish
       if (!this.state.scrolled && !this.state.animationDone) this.setState({ animationDone: true })
