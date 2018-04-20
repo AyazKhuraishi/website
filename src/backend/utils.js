@@ -1,6 +1,6 @@
 /**
  * Get multiple elements by ID.
- * @param {Array} ids - Array of element IDs to get.
+ * @param {Array} ids Array of element IDs to get.
  */
 function getElementsById (ids) {
   let elements = []

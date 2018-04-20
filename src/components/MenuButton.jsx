@@ -4,6 +4,7 @@ import { dispatcher, emitOne } from '../backend/dispatcher'
 import { getElementsById } from '../backend/utils'
 import { config } from '../config'
 import disableScroll from 'disable-scroll'
+import inViewport from 'in-viewport'
 
 export default class MenuButton extends React.Component {
   constructor (props) {
@@ -22,10 +23,10 @@ export default class MenuButton extends React.Component {
       let elements = sections.concat(getElementsById(config.common.additionals))
       if (!this.state.hidden === false) {
         disableScroll.on()
-        elements.map(el => { el.classList.add('blurred'); el.classList.remove('not-blurred') })
+        elements.map(el => { if (inViewport(el)) el.classList.add('blurred'); el.classList.remove('not-blurred') })
       } else {
         disableScroll.off()
-        elements.map(el => { el.classList.add('not-blurred'); el.classList.remove('blurred') })
+        elements.map(el => { if (inViewport(el)) el.classList.add('not-blurred'); el.classList.remove('blurred') })
       }
     }
     this.setState({ hidden: !this.state.hidden })
