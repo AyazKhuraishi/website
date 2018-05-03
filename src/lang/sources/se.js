@@ -51,9 +51,9 @@ module.exports = {
     },
     cards: [
       { title: 'tag-replacer', text: 'En Node.js-modul för ersättande av schabloner i text. Stöder också TagScript.', github: 'https://github.com/linuswillner/tag-replacer' },
+      { title: 'JagTag-JS', text: 'En JavaScript-version av JagTag-teckenspråket som är ursprungligen skrivet i Java.', github: 'https://github.com/TheSharks/JagTag-JS' },
       { title: 'Live Sound Board', text: 'Ett soundboard-program för uppspelning av ljudeffekter under scenuppträdanden.', github: 'https://github.com/linuswillner/LiveSoundBoard' },
-      { title: 'Weather Observatory', text: 'En enkel, säker och skarvbar väderapplikation som jag gjorde till en Reaktor-utmaning.', github: 'https://github.com/linuswillner/Weather-Observatory', website: 'https://linuswillner.me/weather' },
-      { title: 'react-website-boilerplate', text: 'Min personliga React-projektbotten med live reload, SASS-stöd och Standard-stil.', github: 'https://github.com/linuswillner/react-website-boilerplate' }
+      { title: 'Weather Observatory', text: 'En enkel, säker och skarvbar väderapplikation som jag gjorde till en Reaktor-utmaning.', github: 'https://github.com/linuswillner/Weather-Observatory', website: 'https://linuswillner.me/weather' }
     ]
   },
   contact: { // Contact
