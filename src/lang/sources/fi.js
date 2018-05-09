@@ -51,7 +51,7 @@ module.exports = {
     },
     cards: [
       { title: 'tag-replacer', text: 'Node.js-moduuli placeholder-sanojen korvaamiseen tekstissä. Tukee myös TagScriptiä.', github: 'https://github.com/linuswillner/tag-replacer' },
-      { title: 'JagTag-JS', text: 'JavaScriptiin portattu implementaatio JagTag-merkkikielestä.', github: 'https://github.com/TheSharks/JagTag-JS' },
+      { title: 'JagTag-JS', text: 'JavaScriptiin portattu implementaatio JagTag-merkkikielestä.', github: 'https://github.com/TheSharks/JagTag-JS', website: 'https://thesharks.github.io/JagTag-JS' },
       { title: 'Live Sound Board', text: 'Soundboard-ohjelmia ääniefektien soittamiseen näyttämöesitysten aikana.', github: 'https://github.com/linuswillner/LiveSoundBoard' },
       { title: 'Weather Observatory', text: 'Reaktor-haasteeseen rakennettu yksinkertainen, turvallinen ja laajennettava sääohjelma.', github: 'https://github.com/linuswillner/Weather-Observatory', website: 'https://linuswillner.me/weather' }
     ]

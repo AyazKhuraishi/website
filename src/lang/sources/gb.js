@@ -51,7 +51,7 @@ module.exports = {
     },
     cards: [
       { title: 'tag-replacer', text: 'A Node.js module for replacing template tags in strings. Includes TagScript support.', github: 'https://github.com/linuswillner/tag-replacer' },
-      { title: 'JagTag-JS', text: 'A JavaScript port of the JagTag text parsing language, which was originally written in Java.', github: 'https://github.com/TheSharks/JagTag-JS' },
+      { title: 'JagTag-JS', text: 'A JavaScript port of the JagTag text parsing language, which was originally written in Java.', github: 'https://github.com/TheSharks/JagTag-JS', website: 'https://thesharks.github.io/JagTag-JS' },
       { title: 'Live Sound Board', text: 'A soundboard application for providing live sound effects during stage shows.', github: 'https://github.com/linuswillner/LiveSoundBoard' },
       { title: 'Weather Observatory', text: 'A simple, secure and extensible weather application built for a Reaktor challenge.', github: 'https://github.com/linuswillner/Weather-Observatory', website: 'https://linuswillner.me/weather' }
     ]
