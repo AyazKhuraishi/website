@@ -26,12 +26,17 @@ module.exports = {
     p2: `I'm an avid tech nerd that enjoys programming in his free time. I mostly develop JavaScript applications for the backend and web applications with common frontend paradigms, such as HTML and CSS.`,
     p3: `When it comes to programming, I'm a self-taught freelance developer. I am also proficient in three languages (Finnish, Swedish and English) and as such tend to write documentation for the projects I contribute to.`,
     p4: {
+      l1: `My main freelance position is currently at `,
+      l2: `, where I develop and maintain projects such as `,
+      l3: `. I do this in my free time as an aside from studying and work.`
+    },
+    p5: {
       l1: `I have created quite a few programs on my own, such as `,
       l2: ` and `,
-      l3: `, ranging from websites to full-fledged desktop applications. Some of the major projects I have contributed to are `,
+      l3: `, ranging from backend applications to websites and full-fledged desktop applications. Some of the major projects I have contributed to are `,
       l4: ` and `
     },
-    p5: `Open source software is close to my heart and I'm always looking for opportunities to help out. If you feel that I could help you with something, please keep on reading!`
+    p6: `Open source software is close to my heart and I'm always looking for opportunities to help out. If you feel that I could help you with something, please keep on reading!`
   },
   skills: { // Skills
     title: `SKILLS`,

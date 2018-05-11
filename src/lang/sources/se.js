@@ -26,12 +26,17 @@ module.exports = {
     p2: `Jag är en verklig tekniknörd som njuter av programmering på fritiden. För det mesta utvecklar jag JavaScript-applikationer för serversidan och web-applikationer med allmänna frontend-paradigm som HTML och CSS.`,
     p3: `När det kommer till programmering är jag en självlärd freelance-programmerare. Jag är också kunnig inom tre språk (Finska, svenska och engelska) och skriver därmed ofta dokumentation för projekt jag deltar i.`,
     p4: {
+      l1: `Min huvudsakliga freelance-position är för tillfället hos `,
+      l2: `, där jag utvecklar och upprätthåller projekt som `,
+      l3: `. Jag gör detta på fritiden vid sidan av studier och arbete.`
+    },
+    p5: {
       l1: `Jag har utvecklat ett antal program själv, till exempel `,
       l2: ` och `,
-      l3: `, som varierar från nätsidor till fullt funktionerande skrivbordsprogram. Några av de större projekten jag har deltagit i innefattar `,
+      l3: `, som innefattar allt från backend-applikationer till nätsidor och fullt funktionerande skrivbordsprogram. Några av de större projekten jag har deltagit i innefattar `,
       l4: ` och `
     },
-    p5: `Programvara med öppen källkod står mitt hjärta nära och jag söker alltid nya möjligheter att hjälpa till. Om du finner att jag kunde hjälpa dig med något, läs gärna vidare!`
+    p6: `Programvara med öppen källkod står mitt hjärta nära och jag söker alltid nya möjligheter att hjälpa till. Om du finner att jag kunde hjälpa dig med något, läs gärna vidare!`
   },
   skills: { // Skills
     title: `KUNSKAPER`,

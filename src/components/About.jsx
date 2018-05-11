@@ -29,8 +29,9 @@ export default class About extends React.Component {
                 <p>{window.i18n`about.p1`}</p>
                 <p>{window.i18n`about.p2`}</p>
                 <p>{window.i18n`about.p3`}</p>
-                <p>{window.i18n`about.p4.l1`}<Link to={'https://github.com/linuswillner/LiveSoundBoard'}>Live Sound Board</Link>{window.i18n`about.p4.l2`}<Link to={'https://github.com/linuswillner/Weather-Observatory'}>Weather Observatory</Link>{window.i18n`about.p4.l3`}<Link to={'https://github.com/TheSharks/WildBeast'}>WildBeast</Link>{window.i18n`about.p4.l4`}<Link to={'https://github.com/ArekSredzki/electron-release-server'}>electron-release-server</Link>.</p>
-                <p>{window.i18n`about.p5`}</p>
+                <p>{window.i18n`about.p4.l1`}<Link to={'https://github.com/TheSharks'}>TheSharks</Link>{window.i18n`about.p4.l2`}<Link to={'https://github.com/TheSharks/JagTag-JS'}>JagTag-JS</Link>{window.i18n`about.p4.l3`}</p>
+                <p>{window.i18n`about.p5.l1`}<Link to={'https://github.com/linuswillner/LiveSoundBoard'}>Live Sound Board</Link>{window.i18n`about.p5.l2`}<Link to={'https://github.com/linuswillner/Weather-Observatory'}>Weather Observatory</Link>{window.i18n`about.p5.l3`}<Link to={'https://github.com/TheSharks/WildBeast'}>WildBeast</Link>{window.i18n`about.p5.l4`}<Link to={'https://github.com/ArekSredzki/electron-release-server'}>electron-release-server</Link>.</p>
+                <p>{window.i18n`about.p6`}</p>
                 <p className={'signature'}>- LW</p>
               </div>
             </div>

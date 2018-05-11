@@ -26,12 +26,17 @@ module.exports = {
     p2: `Olen todellinen tekniikkanörtti joka nauttii ohjelmoinnista vapaa-ajalla. Kehitän enimmäkseen JavaScript-applikaatioita serverikäyttöön ja web-sovelluksia yleisiä frontend-tekniikoita käyttäen (Esim. HTML ja CSS).`,
     p3: `Ohjelmoinnin saralla olen itseoppinut freelanceri. Osaan myös kolmea kieltä (Suomi, ruotsi ja englanti) minkä vuoksi kirjoitan yleensä dokumentaatiota projekteille joiden kehitykseen osallistun.`,
     p4: {
+      l1: `Pääasiallinen freelance-työnantajani on tällä hetkellä `,
+      l2: `, jolle kehitän ja ylläpidän projekteja kuten `,
+      l3: `. Teen tätä vapaa-ajallani opiskelun ja työn ohella.`
+    },
+    p5: {
       l1: `Olen kehittänyt jonkin verran omia ohjelmiani, kuten `,
       l2: ` sekä `,
-      l3: `, joista löytyy sekä verkkosivuja että työpöytäohjelmia. Olen osallistunut muutamaan suurempaankin projektiin; esimerkkejä tästä ovat `,
+      l3: `, joista löytyy kaikkea backend-applikaatioista verkkosivuihin ja työpöytäohjelmia. Olen osallistunut muutamaan suurempaankin projektiin; esimerkkejä tästä ovat `,
       l4: ` ja `
     },
-    p5: `Avoimen lähdekoodin sovellukset ovat sydäntäni lähellä ja etsin aina uusia tilaisuuksia auttaa. Jos olet sitä mieltä että voisin auttaa sinua jossain, jatka ihmeessä lukemista!`
+    p6: `Avoimen lähdekoodin sovellukset ovat sydäntäni lähellä ja etsin aina uusia tilaisuuksia auttaa. Jos olet sitä mieltä että voisin auttaa sinua jossain, jatka ihmeessä lukemista!`
   },
   skills: { // Skills
     title: `TAITOJA`,
