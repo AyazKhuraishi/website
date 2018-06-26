@@ -22,7 +22,7 @@ module.exports = {
   about: { // About
     title: 'ABOUT ME',
     sectionTitle: 'Hello there!',
-    p1: `I'm Linus Willner, an 18-year-old student and freelance developer from Finland. Pleasure to meet you!`,
+    p1: `I'm Linus Willner, an 19-year-old student and freelance developer from Finland. Pleasure to meet you!`,
     p2: `I'm an avid tech nerd that enjoys programming in his free time. I mostly develop JavaScript applications for the backend and web applications with common frontend paradigms, such as HTML and CSS.`,
     p3: `When it comes to programming, I'm a self-taught freelance developer. I am also proficient in three languages (Finnish, Swedish and English) and as such tend to write documentation for the projects I contribute to.`,
     p4: {

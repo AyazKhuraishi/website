@@ -22,7 +22,7 @@ module.exports = {
   about: { // About
     title: 'OM MIG',
     sectionTitle: 'Morjens!',
-    p1: `Jag heter Linus Willner, och jag är en 18-årig studerande och freelance-programmerare från Finland. Trevligt att råkas!`,
+    p1: `Jag heter Linus Willner, och jag är en 19-årig studerande och freelance-programmerare från Finland. Trevligt att råkas!`,
     p2: `Jag är en verklig tekniknörd som njuter av programmering på fritiden. För det mesta utvecklar jag JavaScript-applikationer för serversidan och web-applikationer med allmänna frontend-paradigm som HTML och CSS.`,
     p3: `När det kommer till programmering är jag en självlärd freelance-programmerare. Jag är också kunnig inom tre språk (Finska, svenska och engelska) och skriver därmed ofta dokumentation för projekt jag deltar i.`,
     p4: {
