@@ -24,10 +24,11 @@ export default class Skills extends React.Component {
               <p>{window.i18n`skills.p3.l1`}<Link to={'https://github.com/linuswillner'}>{window.i18n`skills.p3.l2`}</Link>{window.i18n`skills.p3.l3`}</p>
             </div>
             <div className={'column bars'}>
-              <Bar text={'Node.js'} progress={90} icon={<i className={'fab fa-node'}/>} />
-              <Bar text={'JavaScript'} progress={85} icon={<i className={'fab fa-js-square js'}/>} />
+              <Bar text={'Node.js'} progress={100} icon={<i className={'fab fa-node'}/>} />
+              <Bar text={'JavaScript'} progress={100} icon={<i className={'fab fa-js-square js'}/>} />
+              <Bar text={'React'} progress={90} icon={<i className={'fab fa-react react'}/>} />
+              <Bar text={'Sass'} progress={85} icon={<i className={'fab fa-sass sass'}/>} />
               <Bar text={'HTML/CSS'} progress={80} icon={<i className={'fab fa-html5 html'}/>} />
-              <Bar text={'React'} progress={75} icon={<i className={'fab fa-react react'}/>} />
             </div>
           </div>
         </div>

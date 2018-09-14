@@ -15,9 +15,9 @@ module.exports = {
       'Student',
       'Tech geek',
       'Freelance developer',
-      'Aspiring software engineer'
+      'Software engineer-to-be'
     ],
-    typingTextLowWidth: 'Student, freelance developer and aspiring software engineer from Finland'
+    typingTextLowWidth: 'Student, freelance developer and software engineer-to-be from Finland'
   },
   about: { // About
     title: 'ABOUT ME',
@@ -33,15 +33,15 @@ module.exports = {
     p5: {
       l1: `I have created quite a few programs on my own, such as `,
       l2: ` and `,
-      l3: `, ranging from backend applications to websites and full-fledged desktop applications. Some of the major projects I have contributed to are `,
+      l3: `, ranging from backend applications to websites and full-fledged desktop applications. Some of the major projects I partake in include `,
       l4: ` and `
     },
     p6: `Open source software is close to my heart and I'm always looking for opportunities to help out. If you feel that I could help you with something, please keep on reading!`
   },
   skills: { // Skills
     title: `SKILLS`,
-    p1: `I'm a freelance developer with 2 years of experience in both open and closed source development. I have worked in team-oriented environments in addition to working on my own.`,
-    p2: `I develop websites and web applications (React), JavaScript applications for the backend (Node.js) and desktop applications (Electron). I also have experience in version control (Git), continuous integration and deployment of production applications.`,
+    p1: `I'm a freelance developer with over two years of experience in both open and closed source development. I have worked in team-oriented environments in addition to working on my own.`,
+    p2: `I develop websites and web applications (React), JavaScript applications for the backend (Node.js) and desktop applications (Electron). I also have experience in freelance-level DevOps development (Code review, Continuous Integration, etc.).`,
     p3: {
       l1: `Most of the projects I have created or contribute to can be found on my `,
       l2: `GitHub page`,
@@ -57,8 +57,8 @@ module.exports = {
     cards: [
       { title: 'tag-replacer', text: 'A Node.js module for replacing template tags in strings. Includes TagScript support.', github: 'https://github.com/linuswillner/tag-replacer' },
       { title: 'JagTag-JS', text: 'A JavaScript port of the JagTag text parsing language, which was originally written in Java.', github: 'https://github.com/TheSharks/JagTag-JS', website: 'https://thesharks.github.io/JagTag-JS' },
-      { title: 'Live Sound Board', text: 'A soundboard application for providing live sound effects during stage shows.', github: 'https://github.com/linuswillner/LiveSoundBoard' },
-      { title: 'Weather Observatory', text: 'A simple, secure and extensible weather application built for a Reaktor challenge.', github: 'https://github.com/linuswillner/Weather-Observatory', website: 'https://linuswillner.me/weather' }
+      { title: 'react-console-emulator', text: 'A powerful and flexible Unix emulator component for React that I built for JS-RCON.', github: 'https://github.com/js-rcon/react-console-emulator' },
+      { title: 'JS-RCON', text: 'An extensive and modern server management interface for Team Fortress 2.', github: 'https://github.com/js-rcon' }
     ]
   },
   contact: { // Contact
@@ -84,6 +84,6 @@ module.exports = {
       l4: `and`,
       l5: `Bulma`
     },
-    location: `Engineered with ❤️ in Loviisa, Finland.`
+    location: `Created with genuine organic geek.`
   }
 }

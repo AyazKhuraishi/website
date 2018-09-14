@@ -13,11 +13,11 @@ module.exports = {
   hero: { // Hero
     typingTexts: [
       'Opiskelija',
-      'Tekniikkanörtti',
+      'Tekniikkaharrastaja',
       'Freelance-kehittäjä',
-      'Tuleva ohjelmistoinsinööri'
+      'Tuleva ATK-insinööri'
     ],
-    typingTextLowWidth: 'Suomalainen opiskelija, freelance-kehittäjä ja tuleva ohjelmistoinsinööri'
+    typingTextLowWidth: 'Suomalainen opiskelija, freelance-kehittäjä ja tuleva ATK-insinööri'
   },
   about: { // About
     title: 'TIETOJA',
@@ -33,15 +33,15 @@ module.exports = {
     p5: {
       l1: `Olen kehittänyt jonkin verran omia ohjelmiani, kuten `,
       l2: ` sekä `,
-      l3: `, joista löytyy kaikkea backend-applikaatioista verkkosivuihin ja työpöytäohjelmia. Olen osallistunut muutamaan suurempaankin projektiin; esimerkkejä tästä ovat `,
+      l3: `, joista löytyy kaikkea backend-applikaatioista verkkosivuihin ja työpöytäohjelmia. Osallistuun muutamaan suuremmankin projektin kehitykseen; esimerkkejä tästä ovat `,
       l4: ` ja `
     },
     p6: `Avoimen lähdekoodin sovellukset ovat sydäntäni lähellä ja etsin aina uusia tilaisuuksia auttaa. Jos olet sitä mieltä että voisin auttaa sinua jossain, jatka ihmeessä lukemista!`
   },
   skills: { // Skills
     title: `TAITOJA`,
-    p1: `Olen freelance-kehittäjä jolla on kahden vuoden kokemus sekä avoimen että suljetun lähdekoodin kehityksestä. Olen työskennellyt sekä tiimiympäristössä että yksinäni.`,
-    p2: `Kehitän suurimmaksi osaksi verkkosivuja sekä web-applikaatioita (React), JavaScript-applikaatioita serverikäyttöön (Node.js) sekä työpöytäohjelmia (Electron). Minulla on myös kokemusta versionhallinnasta (Git), jatkuvasta integraatiosta sekä tuotantovalmiiden applikaatioiden ylläpidosta.`,
+    p1: `Olen freelance-kehittäjä jolla on yli kahden vuoden kokemus sekä avoimen että suljetun lähdekoodin kehityksestä. Olen työskennellyt sekä tiimiympäristössä että yksinäni.`,
+    p2: `Kehitän suurimmaksi osaksi verkkosivuja sekä web-applikaatioita (React), JavaScript-applikaatioita serverikäyttöön (Node.js) sekä työpöytäohjelmia (Electron). Minulla on myös kokemusta freelance-tason DevOps-kehityksestä (Code review, Continuous Integration, jne.).`,
     p3: {
       l1: `Suurin osa projekteista jotka olen luonut tai joihin osallistunut löytyvät `,
       l2: `GitHub-sivultani`,
@@ -57,8 +57,8 @@ module.exports = {
     cards: [
       { title: 'tag-replacer', text: 'Node.js-moduuli placeholder-sanojen korvaamiseen tekstissä. Tukee myös TagScriptiä.', github: 'https://github.com/linuswillner/tag-replacer' },
       { title: 'JagTag-JS', text: 'JavaScriptiin portattu implementaatio JagTag-merkkikielestä.', github: 'https://github.com/TheSharks/JagTag-JS', website: 'https://thesharks.github.io/JagTag-JS' },
-      { title: 'Live Sound Board', text: 'Soundboard-ohjelmia ääniefektien soittamiseen näyttämöesitysten aikana.', github: 'https://github.com/linuswillner/LiveSoundBoard' },
-      { title: 'Weather Observatory', text: 'Reaktor-haasteeseen rakennettu yksinkertainen, turvallinen ja laajennettava sääohjelma.', github: 'https://github.com/linuswillner/Weather-Observatory', website: 'https://linuswillner.me/weather' }
+      { title: 'react-console-emulator', text: 'Monipuolinen ja kustomoitava Unix-terminaaliemulaattori Reactissa.', github: 'https://github.com/js-rcon/react-console-emulator' },
+      { title: 'JS-RCON', text: 'Kattava ja moderni serverinhallintapaneeli Team Fortress 2:lle.', github: 'https://github.com/js-rcon' }
     ]
   },
   contact: { // Contact
@@ -84,6 +84,6 @@ module.exports = {
       l4: `sekä`,
       l5: `Bulmalla`
     },
-    location: `Rakennettu ❤️:lla Loviisassa, Suomessa.`
+    location: `Rakennettu aidolla luonnonmukaisesti tuotetulla nörtillä.`
   }
 }

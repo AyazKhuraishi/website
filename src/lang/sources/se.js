@@ -13,11 +13,11 @@ module.exports = {
   hero: { // Hero
     typingTexts: [
       'Studerande',
-      'Tekniknörd',
+      'Teknikhobbyist',
       'Freelance-programmerare',
-      'Blivande programutvecklare'
+      'Blivande IKT-ingenjör'
     ],
-    typingTextLowWidth: 'Studerande, freelance-programmerare och blivande programutvecklare från Finland'
+    typingTextLowWidth: 'Studerande, freelance-programmerare och blivande IKT-ingenjör från Finland'
   },
   about: { // About
     title: 'OM MIG',
@@ -33,15 +33,15 @@ module.exports = {
     p5: {
       l1: `Jag har utvecklat ett antal program själv, till exempel `,
       l2: ` och `,
-      l3: `, som innefattar allt från backend-applikationer till nätsidor och fullt funktionerande skrivbordsprogram. Några av de större projekten jag har deltagit i innefattar `,
+      l3: `, som innefattar allt från backend-applikationer till nätsidor och fullt funktionerande skrivbordsprogram. Några av de större projekten jag deltar i innefattar `,
       l4: ` och `
     },
     p6: `Programvara med öppen källkod står mitt hjärta nära och jag söker alltid nya möjligheter att hjälpa till. Om du finner att jag kunde hjälpa dig med något, läs gärna vidare!`
   },
   skills: { // Skills
     title: `KUNSKAPER`,
-    p1: `Jag är en freelance-programmerare med två års erfarenhet av utveckling med både öppen och sluten källkod. Jag har arbetat i både team-orienterade omgivningar i tillägg till ensamarbete.`,
-    p2: `Jag utvecklar nätsidor och web-applikationer (React), JavaScript applikationer för serversidan (Node.js) och skrivbordsprogram (Electron). Jag har också erfarenhet i versionskontroll (Git), kontinuerlig integration och upprätthåll av produktionsfärdiga appliaktioner.`,
+    p1: `Jag är en freelance-programmerare med över två års erfarenhet av utveckling med både öppen och sluten källkod. Jag har arbetat i både team-orienterade omgivningar i tillägg till ensamarbete.`,
+    p2: `Jag utvecklar nätsidor och web-applikationer (React), JavaScript applikationer för serversidan (Node.js) och skrivbordsprogram (Electron). Jag har också erfarenhet av DevOps-utveckling på freelance-nivå (Code review, Continuous Integration, osv.).`,
     p3: {
       l1: `De flesta av projekten jag har gjort eller deltagit i kan hittas på min `,
       l2: `GitHub-sida`,
@@ -57,8 +57,8 @@ module.exports = {
     cards: [
       { title: 'tag-replacer', text: 'En Node.js-modul för ersättande av schabloner i text. Stöder också TagScript.', github: 'https://github.com/linuswillner/tag-replacer' },
       { title: 'JagTag-JS', text: 'En JavaScript-version av JagTag-teckenspråket som är ursprungligen skrivet i Java.', github: 'https://github.com/TheSharks/JagTag-JS', website: 'https://thesharks.github.io/JagTag-JS' },
-      { title: 'Live Sound Board', text: 'Ett soundboard-program för uppspelning av ljudeffekter under scenuppträdanden.', github: 'https://github.com/linuswillner/LiveSoundBoard' },
-      { title: 'Weather Observatory', text: 'En enkel, säker och skarvbar väderapplikation som jag gjorde till en Reaktor-utmaning.', github: 'https://github.com/linuswillner/Weather-Observatory', website: 'https://linuswillner.me/weather' }
+      { title: 'react-console-emulator', text: 'En månsidig och "hackable" Unix-terminalemulator i React jag byggt för JS-RCON.', github: 'https://github.com/js-rcon/react-console-emulator' },
+      { title: 'JS-RCON', text: 'En omfattande och modern serveradministrationspanel för Team Fortress 2.', github: 'https://github.com/js-rcon' }
     ]
   },
   contact: { // Contact
@@ -84,6 +84,6 @@ module.exports = {
       l4: `och`,
       l5: `Bulma`
     },
-    location: `Programmerat med ❤️ i Lovisa, Finland.`
+    location: `Byggt med äkta naturenlig nörd.`
   }
 }
