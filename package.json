@@ -42,7 +42,7 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.1",
-    "webpack-dev-server": "^3.1.8"
+    "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
     "bulma": "^0.7.2",
