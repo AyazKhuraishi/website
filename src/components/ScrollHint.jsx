@@ -16,7 +16,7 @@ export default class ScrollHint extends React.Component {
   }
 
   handleClick () {
-    let about = window.i18n`navbar.items`.map(i => i.href)[1].substring(1)
+    const about = window.i18n`navbar.items`.map(i => i.href)[1].substring(1)
     scrollIntoView(document.getElementById(about))
   }
 
@@ -25,7 +25,7 @@ export default class ScrollHint extends React.Component {
   }
 
   decideClassName () {
-    let state = this.state
+    const state = this.state
     let className = ''
 
     // This is quite verbose, but should be easier to understand than a switch

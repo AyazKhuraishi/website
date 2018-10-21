@@ -2,7 +2,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { dispatcher, emitOne } from '../backend/dispatcher'
-import { config } from '../config'
 import scrollIntoView from 'scroll-into-view'
 
 class Item extends React.Component {
@@ -29,6 +28,7 @@ class Item extends React.Component {
       },
       listOverrides: {
         borderBottom: 0,
+        width: 110,
         flexDirection: window.lowWidth ? 'column' : 'row'
       }
     }
@@ -52,7 +52,7 @@ export default class Navbar extends React.Component {
   }
 
   handleSelect (itemName) {
-    let selectedButton = window.i18n`navbar.items`.map(i => i.name).indexOf(itemName)
+    const selectedButton = window.i18n`navbar.items`.map(i => i.name).indexOf(itemName)
     this.setState({ selectedIndex: selectedButton })
   }
 

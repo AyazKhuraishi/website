@@ -4,12 +4,8 @@ import { dispatcher } from '../backend/dispatcher'
 
 // On low device widths, hide margins on menu toggle
 const styles = {
-  show: {
-    opacity: 1,
-    transition: 'all 500ms'
-  },
   hide: {
-    opacity: 0
+    display: 'none'
   }
 }
 
@@ -27,7 +23,7 @@ export default class Divider extends React.Component {
 
   render () {
     return (
-      <div className={'divider is-divider'} style={this.state.hidden === false ? styles.show : styles.hide} />
+      <div className={'divider is-divider'} style={this.state.hidden === false ? {} : styles.hide} />
     )
   }
 }

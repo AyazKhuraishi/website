@@ -20,7 +20,7 @@ export function i18n (stringPath) {
   // Check that the lang value is correct
   if (localStorage.getItem('lang') && localStorage.getItem('lang').match(/gb|fi|se/gi) !== null) {
     // Ramda handles the pathfinding in the object
-    let res = R.path(stringPath, window.lang[localStorage.getItem('lang') || 'gb'])
+    const res = R.path(stringPath, window.lang[localStorage.getItem('lang') || 'gb'])
 
     if (res === undefined) return ''
     else return res

@@ -29,9 +29,10 @@ export default class Main extends React.Component {
     super(props)
     this.state = { lowWidth: window.innerWidth < 770 }
   }
+
   globalClickHandler (e) {
     // Closes any open dialogs when a non-button element is clicked (Improves UX)
-    let targetIsButton = e.target.dataset.button
+    const targetIsButton = e.target.dataset.button
     if (!targetIsButton) emitOne('CLOSE_ANY_OPEN_DIALOG')
   }
 
@@ -40,9 +41,11 @@ export default class Main extends React.Component {
 
     dispatcher.on('LANG_SELECT', () => this.forceUpdate())
 
+    // Initial check if property is not set
     if (!window.lowWidth) {
       const isLowWidth = checkIfLowWidth()
       window.lowWidth = isLowWidth
+      emitOne('WIDTH_CHANGE', isLowWidth)
       this.setState({ lowWidth: isLowWidth })
     }
 

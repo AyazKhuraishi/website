@@ -13,12 +13,6 @@ export default class MenuButton extends React.Component {
   }
 
   handleClick (e) {
-    console.time()
-    const toggleClass = (toToggle, element, enabled) => {
-      element.classList.add(enabled ? toToggle[0] : toToggle[1])
-      element.classList.remove(enabled ? toToggle[1] : toToggle[0])
-    }
-
     emitOne('MENU_TOGGLE', !this.state.hidden)
 
     // This is a wee bit hacky, but it works as intended (Toggling does not trigger transitions)
@@ -29,16 +23,16 @@ export default class MenuButton extends React.Component {
 
       if (!this.state.hidden === false) {
         disableScroll.on()
-        elementsInView.map(el => toggleClass(['blurred', 'not-blurred'], el, true))
-        toggleClass(['scroll-hint-hidden', 'scroll-hint'], scrollHint, true)
+        elementsInView.map(el => el.classList.add('blurred'))
+        scrollHint.classList.add('scroll-hint-hidden')
       } else {
         disableScroll.off()
-        elementsInView.map(el => toggleClass(['not-blurred', 'blurred'], el, true))
-        toggleClass(['scroll-hint', 'scroll-hint-hidden'], scrollHint, true)
+        elementsInView.map(el => el.classList.remove('blurred'))
+        scrollHint.classList.remove('scroll-hint-hidden')
       }
     }
 
-    this.setState({ hidden: !this.state.hidden }, () => console.timeEnd())
+    this.setState({ hidden: !this.state.hidden })
   }
 
   componentDidMount () {
