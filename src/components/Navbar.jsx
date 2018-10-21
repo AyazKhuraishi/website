@@ -5,26 +5,6 @@ import { dispatcher, emitOne } from '../backend/dispatcher'
 import { config } from '../config'
 import scrollIntoView from 'scroll-into-view'
 
-// On low device widths, display a different style of menu
-const styles = {
-  navbarOverrides: {
-    marginBottom: 0,
-    top: window.innerWidth < 685 ? '25%' : 0,
-    backgroundColor: window.innerWidth < 685 ? 'transparent' : '#F0F0F0'
-  },
-  navbarHidden: {
-    marginBottom: 0,
-    opacity: 0,
-    top: window.innerWidth < 685 ? '25%' : 0,
-    backgroundColor: window.innerWidth < 685 ? 'transparent' : '#F0F0F0',
-    pointerEvents: 'none' // Prevent link clicking (Because it's still there, just not visible)
-  },
-  listOverrides: {
-    borderBottom: 0,
-    flexDirection: window.innerWidth < 685 ? 'column' : 'row'
-  }
-}
-
 class Item extends React.Component {
   handleClick (link) {
     emitOne('NAVBAR_ITEM_CLICK')
@@ -32,6 +12,27 @@ class Item extends React.Component {
   }
 
   render () {
+    // On low device widths, display a different style of menu
+    // Styles are computed on render due to possible resizes happening without reload
+    const styles = {
+      navbarOverrides: {
+        marginBottom: 0,
+        top: window.lowWidth ? '25%' : 0,
+        backgroundColor: window.lowWidth ? 'transparent' : '#F0F0F0'
+      },
+      navbarHidden: {
+        marginBottom: 0,
+        opacity: 0,
+        top: window.lowWidth ? '25%' : 0,
+        backgroundColor: window.lowWidth ? 'transparent' : '#F0F0F0',
+        pointerEvents: 'none' // Prevent link clicking (Because it's still there, just not visible)
+      },
+      listOverrides: {
+        borderBottom: 0,
+        flexDirection: window.lowWidth ? 'column' : 'row'
+      }
+    }
+
     return (
       <a
         style={styles.listOverrides}
@@ -55,10 +56,31 @@ export default class Navbar extends React.Component {
     this.setState({ selectedIndex: selectedButton })
   }
 
+  componentDidMount () {
+    dispatcher.on('MENU_TOGGLE', hidden => this.setState({ hidden: hidden }))
+  }
+
   render () {
-    dispatcher.once('MENU_TOGGLE', hidden => {
-      this.setState({ hidden: hidden })
-    })
+    // On low device widths, display a different style of menu
+    // Styles are computed on render due to possible resizes happening without reload
+    const styles = {
+      navbarOverrides: {
+        marginBottom: 0,
+        top: window.lowWidth ? '25%' : 0,
+        backgroundColor: window.lowWidth ? 'transparent' : '#F0F0F0'
+      },
+      navbarHidden: {
+        marginBottom: 0,
+        opacity: 0,
+        top: window.lowWidth ? '25%' : 0,
+        backgroundColor: window.lowWidth ? 'transparent' : '#F0F0F0',
+        pointerEvents: 'none' // Prevent link clicking (Because it's still there, just not visible)
+      },
+      listOverrides: {
+        borderBottom: 0,
+        flexDirection: window.lowWidth ? 'column' : 'row'
+      }
+    }
 
     return (
       <div className={'navbar tabs is-centered'} style={this.state.hidden ? styles.navbarHidden : styles.navbarOverrides}>

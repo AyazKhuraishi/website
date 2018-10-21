@@ -2,22 +2,23 @@
 import React from 'react'
 import Link from './Link'
 
-// On low device widths, hide certain elements to improve UX
-const styles = {
-  textOverrides: {
-    textAlign: window.innerWidth < 770 ? 'center' : 'left',
-    paddingRight: window.innerWidth < 770 ? '12px' : '70px'
-  },
-  columnOverrides: {
-    display: window.innerWidth < 770 ? 'none' : 'block'
-  },
-  imageOverrides: {
-    display: window.innerWidth < 770 ? 'none' : 'inline'
-  }
-}
-
 export default class About extends React.Component {
   render () {
+    // On low device widths, hide certain elements to improve UX
+    // Styles are computed on render due to possible resizes happening without reload
+    const styles = {
+      textOverrides: {
+        textAlign: window.lowWidth ? 'center' : 'left',
+        paddingRight: window.lowWidth ? '12px' : '70px'
+      },
+      columnOverrides: {
+        display: window.lowWidth ? 'none' : 'block'
+      },
+      imageOverrides: {
+        display: window.lowWidth ? 'none' : 'inline'
+      }
+    }
+
     return (
       <section className={'section about'} id={'about'}>
         <div className={'container'}>

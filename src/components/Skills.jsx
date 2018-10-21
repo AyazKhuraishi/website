@@ -3,16 +3,17 @@ import React from 'react'
 import Bar from './Bar'
 import Link from './Link'
 
-// On low device widths, center text for better UX
-const styles = {
-  columnOverrides: {
-    textAlign: window.innerWidth < 770 ? 'center' : 'left',
-    paddingRight: window.innerWidth < 770 ? '12px' : '70px'
-  }
-}
-
 export default class Skills extends React.Component {
   render () {
+    // On low device widths, center text for better UX
+    // Styles are computed on render due to possible resizes happening without reload
+    const styles = {
+      columnOverrides: {
+        textAlign: window.lowWidth ? 'center' : 'left',
+        paddingRight: window.lowWidth ? '12px' : '70px'
+      }
+    }
+
     return (
       <section className={'section skills'} id={'skills'}>
         <div className={'container'}>

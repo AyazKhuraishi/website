@@ -2,13 +2,14 @@
 import React from 'react'
 import Typist from 'react-typist'
 import { config } from '../config'
+import { dispatcher } from '../backend/dispatcher'
 
 export default class Hero extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      typing: window.innerWidth > 770,
-      typingEnabled: window.innerWidth > 770
+      typing: !window.lowWidth,
+      typingEnabled: !window.lowWidth
     }
     this.typingDone = this.typingDone.bind(this)
   }
@@ -17,6 +18,10 @@ export default class Hero extends React.Component {
     setTimeout(() => {
       this.setState({ typing: false }, () => { this.setState({ typing: true }) })
     }, config.hero.typingDelay)
+  }
+
+  componentDidMount () {
+    dispatcher.on('WIDTH_CHANGE', isLowWidth => this.setState({ typingEnabled: !isLowWidth }))
   }
 
   render () {

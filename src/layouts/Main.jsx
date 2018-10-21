@@ -25,17 +25,45 @@ global.lang = lang // Lang files
 global.i18n = i18n // Translation function
 
 export default class Main extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = { lowWidth: window.innerWidth < 770 }
+  }
   globalClickHandler (e) {
     // Closes any open dialogs when a non-button element is clicked (Improves UX)
     let targetIsButton = e.target.dataset.button
     if (!targetIsButton) emitOne('CLOSE_ANY_OPEN_DIALOG')
   }
 
-  render () {
-    dispatcher.once('LANG_SELECT', () => {
-      this.forceUpdate()
-    })
+  componentDidMount () {
+    const checkIfLowWidth = () => window.innerWidth < 770
 
+    dispatcher.on('LANG_SELECT', () => this.forceUpdate())
+
+    if (!window.lowWidth) {
+      const isLowWidth = checkIfLowWidth()
+      window.lowWidth = isLowWidth
+      this.setState({ lowWidth: isLowWidth })
+    }
+
+    window.addEventListener('resize', () => {
+      if (!window.measuring) {
+        const isLowWidth = checkIfLowWidth()
+
+        window.measuring = true
+        window.lowWidth = isLowWidth
+
+        if (isLowWidth !== this.state.lowWidth) {
+          this.setState({ lowWidth: isLowWidth })
+          emitOne('WIDTH_CHANGE', isLowWidth)
+        }
+
+        setTimeout(() => { window.measuring = false }, 250) // Lowers congestion on resize
+      }
+    })
+  }
+
+  render () {
     return (
       <div onClick={this.globalClickHandler}>
         <LangButton/>

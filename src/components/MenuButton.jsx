@@ -1,7 +1,6 @@
 // Menu button
 import React from 'react'
 import { dispatcher, emitOne } from '../backend/dispatcher'
-import { getElementsById } from '../backend/utils'
 import { config } from '../config'
 import disableScroll from 'disable-scroll'
 import inViewport from 'in-viewport'
@@ -14,33 +13,45 @@ export default class MenuButton extends React.Component {
   }
 
   handleClick (e) {
-    if (e) e.preventDefault()
+    console.time()
+    const toggleClass = (toToggle, element, enabled) => {
+      element.classList.add(enabled ? toToggle[0] : toToggle[1])
+      element.classList.remove(enabled ? toToggle[1] : toToggle[0])
+    }
+
     emitOne('MENU_TOGGLE', !this.state.hidden)
-    // Blur background
+
     // This is a wee bit hacky, but it works as intended (Toggling does not trigger transitions)
-    if (window.innerWidth < 685) {
-      let sections = getElementsById(config.common.sections) // List of elements to blur
-      let elements = sections.concat(getElementsById(config.common.additionals))
+    if (window.lowWidth) {
+      const elements = document.getElementsById(config.common.sections) // List of elements to blur
+      const elementsInView = elements.filter(el => inViewport(el))
+      const scrollHint = document.getElementById('scroll-hint')
+
       if (!this.state.hidden === false) {
         disableScroll.on()
-        elements.map(el => { if (inViewport(el)) el.classList.add('blurred'); el.classList.remove('not-blurred') })
+        elementsInView.map(el => toggleClass(['blurred', 'not-blurred'], el, true))
+        toggleClass(['scroll-hint-hidden', 'scroll-hint'], scrollHint, true)
       } else {
         disableScroll.off()
-        elements.map(el => { if (inViewport(el)) el.classList.add('not-blurred'); el.classList.remove('blurred') })
+        elementsInView.map(el => toggleClass(['not-blurred', 'blurred'], el, true))
+        toggleClass(['scroll-hint', 'scroll-hint-hidden'], scrollHint, true)
       }
     }
-    this.setState({ hidden: !this.state.hidden })
+
+    this.setState({ hidden: !this.state.hidden }, () => console.timeEnd())
   }
 
-  render () {
-    dispatcher.once('NAVBAR_ITEM_CLICK', () => {
+  componentDidMount () {
+    dispatcher.on('NAVBAR_ITEM_CLICK', () => {
       this.handleClick()
     })
 
-    dispatcher.once('CLOSE_ANY_OPEN_DIALOG', () => {
+    dispatcher.on('CLOSE_ANY_OPEN_DIALOG', () => {
       if (this.state.hidden === false) this.handleClick()
     })
+  }
 
+  render () {
     return (
       <div>
         <a

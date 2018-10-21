@@ -19,10 +19,13 @@ export default class Divider extends React.Component {
     this.state = { hidden: false }
   }
 
-  render () {
+  componentDidMount () {
     dispatcher.on('MENU_TOGGLE', () => {
-      if (window.innerWidth < 685) this.setState({ hidden: !this.state.hidden })
+      if (window.lowWidth) this.setState({ hidden: !this.state.hidden })
     })
+  }
+
+  render () {
     return (
       <div className={'divider is-divider'} style={this.state.hidden === false ? styles.show : styles.hide} />
     )

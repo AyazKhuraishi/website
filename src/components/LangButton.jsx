@@ -19,14 +19,16 @@ export default class LangButton extends React.Component {
     this.setState({ active: !this.state.active })
   }
 
-  render () {
-    dispatcher.once('LANG_SELECT', lang => {
+  componentDidMount () {
+    dispatcher.on('LANG_SELECT', lang => {
       localStorage.setItem('lang', lang) // Write to local storage and remember for next session
       this.setState({ lang: lang, active: false })
     })
 
-    dispatcher.once('CLOSE_ANY_OPEN_DIALOG', () => { this.setState({ active: false }) })
+    dispatcher.on('CLOSE_ANY_OPEN_DIALOG', () => this.setState({ active: false }))
+  }
 
+  render () {
     return (
       <div className={`dropdown lang-button ${this.state.active ? 'is-active' : ''}`}>
         <div className={'dropdown-trigger'}>

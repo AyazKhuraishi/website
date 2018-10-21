@@ -11,8 +11,18 @@
 
 /* Blurred and not blurred */
 .blurred {
-  @include filter (blur(100px));
   @extend %navbar-toggle-animation;
+  position: relative;
+}
+
+.blurred:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F0F0F0;
 }
 
 .not-blurred {

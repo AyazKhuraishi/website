@@ -10,21 +10,10 @@ export const config = {
       'skills',
       'projects',
       'contact'
-    ],
-    // Additional elements to blur
-    additionals: [
-      'scroll-hint'
     ]
   },
   // Hero section
   hero: {
-    // Texts to type out in the console field
-    typingTexts: [
-      'Student',
-      'Tech geek',
-      'Freelance developer',
-      'Aspiring software engineer'
-    ],
     // Typing delay
     typingDelay: 1000
   },

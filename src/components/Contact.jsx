@@ -33,17 +33,7 @@ export default class Contact extends React.Component {
                 <h2 className={'contact-method'}>{window.i18n`contact.email`}: <b>hello@linuswillner.me</b></h2>
                 <h2 className={'contact-method'}>Discord: <b>LWTech#0005</b></h2>
                 <p className={'field'}>
-                  {
-                    config.contact.icons.map(icon => {
-                      return (
-                        <SocialMediaIcon
-                          key={icon.link}
-                          link={icon.link}
-                          iconClassName={icon.iconClassName}
-                        />
-                      )
-                    })
-                  }
+                  {config.contact.icons.map(icon => <SocialMediaIcon key={icon.link} link={icon.link} iconClassName={icon.iconClassName}/>)}
                 </p>
               </div>
             </div>
