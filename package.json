@@ -52,7 +52,7 @@
     "in-viewport": "^3.6.0",
     "prop-types": "^15.6.2",
     "ramda": "^0.26.1",
-    "react": "^16.7.0",
+    "react": "^16.8.1",
     "react-dom": "^16.7.0",
     "react-sweet-progress": "^1.1.2",
     "react-typist": "github:linuswillner/react-typist",
