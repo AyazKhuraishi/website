@@ -50,7 +50,7 @@
     "disable-scroll": "^0.4.1",
     "flag-icon-css": "^3.2.1",
     "in-viewport": "^3.6.0",
-    "prop-types": "^15.7.0",
+    "prop-types": "^15.7.1",
     "ramda": "^0.26.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
