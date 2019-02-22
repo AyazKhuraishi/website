@@ -9,7 +9,6 @@ import { lang, i18n } from '../lang/lang'
 import Navbar from '../components/Navbar'
 import LangButton from '../components/LangButton'
 import MenuButton from '../components/MenuButton'
-import ScrollHint from '../components/ScrollHint'
 import Divider from '../components/Divider'
 
 // Sections
@@ -71,7 +70,6 @@ export default class Main extends React.Component {
       <div onClick={this.globalClickHandler}>
         <LangButton/>
         <MenuButton/>
-        <ScrollHint/>
         <Navbar/>
         <Hero/>
         <About/>

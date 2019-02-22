@@ -19,16 +19,13 @@ export default class MenuButton extends React.Component {
     if (window.lowWidth) {
       const elements = document.getElementsById(config.common.sections) // List of elements to blur
       const elementsInView = elements.filter(el => inViewport(el))
-      const scrollHint = document.getElementById('scroll-hint')
 
       if (!this.state.hidden === false) {
         disableScroll.on()
         elementsInView.map(el => el.classList.add('blurred'))
-        scrollHint.classList.add('scroll-hint-hidden')
       } else {
         disableScroll.off()
         elementsInView.map(el => el.classList.remove('blurred'))
-        scrollHint.classList.remove('scroll-hint-hidden')
       }
     }
 

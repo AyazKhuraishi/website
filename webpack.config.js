@@ -52,7 +52,7 @@ module.exports = {
 
   // Entry point
   entry: [
-    'react-hot-loader/patch',
+    'react-hot-loader/webpack',
     path.join(__dirname, '/src/index.jsx')
   ],
 
