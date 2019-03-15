@@ -56,7 +56,7 @@
     "react-dom": "^16.8.4",
     "react-sweet-progress": "^1.1.2",
     "react-typist": "github:linuswillner/react-typist",
-    "scroll-into-view": "^1.9.3",
+    "scroll-into-view": "^1.9.4",
     "wolfy87-eventemitter": "^5.2.6"
   }
 }
