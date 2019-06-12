@@ -32,13 +32,14 @@ const EnvironmentConfig = new webpack.DefinePlugin({
   }
 })
 
+const createAlias = modulePath => path.resolve(__dirname, modulePath)
+
 // Webpack config
 module.exports = {
   // Development server
   devServer: {
     host: 'localhost',
-    port: '8000',
-    quiet: true, // Remove console spam
+    port: 8000,
     hot: true,
     headers: {
       'Access-Control-Allow-Origin': '*' // Allow CORS
@@ -87,6 +88,14 @@ module.exports = {
           limit: 10000
         }
       },
+      {
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'src/assets/fonts/'
+        }
+      },
       { // Exclusions
         exclude: [
           path.join(__dirname, '/src/config.js')
@@ -99,7 +108,12 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      tools: path.resolve(__dirname, 'src/components/tools')
+      'react-dom': '@hot-loader/react-dom',
+      // Internal shortcuts
+      utils: createAlias('src/utils'),
+      config: createAlias('src/config.js'),
+      components: createAlias('src/components'),
+      sections: createAlias('src/components/sections')
     }
   },
 
