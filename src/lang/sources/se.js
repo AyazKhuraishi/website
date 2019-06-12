@@ -1,15 +1,8 @@
+const moment = require('moment')
+
 // Swedish (FI)
 
-module.exports = {
-  navbar: { // Navbar
-    items: [
-      { name: 'Hem', href: '#home' },
-      { name: 'Om mig', href: '#about' },
-      { name: 'Kunskaper', href: '#skills' },
-      { name: 'Projekt', href: '#projects' },
-      { name: 'Kontakta mig', href: '#contact' }
-    ]
-  },
+export default {
   hero: { // Hero
     typingTexts: [
       'Studerande',
@@ -17,32 +10,33 @@ module.exports = {
       'Freelance-programmerare',
       'Blivande IKT-ingenjör'
     ],
-    typingTextLowWidth: 'Studerande, freelance-programmerare och blivande IKT-ingenjör från Finland'
+    typingTextLowWidth: 'Studerande, freelance-programmerare, blivande IKT-ingenjör'
   },
   about: { // About
     title: 'OM MIG',
     sectionTitle: 'Morjens!',
-    p1: `Jag heter Linus Willner, och jag är en 19-årig studerande och freelance-programmerare från Finland. Trevligt att råkas!`,
-    p2: `Jag är en verklig tekniknörd som njuter av programmering på fritiden. För det mesta utvecklar jag JavaScript-applikationer för serversidan och web-applikationer med allmänna frontend-paradigm som HTML och CSS.`,
-    p3: `När det kommer till programmering är jag en självlärd freelance-programmerare. Jag är också kunnig inom tre språk (Finska, svenska och engelska) och skriver därmed ofta dokumentation för projekt jag deltar i.`,
+    p1: `Jag heter Linus Willner, och jag är en ${moment().diff(moment([ 1999, 6, 18 ]), 'years')}-årig studerande och freelance-programmerare från Finland. Trevligt att råkas!`,
+    p2: `Jag är en verklig tekniknörd som njuter av programmering på fritiden. Min bravur är att bygga web-applikationer med lite backend-programmering strött däromkring.`,
+    p3: `Sedan 2017 har jag sysslat med programutveckling i diverse hörn av nätet, mestadels inom open source software. Jag har jobbat som programmerare för det mesta, men därtill också som dokumentationsskribent, lokalisator och kvalitetskontrollant.`,
     p4: {
-      l1: `Min huvudsakliga freelance-position är för tillfället hos `,
+      l1: `Min huvudsakliga position är för tillfället hos `,
       l2: `, där jag utvecklar och upprätthåller projekt som `,
       l3: `. Jag gör detta på fritiden vid sidan av studier och arbete.`
     },
     p5: {
-      l1: `Jag har utvecklat ett antal program själv, till exempel `,
+      l1: `Jag är mest känd för mitt arbete inom projekt som `,
       l2: ` och `,
-      l3: `, som innefattar allt från backend-applikationer till nätsidor och fullt funktionerande skrivbordsprogram. Några av de större projekten jag deltar i innefattar `,
+      l3: `, men jag har även gjort ett antal program på eget bevåg. Dessa innefattar allt från backend-applikationer till nätsidor och fullt funktionerande skrivbordsprogram. Exempel på program jag byggt innefattar `,
       l4: ` och `
     },
-    p6: `Programvara med öppen källkod står mitt hjärta nära och jag söker alltid nya möjligheter att hjälpa till. Om du finner att jag kunde hjälpa dig med något, läs gärna vidare!`
+    p6: `Jag utför för tillfället min militärtjänstgöring som virtualutbildningsassistent vid Nylands brigad, varefter jag inleder studier inom informations- och kommunikationsteknologi vid Metropolia yrkeshögskola för att bli programutvecklare.`
   },
   skills: { // Skills
     title: `KUNSKAPER`,
-    p1: `Jag är en freelance-programmerare med över två års erfarenhet av utveckling med både öppen och sluten källkod. Jag har arbetat i både team-orienterade omgivningar i tillägg till ensamarbete.`,
-    p2: `Jag utvecklar nätsidor och web-applikationer (React), JavaScript applikationer för serversidan (Node.js) och skrivbordsprogram (Electron). Jag har också erfarenhet av DevOps-utveckling på freelance-nivå (Code review, Continuous Integration, osv.).`,
-    p3: {
+    p1: `Jag är en freelance-programmerare med flera års erfarenhet i ett brett spektrum av omgivningar, i team stora som små.`,
+    p2: `Jag har utvecklat nätsidor och web-applikationer, backend-program och även några små skrivbordsprogram. Jag har även kunskaper i DevOps-utveckling på freelance-nivå (Code review, Continuous Integration, osv.). Därtill har jag gott kunnande inom sysadmin från diverse Linux-omgivningar.`,
+    p3: `Bifogat finns en lista på programmeringsspråk och frameworks jag kan bäst och har jobbat med mest, men jag är alltid öppen för att lära mig något nytt.`,
+    p4: {
       l1: `De flesta av projekten jag har gjort eller deltagit i kan hittas på min `,
       l2: `GitHub-sida`,
       l3: ` och jag håller alla mina projekt som har öppen källkod på denna plattform.`
@@ -65,7 +59,7 @@ module.exports = {
     title: `KONTAKTA MIG`,
     p1: {
       l1: `Om du vill ta kontakt med mig för att fråga något, formellt eller ej, är e-post oftast den bästa metoden för det.`,
-      l2: `Jag läser min e-post ofta och försöker svara så gott jag kan.`
+      l2: `Du kan även kasta ett meddelande i min riktning på Twitter om du föredrar, länk nedan.`
     },
     p2: {
       l1: `För mer informell konversation är mina direktmeddelanden på `,
@@ -76,14 +70,14 @@ module.exports = {
     email: `E-post`
   },
   footer: {
-    copyright: `Copyright (c) ${new Date().getFullYear()} Linus Willner. Alla rättigheter reserverade.`,
+    copyright: `Copyright (c) ${moment().format('YYYY')} Linus Willner. Alla rättigheter reserverade. Pärmbild: Chris Ried/Unsplash`,
     tech: {
       l1: `Byggt med `,
       l2: `React`,
-      l3: `Sass`,
-      l4: `och`,
+      l3: ` Sass `,
+      l4: `och `,
       l5: `Bulma`
     },
-    location: `Byggt med äkta naturenlig nörd.`
+    location: ` Byggt med äkta naturenlig nörd.`
   }
 }

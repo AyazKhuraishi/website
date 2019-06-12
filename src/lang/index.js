@@ -1,12 +1,12 @@
 // Lang system core
 import * as R from 'ramda'
 
-const sourcePath = './sources/'
+const src = './sources'
 
 export const lang = {
-  gb: require(sourcePath + 'gb'),
-  fi: require(sourcePath + 'fi'),
-  se: require(sourcePath + 'se')
+  gb: require(`${src}/gb.js`).default,
+  fi: require(`${src}/fi.js`).default,
+  se: require(`${src}/se.js`).default
 }
 
 /**
@@ -22,8 +22,7 @@ export function i18n (stringPath) {
     // Ramda handles the pathfinding in the object
     const res = R.path(stringPath, window.lang[localStorage.getItem('lang') || 'gb'])
 
-    if (res === undefined) return ''
-    else return res
+    return !res ? '' : res
   } else {
     // Backwards compatibility to previous version of the website
     // Old: en/fi/sv

@@ -1,15 +1,8 @@
+const moment = require('moment')
+
 // English (GB)
 
-module.exports = {
-  navbar: { // Navbar
-    items: [
-      { name: 'Home', href: '#home' },
-      { name: 'About', href: '#about' },
-      { name: 'Skills', href: '#skills' },
-      { name: 'Projects', href: '#projects' },
-      { name: 'Contact', href: '#contact' }
-    ]
-  },
+export default {
   hero: { // Hero
     typingTexts: [
       'Student',
@@ -17,32 +10,33 @@ module.exports = {
       'Freelance developer',
       'Software engineer-to-be'
     ],
-    typingTextLowWidth: 'Student, freelance developer and software engineer-to-be from Finland'
+    typingTextLowWidth: 'Student, freelance developer, software engineer-to-be'
   },
   about: { // About
     title: 'ABOUT ME',
     sectionTitle: 'Hello there!',
-    p1: `I'm Linus Willner, an 19-year-old student and freelance developer from Finland. Pleasure to meet you!`,
-    p2: `I'm an avid tech nerd that enjoys programming in his free time. I mostly develop JavaScript applications for the backend and web applications with common frontend paradigms, such as HTML and CSS.`,
-    p3: `When it comes to programming, I'm a self-taught freelance developer. I am also proficient in three languages (Finnish, Swedish and English) and as such tend to write documentation for the projects I contribute to.`,
+    p1: `I'm Linus Willner, a ${moment().diff(moment([ 1999, 6, 18 ]), 'years')}-year-old student and freelance developer from Finland. Pleasure to meet you!`,
+    p2: `I'm an avid tech nerd that enjoys programming in his free time. I develop web applications with some backend software development dotted about as well.`,
+    p3: `Since 2017, I've been doing software development in various corners of the internet, mostly in the field of open source software. I have worked as a programmer for the most part, but also inherited other roles, such as documentation writer, localisation engineer and quality assurance engineer.`,
     p4: {
-      l1: `My main freelance position is currently at `,
+      l1: `My main position is currently at `,
       l2: `, where I develop and maintain projects such as `,
       l3: `. I do this in my free time as an aside from studying and work.`
     },
     p5: {
-      l1: `I have created quite a few programs on my own, such as `,
+      l1: `I'm perhaps best known for my contributions to projects like `, // I have created quite a few programs on my own, such as
       l2: ` and `,
-      l3: `, ranging from backend applications to websites and full-fledged desktop applications. Some of the major projects I partake in include `,
+      l3: `, but I have also created a fair few programs of my own. These range from backend applications to websites and full-fledged desktop applications. Some examples of my work are `,
       l4: ` and `
     },
-    p6: `Open source software is close to my heart and I'm always looking for opportunities to help out. If you feel that I could help you with something, please keep on reading!`
+    p6: `I'm currently doing my military service as a Virtual Training Assistant at the Nyland Brigade, after which I will begin studying ICT at Metropolia UAS to get a software engineering degree.`
   },
   skills: { // Skills
     title: `SKILLS`,
-    p1: `I'm a freelance developer with over two years of experience in both open and closed source development. I have worked in team-oriented environments in addition to working on my own.`,
-    p2: `I develop websites and web applications (React), JavaScript applications for the backend (Node.js) and desktop applications (Electron). I also have experience in freelance-level DevOps development (Code review, Continuous Integration, etc.).`,
-    p3: {
+    p1: `I'm a freelance developer with several years of experience in a multitude of environments, in teams both large and small.`,
+    p2: `I have developed websites and web applications, backend software and also some simple desktop applications. I additionally have experience in freelance-level DevOps development (Code review, Continuous Integration, etc.). Furthermore, I have a fair chunk of sysadmin experience working with various Linux environments.`,
+    p3: `Attached is a list of the languages and frameworks I know best and have worked with the most, but I am always open for learning new things.`,
+    p4: {
       l1: `Most of the projects I have created or contribute to can be found on my `,
       l2: `GitHub page`,
       l3: ` and I keep all my open source projects on the platform.`
@@ -65,7 +59,7 @@ module.exports = {
     title: `CONTACT`,
     p1: {
       l1: `If you want to reach out to me for any sort of inquiry, be it formal or not, email is usually the best way to do that.`,
-      l2: `I read my email frequently and will answer to the best of my ability.`
+      l2: `You can also holler at me on Twitter if you prefer, link below.`
     },
     p2: {
       l1: `For more informal conversation in the form of instant messaging, my DMs on `,
@@ -76,14 +70,14 @@ module.exports = {
     email: `Email`
   },
   footer: {
-    copyright: `Copyright (c) ${new Date().getFullYear()} Linus Willner. All rights reserved.`,
+    copyright: `Copyright (c) ${moment().format('YYYY')} Linus Willner. All rights reserved. Cover photo: Chris Ried/Unsplash`,
     tech: {
       l1: `Achieved with `,
       l2: `React`,
-      l3: `Sass`,
-      l4: `and`,
+      l3: ` Sass `,
+      l4: `and `,
       l5: `Bulma`
     },
-    location: `Created with genuine organic geek.`
+    location: ` Created with genuine organic geek.`
   }
 }
