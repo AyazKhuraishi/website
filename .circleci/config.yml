@@ -8,15 +8,18 @@ jobs:
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
-          name: NPM install
-          command: npm install
+          name: Install dependencies
+          command: npm i
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
             - node_modules
       - run:
-          name: NPM test
+          name: Run tests
           command: npm test
+      - run:
+          name: Generate test build
+          command: npm run build
 
   deploy:
     machine:
@@ -24,10 +27,10 @@ jobs:
     steps:
       - checkout
       - run:
-          name: NPM install
-          command: npm install
+          name: Install dependencies
+          command: npm i
       - run:
-          name: Compile to production
+          name: Generate production build
           command: npm run build
       - run:
           name: Deploy code to server
