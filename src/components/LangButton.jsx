@@ -1,10 +1,9 @@
 // Lang selector button
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react'
 import LangSelector from './LangSelector'
-import { dispatcher, emitOne } from '../backend/dispatcher'
+import { dispatcher } from 'utils/dispatcher'
 
-export default class LangButton extends React.Component {
+export default class LangButton extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -30,7 +29,7 @@ export default class LangButton extends React.Component {
 
   render () {
     return (
-      <div className={`dropdown lang-button ${this.state.active ? 'is-active' : ''}`}>
+      <div className={`dropdown is-up lang-button ${this.state.active ? 'is-active' : ''}`}>
         <div className={'dropdown-trigger'}>
           <button
             className={'button inner'}
@@ -39,11 +38,12 @@ export default class LangButton extends React.Component {
             data-button={'lang'}
             onClick={this.handleClick}
           >
-            <span className={'icon is-small'}>
+            <span className={'icon lang-icon'}>
               <span
                 className={`flag-icon flag-icon-${this.state.lang}`}
                 aria-hidden={'true'}
                 data-button={'lang'}
+                onClick={this.handleClick}
               />
             </span>
           </button>

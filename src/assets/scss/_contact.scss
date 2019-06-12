@@ -1,7 +1,3 @@
-/* Contact section */
-
-@import 'utils';
-
 /* Section background */
 .contact {
   background-color: #FCFCFC;
@@ -37,4 +33,11 @@
 /* Social icon spacing */
 .social:not(:last-child) {
   margin-right: 10px;
+}
+
+/* Email masking trick */
+.email:before {
+  content: attr(data-suffix) "\0040" attr(data-prefix);
+  unicode-bidi: bidi-override;
+  direction: rtl;
 }

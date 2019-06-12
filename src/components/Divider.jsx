@@ -1,15 +1,13 @@
 // Divider component
-import React from 'react'
-import { dispatcher } from '../backend/dispatcher'
+import React, { Component } from 'react'
+import { dispatcher } from 'utils/dispatcher'
 
 // On low device widths, hide margins on menu toggle
 const styles = {
-  hide: {
-    display: 'none'
-  }
+  hide: { display: 'none' }
 }
 
-export default class Divider extends React.Component {
+export default class Divider extends Component {
   constructor (props) {
     super(props)
     this.state = { hidden: false }

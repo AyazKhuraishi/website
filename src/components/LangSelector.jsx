@@ -1,7 +1,7 @@
 // Lang selector dropdown
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { emitOne } from '../backend/dispatcher'
+import { emit } from 'utils/dispatcher'
 
 // Animation overrides for the lang selector
 const styles = {
@@ -20,30 +20,35 @@ const styles = {
   }
 }
 
-class DropdownItem extends React.Component {
+class DropdownItem extends Component {
   constructor (props) {
     super(props)
     this.handleClick = this.handleClick.bind(this)
   }
 
+  static propTypes = {
+    country: PropTypes.string.isRequired
+  }
+
   handleClick (e) {
     e.preventDefault()
-    emitOne('LANG_SELECT', this.props.country)
+    emit('LANG_SELECT', this.props.country)
   }
 
   render () {
     return (
-      <div
-        className={'dropdown-item item'}
-        onClick={this.handleClick}
-      >
+      <div className={'dropdown-item item'} onClick={this.handleClick}>
         <span className={`flag-icon flag-icon-${this.props.country}`}/>
       </div>
     )
   }
 }
 
-export default class LangSelector extends React.Component {
+export default class LangSelector extends Component {
+  static propTypes = {
+    active: PropTypes.bool.isRequired
+  }
+
   render () {
     return (
       <div
@@ -60,12 +65,4 @@ export default class LangSelector extends React.Component {
       </div>
     )
   }
-}
-
-DropdownItem.propTypes = {
-  country: PropTypes.string.isRequired
-}
-
-LangSelector.propTypes = {
-  active: PropTypes.bool.isRequired
 }

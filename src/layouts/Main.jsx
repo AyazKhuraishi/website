@@ -1,38 +1,35 @@
-// Application layout
-import React from 'react'
+import React, { Component } from 'react'
+import { dispatcher, emit } from 'utils/dispatcher'
+import { lang, i18n } from '../lang'
 
-// Backend
-import { dispatcher, emitOne } from '../backend/dispatcher'
-import { lang, i18n } from '../lang/lang'
-
-// Misc components
-import Navbar from '../components/Navbar'
-import LangButton from '../components/LangButton'
-import MenuButton from '../components/MenuButton'
-import Divider from '../components/Divider'
+import LangButton from 'components/LangButton'
+import Divider from 'components/Divider'
 
 // Sections
-import Hero from '../components/Hero'
-import About from '../components/About'
-import Skills from '../components/Skills'
-import Projects from '../components/Projects'
-import Contact from '../components/Contact'
-import Footer from '../components/Footer'
+import Hero from 'sections/Hero'
+import About from 'sections/About'
+import Skills from 'sections/Skills'
+import Projects from 'sections/Projects'
+import Contact from 'sections/Contact'
+import Footer from 'sections/Footer'
 
 // Globals
 global.lang = lang // Lang files
 global.i18n = i18n // Translation function
 
-export default class Main extends React.Component {
+export default class Main extends Component {
   constructor (props) {
     super(props)
-    this.state = { lowWidth: window.innerWidth < 770 }
+    this.state = {
+      lowWidth: window.innerWidth < 770,
+      measuring: false
+    }
   }
 
   globalClickHandler (e) {
     // Closes any open dialogs when a non-button element is clicked (Improves UX)
     const targetIsButton = e.target.dataset.button
-    if (!targetIsButton) emitOne('CLOSE_ANY_OPEN_DIALOG')
+    if (!targetIsButton) emit('CLOSE_ANY_OPEN_DIALOG')
   }
 
   componentDidMount () {
@@ -44,23 +41,23 @@ export default class Main extends React.Component {
     if (!window.lowWidth) {
       const isLowWidth = checkIfLowWidth()
       window.lowWidth = isLowWidth
-      emitOne('WIDTH_CHANGE', isLowWidth)
+      emit('WIDTH_CHANGE', isLowWidth)
       this.setState({ lowWidth: isLowWidth })
     }
 
     window.addEventListener('resize', () => {
-      if (!window.measuring) {
-        const isLowWidth = checkIfLowWidth()
+      if (!this.state.measuring) {
+        this.setState({ measuring: true }, () => {
+          const isLowWidth = checkIfLowWidth()
+          window.lowWidth = isLowWidth
 
-        window.measuring = true
-        window.lowWidth = isLowWidth
+          if (isLowWidth !== this.state.lowWidth) {
+            this.setState({ lowWidth: isLowWidth })
+            emit('WIDTH_CHANGE', isLowWidth)
+          }
 
-        if (isLowWidth !== this.state.lowWidth) {
-          this.setState({ lowWidth: isLowWidth })
-          emitOne('WIDTH_CHANGE', isLowWidth)
-        }
-
-        setTimeout(() => { window.measuring = false }, 250) // Lowers congestion on resize
+          setTimeout(() => this.setState({ measuring: false }), 250) // Lowers congestion on resize
+        })
       }
     })
   }
@@ -69,8 +66,6 @@ export default class Main extends React.Component {
     return (
       <div onClick={this.globalClickHandler}>
         <LangButton/>
-        <MenuButton/>
-        <Navbar/>
         <Hero/>
         <About/>
         <Divider/>

@@ -1,83 +1,34 @@
 // Project card
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Link from './Link'
+import { ButtonGroup, GitHubButton, WebsiteButton } from './Buttons'
 
-class GitHubButton extends React.Component {
-  render () {
-    return (
-      <Link className={`button ${this.props.centerFix ? 'center-fix' : ''}`} to={this.props.link}>
-        <span className={'icon'}>
-          <i className={'fab fa-github'}></i>
-        </span>
-        <span>GitHub</span>
-      </Link>
-    )
+export default class ProjectCard extends Component {
+  static propTypes = {
+    title: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    links: PropTypes.object
   }
-}
 
-class WebsiteButton extends React.Component {
-  render () {
-    return (
-      <Link className={`button ${this.props.centerFix ? 'center-fix' : ''}`} to={this.props.link}>
-        <span className={'icon'}>
-          <i className={'fas fa-globe'}></i>
-        </span>
-        <span>Website</span>
-      </Link>
-    )
+  getContent () {
+    const { website, github } = this.props.links
+
+    if (website && github) {
+      return <ButtonGroup github={github} website={website}/>
+    } else if (website) {
+      return <WebsiteButton link={website}/>
+    } else if (github) {
+      return <GitHubButton link={github}/>
+    }
   }
-}
 
-class ButtonGroup extends React.Component {
-  render () {
-    return (
-      <div className={'buttons button-group'}>
-        <GitHubButton link={this.props.github} centerFix />
-        <WebsiteButton link={this.props.website} centerFix />
-      </div>
-    )
-  }
-}
-
-export default class ProjectCard extends React.Component {
   render () {
     return (
       <div className={'tile card notification is-child'}>
         <h2 className={'section-title card-title'}>{this.props.title}</h2>
         <p className={'section-text card-text'}>{this.props.text}</p>
-        {
-          // If both defined, use group - otherwise check for either
-          this.props.links.github && this.props.links.website
-            ? <ButtonGroup github={this.props.links.github} website={this.props.links.website} />
-            : this.props.links.github
-              ? <GitHubButton link={this.props.links.github} />
-              : this.props.links.website
-                ? <WebsiteButton link={this.props.links.website} />
-                : ''
-        }
+        {this.getContent()}
       </div>
     )
   }
-}
-
-ProjectCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-  links: PropTypes.object
-}
-
-GitHubButton.propTypes = {
-  link: PropTypes.string.isRequired,
-  centerFix: PropTypes.any // No value required
-}
-
-WebsiteButton.propTypes = {
-  link: PropTypes.string.isRequired,
-  centerFix: PropTypes.any // No value required
-}
-
-ButtonGroup.propTypes = {
-  github: PropTypes.string.isRequired,
-  website: PropTypes.string.isRequired
 }

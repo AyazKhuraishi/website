@@ -1,17 +1,14 @@
-/* Home section */
-
-@import 'utils';
-
 /* Section background */
 .banner {
-  background-color: #F0F0F0;
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
 }
 
 /* Page title */
 .large-title {
-  font-size: 80px;
+  font-size: 100px;
   font-weight: bold;
-  color: #363636;
+  color: #FFFFFF;
   padding-bottom: 20px;
   @extend %large-title;
 }
@@ -24,7 +21,7 @@
   font-size: 30px;
   background-color: #333333;
   border-radius: 20px;
-  color: white;
+  color: #FFFFFF;
   text-align: left;
   padding-left: 20px;
   @extend %monospace-command;
@@ -32,15 +29,20 @@
 
 /* Add Bash identifiers before typing text */
 .subtitle-typing:before {
-  content: "admin@lw:~$ ";
+  content: "root@linus:~$ ";
   color: #C0C0C0;
   @extend %monospace-prefix;
 }
 
 .subtitle-lowwidth {
+  color: #C0C0C0;
   font-weight: lighter;
   font-style: italic;
   font-size: 23px;
   text-align: center;
   padding-bottom: 10px;
+}
+
+.lang-selector {
+  padding-top: 20px;
 }
