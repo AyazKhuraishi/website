@@ -1,6 +1,6 @@
 // Global configuration file
 
-export const config = {
+export default {
   // Common variables
   common: {
     // Sections on the page

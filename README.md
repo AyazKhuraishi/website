@@ -12,4 +12,4 @@ I am still an abhorrent designer, but I'm confident this single-page application
 
 ## Copyright
 
-Copyright (c) 2018 Linus Willner. Some rights reserved.
+Copyright (c) 2018-2019 Linus Willner. Some rights reserved.
