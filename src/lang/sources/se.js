@@ -15,7 +15,7 @@ export default {
   about: { // About
     title: 'OM MIG',
     sectionTitle: 'Morjens!',
-    p1: `Jag heter Linus Willner, och jag är en ${moment().diff(moment([ 1999, 6, 18 ]), 'years')}-årig studerande och freelance-programmerare från Finland. Trevligt att råkas!`,
+    p1: `Jag heter Linus Willner, och jag är en ${moment().diff(moment('18 June 1999'), 'years')}-årig studerande och freelance-programmerare från Finland. Trevligt att råkas!`,
     p2: `Jag är en verklig tekniknörd som njuter av programmering på fritiden. Min bravur är att bygga web-applikationer med lite backend-programmering strött däromkring.`,
     p3: `Sedan 2017 har jag sysslat med programutveckling i diverse hörn av nätet, mestadels inom open source software. Jag har jobbat som programmerare för det mesta, men därtill också som dokumentationsskribent, lokalisator och kvalitetskontrollant.`,
     p4: {

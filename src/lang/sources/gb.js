@@ -15,7 +15,7 @@ export default {
   about: { // About
     title: 'ABOUT ME',
     sectionTitle: 'Hello there!',
-    p1: `I'm Linus Willner, a ${moment().diff(moment([ 1999, 6, 18 ]), 'years')}-year-old student and freelance developer from Finland. Pleasure to meet you!`,
+    p1: `I'm Linus Willner, a ${moment().diff(moment('18 June 1999'), 'years')}-year-old student and freelance developer from Finland. Pleasure to meet you!`,
     p2: `I'm an avid tech nerd that enjoys programming in his free time. I develop web applications with some backend software development dotted about as well.`,
     p3: `Since 2017, I've been doing software development in various corners of the internet, mostly in the field of open source software. I have worked as a programmer for the most part, but also inherited other roles, such as documentation writer, localisation engineer and quality assurance engineer.`,
     p4: {
