@@ -50,7 +50,7 @@
     "@hot-loader/react-dom": "^16.8.6",
     "bulma": "^0.7.5",
     "bulma-divider": "^2.0.1",
-    "disable-scroll": "^0.4.1",
+    "disable-scroll": "^0.5.0",
     "flag-icon-css": "^3.3.0",
     "in-viewport": "^3.6.0",
     "moment": "^2.24.0",
