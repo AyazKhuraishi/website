@@ -6,7 +6,7 @@ const ExtractCSSWebpackPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const PurgeCSSWebpackPlugin = require('purgecss-webpack-plugin')
 const OptimizeJSWebpackPlugin = require('terser-webpack-plugin')
-const OptimizeFontsWebpackPlugin = require('fontmin-webpack')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 const dev = process.env.NODE_ENV !== 'production' || process.argv.indexOf('-p') === -1
 
@@ -30,11 +30,12 @@ const JSOptimizerConfig = new OptimizeJSWebpackPlugin({
 const CSSOptimizerConfig = new OptimizeCSSWebpackPlugin({})
 
 const CSSPurgerConfig = new PurgeCSSWebpackPlugin({
-  paths: glob.sync(path.join(__dirname, 'src', 'assets', '**', '*'), { nodir: true })
-})
-
-const FontMinifierConfig = new OptimizeFontsWebpackPlugin({
-  autodetect: true
+  paths: glob.sync(`${path.join(__dirname, 'src')}/**/*`, { nodir: true }),
+  whitelistPatterns: [
+    /react-sweet-progress/,
+    /fa-/,
+    /flag-icon/
+  ]
 })
 
 const EnvironmentConfig = new webpack.DefinePlugin({
@@ -42,6 +43,23 @@ const EnvironmentConfig = new webpack.DefinePlugin({
     NODE_ENV: JSON.stringify('production')
   }
 })
+
+const devPlugins = [
+  HTMLInjecterConfig,
+  CSSExtracterConfig,
+  new webpack.HotModuleReplacementPlugin(),
+  new webpack.NamedModulesPlugin()
+]
+
+const prodPlugins = [
+  HTMLInjecterConfig,
+  CSSExtracterConfig,
+  CSSPurgerConfig,
+  EnvironmentConfig
+]
+
+// If clean build is desired, add CleanWebpackPlugin
+if (process.argv.indexOf('-c') !== -1) prodPlugins.push(new CleanWebpackPlugin())
 
 const createAlias = modulePath => path.resolve(__dirname, modulePath)
 
@@ -95,7 +113,7 @@ module.exports = {
         loader: 'babel-loader'
       },
       { // SCSS
-        test: /\.s?css$/,
+        test: /\.scss$/,
         use: [
           dev ? 'style-loader' : ExtractCSSWebpackPlugin.loader,
           'css-loader',
@@ -103,11 +121,18 @@ module.exports = {
         ]
       },
       { // Images
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif)$/i,
         loader: 'url-loader',
         options: {
           limit: 10000
         }
+      },
+      { // SVGs
+        test: /\.svg$/,
+        use: [
+          { loader: 'file-loader' },
+          { loader: 'svgo-loader' }
+        ]
       },
       { // Fonts
         test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
@@ -145,17 +170,5 @@ module.exports = {
   },
 
   mode: dev ? 'development' : 'production',
-  plugins:
-    dev ? [
-      HTMLInjecterConfig,
-      CSSExtracterConfig,
-      new webpack.HotModuleReplacementPlugin(),
-      new webpack.NamedModulesPlugin()
-    ] : [
-      HTMLInjecterConfig,
-      CSSExtracterConfig,
-      CSSPurgerConfig,
-      FontMinifierConfig,
-      EnvironmentConfig
-    ]
+  plugins: dev ? devPlugins : prodPlugins
 }

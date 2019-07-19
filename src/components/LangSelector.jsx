@@ -1,7 +1,6 @@
 // Lang selector dropdown
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import FlagIcon from './FlagIcon'
 import { emit } from 'utils/dispatcher'
 
 // Animation overrides for the lang selector
@@ -39,7 +38,7 @@ class DropdownItem extends Component {
   render () {
     return (
       <div className={'dropdown-item item'} onClick={this.handleClick}>
-        <FlagIcon code={this.props.country}/>
+        <span className={`flag-icon flag-icon-${this.props.country}`}/>
       </div>
     )
   }
