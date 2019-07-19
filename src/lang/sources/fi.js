@@ -15,7 +15,7 @@ export default {
   about: { // About
     title: 'TIETOJA',
     sectionTitle: 'Terve!',
-    p1: `Nimeni on Linus Willner, ja olen ${moment().diff(moment('18 June 1999'), 'years')}-vuotias opiskelija sekä freelance-kehittäjä Suomesta. Mukava tavata!`,
+    p1: `Nimeni on Linus Willner, ja olen ${moment().diff(moment('1999-06-18'), 'years')}-vuotias opiskelija sekä freelance-kehittäjä Suomesta. Mukava tavata!`,
     p2: `Olen todellinen tekniikkanörtti joka nauttii ohjelmoinnista vapaa-ajalla. Kehitän web-applikaatioita sekoittaen mukaan myöskin backend-ohjelmistoja ajoittain.`,
     p3: `Vuodesta 2017 lähtien olen osallistunut ohjelmistokehitykseen internetin erinäisissä nurkissa, suurimmaksi osaksi avoimen lähdekoodin saralla. Olen työskennellyt enimmäkseen ohjelmoijana, mutta myöskin muissa rooleissa kuten dokumentaatiokirjoittajana, kääntäjänä sekä laadunvalvojana.`,
     p4: {

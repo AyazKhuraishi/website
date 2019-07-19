@@ -6,7 +6,8 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server",
     "test": "eslint .",
-    "build": "cross-env NODE_ENV=production webpack -p && cp ./src/keybase.txt ./build/keybase.txt"
+    "build": "cross-env NODE_ENV=production webpack -p && npm run copy-keybase",
+    "copy-keybase": "node scripts/copyKeybase.js"
   },
   "keywords": [],
   "author": "Linus Willner <hello@linuswillner.me> (https://linuswillner.me)",
@@ -32,10 +33,12 @@
     "eslint-plugin-react": "^7.14.2",
     "eslint-plugin-standard": "^4.0.0",
     "file-loader": "^4.1.0",
+    "fontmin-webpack": "^2.0.4",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "purgecss-webpack-plugin": "^1.5.0",
     "react-hot-loader": "^4.12.8",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
@@ -50,13 +53,13 @@
     "@hot-loader/react-dom": "^16.8.6",
     "bulma": "^0.7.5",
     "bulma-divider": "^2.0.1",
-    "flag-icon-css": "^3.3.0",
     "in-viewport": "^3.6.0",
     "moment": "^2.24.0",
     "prop-types": "^15.7.2",
     "ramda": "^0.26.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-flag-icon-css": "^1.0.25",
     "react-sweet-progress": "^1.1.2",
     "react-typist": "github:linuswillner/react-typist",
     "wolfy87-eventemitter": "^5.2.6"

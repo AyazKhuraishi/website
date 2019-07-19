@@ -1,9 +1,12 @@
 const path = require('path')
+const glob = require('glob')
 const webpack = require('webpack')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const ExtractCSSWebpackPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSWebpackPlugin = require('optimize-css-assets-webpack-plugin')
+const PurgeCSSWebpackPlugin = require('purgecss-webpack-plugin')
 const OptimizeJSWebpackPlugin = require('terser-webpack-plugin')
+const OptimizeFontsWebpackPlugin = require('fontmin-webpack')
 
 const dev = process.env.NODE_ENV !== 'production' || process.argv.indexOf('-p') === -1
 
@@ -25,6 +28,14 @@ const JSOptimizerConfig = new OptimizeJSWebpackPlugin({
 })
 
 const CSSOptimizerConfig = new OptimizeCSSWebpackPlugin({})
+
+const CSSPurgerConfig = new PurgeCSSWebpackPlugin({
+  paths: glob.sync(path.join(__dirname, 'src', 'assets', '**', '*'), { nodir: true })
+})
+
+const FontMinifierConfig = new OptimizeFontsWebpackPlugin({
+  autodetect: true
+})
 
 const EnvironmentConfig = new webpack.DefinePlugin({
   'process.env': {
@@ -48,7 +59,17 @@ module.exports = {
 
   // Production optimisers
   optimization: {
-    minimizer: dev ? [] : [ JSOptimizerConfig, CSSOptimizerConfig ]
+    minimizer: dev ? [] : [ JSOptimizerConfig, CSSOptimizerConfig ],
+    splitChunks: {
+      cacheGroups: {
+        styles: {
+          name: 'styles',
+          test: /\.s?css$/,
+          chunks: 'all',
+          enforce: true
+        }
+      }
+    }
   },
 
   // Entry point
@@ -74,7 +95,7 @@ module.exports = {
         loader: 'babel-loader'
       },
       { // SCSS
-        test: /\.scss$/,
+        test: /\.s?css$/,
         use: [
           dev ? 'style-loader' : ExtractCSSWebpackPlugin.loader,
           'css-loader',
@@ -88,7 +109,7 @@ module.exports = {
           limit: 10000
         }
       },
-      {
+      { // Fonts
         test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'file-loader',
         options: {
@@ -133,6 +154,8 @@ module.exports = {
     ] : [
       HTMLInjecterConfig,
       CSSExtracterConfig,
+      CSSPurgerConfig,
+      FontMinifierConfig,
       EnvironmentConfig
     ]
 }
