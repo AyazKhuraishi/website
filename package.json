@@ -61,7 +61,7 @@
     "prop-types": "^15.7.2",
     "ramda": "^0.26.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react-dom": "^16.9.0",
     "react-sweet-progress": "^1.1.2",
     "react-typist": "github:linuswillner/react-typist",
     "wolfy87-eventemitter": "^5.2.6"
