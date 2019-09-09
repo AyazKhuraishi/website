@@ -22,8 +22,6 @@ const CSSExtracterConfig = new ExtractCSSWebpackPlugin({
 })
 
 const JSOptimizerConfig = new OptimizeJSWebpackPlugin({
-  cache: true,
-  parallel: true,
   sourceMap: true
 })
 

@@ -22,8 +22,8 @@ jobs:
           command: npm run build
 
   deploy:
-    machine:
-      image: circleci/classic:latest
+    docker:
+      - image: circleci/node:latest
     steps:
       - checkout
       - run:
