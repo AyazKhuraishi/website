@@ -25,7 +25,7 @@ export default {
       l3: ', but I have also created a fair few programs of my own. These range from backend applications to websites and full-fledged desktop applications. Some examples of my work are ',
       l4: ' and '
     },
-    p6: 'Currently, I am a Virtual Training Assistant at the Nyland Brigade, where I work as a conscript programmer and systems administrator for the Finnish Defence Forces. As my next endeavour, I will commence studies in ICT at Metropolia UAS in January 2020.'
+    p6: 'Most recently, I was a Virtual Training Assistant at the Nyland Brigade, where I worked as a conscript programmer and systems administrator for the Finnish Defence Forces. As my next endeavour, I will commence studies in ICT at Metropolia UAS in January 2020.'
   },
   skills: { // Skills
     title: 'SKILLS',
