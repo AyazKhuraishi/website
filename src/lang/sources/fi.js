@@ -16,20 +16,16 @@ export default {
     title: 'TIETOJA',
     sectionTitle: 'Terve!',
     p1: `Nimeni on Linus Willner, ja olen ${moment().diff(moment('1999-06-18'), 'years')}-vuotias opiskelija sekä freelance-kehittäjä Suomesta. Mukava tavata!`,
-    p2: 'Olen todellinen tekniikkanörtti joka nauttii ohjelmoinnista vapaa-ajalla. Kehitän web-applikaatioita sekoittaen mukaan myöskin backend-ohjelmistoja ajoittain.',
-    p3: 'Vuodesta 2017 lähtien olen osallistunut ohjelmistokehitykseen internetin erinäisissä nurkissa, suurimmaksi osaksi avoimen lähdekoodin saralla. Olen työskennellyt enimmäkseen ohjelmoijana, mutta myöskin muissa rooleissa kuten dokumentaatiokirjoittajana, kääntäjänä sekä laadunvalvojana.',
-    p4: {
-      l1: 'Pääasiallinen asemani on tällä hetkellä ',
-      l2: ', jossa kehitän ja ylläpidän projekteja kuten ',
-      l3: '. Teen tätä vapaa-ajallani opiskelun ja työn ohella.'
-    },
+    p2: 'Olen lähtöisin pienestä kaupungista nimeltä Loviisa itäiseltä Uudeltamaalta, ja olen innokas tekniikan sormeilija sekä ohjelmistotuotannon opiskelija. Web-applikaatioiden kehitys on vahvuuteni, jonka lisäksi kehitän myös backend-applikaatioita ja suoritan järjestelmäylläpitoa.',
+    p3: 'Vuodesta 2017 lähtien olen toiminut ohjelmistokehittäjänä, suurimmaksi osaksi avoimen lähdekoodin saralla. Olen työskennellyt enimmäkseen ohjelmoijana sekä järjestelmäylläpitäjänä, jonka lisäksi olen toiminut dokumentaatio-, käännös- ja laadunvalvontatehtävissä.',
+    p4: 'Olen monikielinen persoona joka hallitsee samantasoisesti kolmea kieltä - tarkemmin sanottuna suomea, ruotsia sekä englantia. Äidinkieleni ovat listan kaksi ensimmäistä kieltä.',
     p5: {
       l1: 'Minut tunnetaan arvatenkin parhaimmin projekteista kuten ',
       l2: ' sekä ',
       l3: ', mutta olen myös kehittänyt lukuisia ohjelmia omin neuvoin. Näistä löytyy kaikkea backend-applikaatioista verkkosivuihin ja työpöytäohjelmiin. Muutamia esimerkkejä töistäni ovat ',
       l4: ' ja '
     },
-    p6: 'Suoritan tällä hetkellä varusmiespalvelustani virtuaalikoulutushenkilönä Uudenmaan prikaatissa, jonka jälkeen aloitan tieto- ja viestintätekniikan opinnot Metropolia ammattikorkeakoulussa ryhtyäkseni ohjelmistokehittäjäksi.'
+    p6: 'Tämänhetkinen tehtäväni on toimia virtuaalikoulutustukihenkilönä Uudenmaan prikaatissa, jossa työskentelen Puolustusvoimille varusmiesohjelmoijana sekä -järjestelmäylläpitäjänä. Seuraava edesottamukseni on tieto- ja viestintätekniikan opintojen aloitus Metropolia Ammattikorkeakoulussa tammikuussa 2020.'
   },
   skills: { // Skills
     title: 'TAITOJA',
@@ -70,7 +66,7 @@ export default {
     email: 'Sähköposti'
   },
   footer: {
-    copyright: `Copyright (c) ${moment().format('YYYY')} Linus Willner. Kaikki oikeudet pidätetään. Kansikuva: Chris Ried/Unsplash`,
+    copyright: `Copyright (c) ${moment().format('YYYY')} Linus Willner. Kaikki oikeudet pidätetään. Kansikuva: Maik Jonietz/Unsplash`,
     tech: {
       l1: 'Toteutettu ',
       l2: 'Reactilla',

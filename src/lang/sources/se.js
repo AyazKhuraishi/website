@@ -16,20 +16,16 @@ export default {
     title: 'OM MIG',
     sectionTitle: 'Morjens!',
     p1: `Jag heter Linus Willner, och jag är en ${moment().diff(moment('1999-06-18'), 'years')}-årig studerande och freelance-programmerare från Finland. Trevligt att råkas!`,
-    p2: 'Jag är en verklig tekniknörd som njuter av programmering på fritiden. Min bravur är att bygga web-applikationer med lite backend-programmering strött däromkring.',
-    p3: 'Sedan 2017 har jag sysslat med programutveckling i diverse hörn av nätet, mestadels inom open source software. Jag har jobbat som programmerare för det mesta, men därtill också som dokumentationsskribent, lokalisator och kvalitetskontrollant.',
-    p4: {
-      l1: 'Min huvudsakliga position är för tillfället hos ',
-      l2: ', där jag utvecklar och upprätthåller projekt som ',
-      l3: '. Jag gör detta på fritiden vid sidan av studier och arbete.'
-    },
+    p2: 'Jag kommer från en liten stad vid namnet Lovisa i östra Nyland, och är en ivrig teknikmekare samt programmeringsstuderande. Min bravur är utvecklingen av web-applikationer, och därtill byggandet av backend-applikationer samt systemadministration.',
+    p3: 'Sedan 2017 har jag sysslat med programutveckling, mestadels inom s.k. open source software. Jag har jobbat som programmerare och systemadministrator för det mesta, och därtill innehaft roller inom dokumentation, lokalisation och kvalitetskontroll.',
+    p4: 'Jag är en flerspråkig person med jämn kunskapsnivå i tre språk - närmare sagt finska, svenska och engelska. Mina modersmål är de två förstnämnda.',
     p5: {
       l1: 'Jag är mest känd för mitt arbete inom projekt som ',
       l2: ' och ',
       l3: ', men jag har även gjort ett antal program på eget bevåg. Dessa innefattar allt från backend-applikationer till nätsidor och fullt funktionerande skrivbordsprogram. Exempel på program jag byggt innefattar ',
       l4: ' och '
     },
-    p6: 'Jag utför för tillfället min militärtjänstgöring som virtualutbildningsassistent vid Nylands brigad, varefter jag inleder studier inom informations- och kommunikationsteknologi vid Metropolia yrkeshögskola för att bli programutvecklare.'
+    p6: 'Min nuvarande uppgift är att fungera som virtualutbildningsassistent vid Nylands brigad, där jag fungerar som beväringsprogrammerare och -systemadministrator för Försvarsmakten. Mitt nästa undertagande är påbörjandet av studier inom informations- och kommunikationsteknik vid Metropolia yrkeshögskola i januari 2020.'
   },
   skills: { // Skills
     title: 'KUNSKAPER',
@@ -70,7 +66,7 @@ export default {
     email: 'E-post'
   },
   footer: {
-    copyright: `Copyright (c) ${moment().format('YYYY')} Linus Willner. Alla rättigheter reserverade. Pärmbild: Chris Ried/Unsplash`,
+    copyright: `Copyright (c) ${moment().format('YYYY')} Linus Willner. Alla rättigheter reserverade. Pärmbild: Maik Jonietz/Unsplash`,
     tech: {
       l1: 'Byggt med ',
       l2: 'React',

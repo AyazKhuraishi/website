@@ -30,13 +30,7 @@ export default class About extends Component {
                 <p>{window.i18n`about.p1`}</p>
                 <p>{window.i18n`about.p2`}</p>
                 <p>{window.i18n`about.p3`}</p>
-                <p>
-                  {window.i18n`about.p4.l1`}
-                  <Link to={'https://github.com/TheSharks'}>TheSharks</Link>
-                  {window.i18n`about.p4.l2`}
-                  <Link to={'https://github.com/TheSharks/JagTag-JS'}>JagTag-JS</Link>
-                  {window.i18n`about.p4.l3`}
-                </p>
+                <p>{window.i18n`about.p4`}</p>
                 <p>
                   {window.i18n`about.p5.l1`}
                   <Link to={'https://github.com/TheSharks/WildBeast'}>WildBeast</Link>
