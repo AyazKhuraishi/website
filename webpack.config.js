@@ -53,7 +53,8 @@ const prodPlugins = [
   HTMLInjecterConfig,
   CSSExtracterConfig,
   CSSPurgerConfig,
-  EnvironmentConfig
+  EnvironmentConfig,
+  new webpack.ProgressPlugin()
 ]
 
 // If clean build is desired, add CleanWebpackPlugin

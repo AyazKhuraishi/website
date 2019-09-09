@@ -15,10 +15,10 @@ jobs:
           paths:
             - node_modules
       - run:
-          name: Run tests
+          name: Test
           command: npm test
       - run:
-          name: Generate test build
+          name: Build
           command: npm run build
 
   deploy:
@@ -30,10 +30,13 @@ jobs:
           name: Install dependencies
           command: npm i
       - run:
-          name: Generate production build
-          command: npm run build
+          name: Build
+          command: npm run build-clean
       - run:
-          name: Deploy code to server
+          name: Add deployment host to known_hosts
+          command: ssh-keyscan -H ${DEPLOYMENT_HOST} >> ~/.ssh/known_hosts
+      - run:
+          name: Deploy
           command: scp -r ./build/* $DEPLOYMENT_USER@$DEPLOYMENT_HOST:$DEPLOYMENT_DIR
 
 workflows:
