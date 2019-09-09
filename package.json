@@ -6,6 +6,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server",
     "test": "eslint .",
+    "test-fix": "eslint . --fix",
     "build": "cross-env NODE_ENV=production webpack -p && npm run copy-keybase",
     "build-clean": "cross-env NODE_ENV=production webpack -p -c && npm run copy-keybase",
     "copy-keybase": "node scripts/copyKeybase.js"
