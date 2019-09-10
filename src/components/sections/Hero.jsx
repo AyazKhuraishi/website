@@ -1,7 +1,8 @@
 // Hero section (Top of page)
 import React, { Component } from 'react'
-import Typist from 'react-typist'
+import Typist from 'react-typist-repacked'
 import config from 'config'
+import i18n from 'lang'
 import { dispatcher } from 'utils/dispatcher'
 
 export default class Hero extends Component {
