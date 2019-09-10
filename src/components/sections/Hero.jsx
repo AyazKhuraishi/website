@@ -24,7 +24,7 @@ export default class Hero extends Component {
 
   generateContent () {
     if (this.state.typingEnabled && this.state.typing) {
-      const texts = window.i18n`hero.typingTexts`
+      const texts = i18n`hero.typingTexts`
       const delay = config.hero.typingDelay
 
       return (
@@ -46,7 +46,7 @@ export default class Hero extends Component {
           <Typist.Backspace count={texts[3].length + 8} delay={delay} />
         </Typist>
       )
-    } else return <h2 className={'subtitle-lowwidth'}>{window.i18n`hero.typingTextLowWidth`}</h2>
+    } else return <h2 className={'subtitle-lowwidth'}>{i18n`hero.typingTextLowWidth`}</h2>
   }
 
   componentDidMount () {

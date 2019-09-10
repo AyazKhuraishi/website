@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { dispatcher, emit } from 'utils/dispatcher'
-import { lang, i18n } from '../lang'
 
 import LangButton from 'components/LangButton'
 import Divider from 'components/Divider'
@@ -12,10 +11,6 @@ import Skills from 'sections/Skills'
 import Projects from 'sections/Projects'
 import Contact from 'sections/Contact'
 import Footer from 'sections/Footer'
-
-// Globals
-global.lang = lang // Lang files
-global.i18n = i18n // Translation function
 
 export default class Main extends Component {
   constructor (props) {

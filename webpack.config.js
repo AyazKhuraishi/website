@@ -112,7 +112,7 @@ module.exports = {
         loader: 'babel-loader'
       },
       { // SCSS
-        test: /\.scss$/,
+        test: /\.s?css$/,
         use: [
           dev ? 'style-loader' : ExtractCSSWebpackPlugin.loader,
           'css-loader',
@@ -158,7 +158,8 @@ module.exports = {
       utils: createAlias('src/utils'),
       config: createAlias('src/config.js'),
       components: createAlias('src/components'),
-      sections: createAlias('src/components/sections')
+      sections: createAlias('src/components/sections'),
+      lang: createAlias('src/lang')
     }
   },
 

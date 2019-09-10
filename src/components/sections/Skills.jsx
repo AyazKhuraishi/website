@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import Bar from '../Bar'
 import { Link } from '../Links'
+import i18n from 'lang'
 
 export default class Skills extends Component {
   render () {
@@ -17,13 +18,13 @@ export default class Skills extends Component {
     return (
       <section className={'section skills'} id={'skills'}>
         <div className={'container'}>
-          <h1 className={'title section-title'}>{window.i18n`skills.title`}</h1>
+          <h1 className={'title section-title'}>{i18n`skills.title`}</h1>
           <div className={'columns'}>
             <div className={'column section-text skills-text'} style={styles.columnOverrides}>
-              <p>{window.i18n`skills.p1`}</p>
-              <p>{window.i18n`skills.p2`}</p>
-              <p>{window.i18n`skills.p3`}</p>
-              <p>{window.i18n`skills.p4.l1`}<Link to={'https://github.com/linuswillner'}>{window.i18n`skills.p4.l2`}</Link>{window.i18n`skills.p4.l3`}</p>
+              <p>{i18n`skills.p1`}</p>
+              <p>{i18n`skills.p2`}</p>
+              <p>{i18n`skills.p3`}</p>
+              <p>{i18n`skills.p4.l1`}<Link to={'https://github.com/linuswillner'}>{i18n`skills.p4.l2`}</Link>{i18n`skills.p4.l3`}</p>
             </div>
             <div className={'column bars'}>
               <Bar text={'JavaScript'} progress={100} icon={<i className={'fab fa-node-js js'}/>}/>

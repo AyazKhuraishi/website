@@ -1,6 +1,7 @@
 // Footer section
 import React, { Component } from 'react'
 import { FooterLink } from '../Links'
+import i18n from 'lang'
 
 export default class Footer extends Component {
   render () {
@@ -8,14 +9,14 @@ export default class Footer extends Component {
       <footer className={'footer page-footer'}>
         <div className={'container'}>
           <div className={'footer-text section-text'}>
-            <p>{window.i18n`footer.copyright`}</p>
+            <p>{i18n`footer.copyright`}</p>
             <p>
-              {window.i18n`footer.tech.l1`}
-              <FooterLink type={'react'}>{window.i18n`footer.tech.l2`}</FooterLink>,
-              <FooterLink type={'sass'}>{window.i18n`footer.tech.l3`}</FooterLink>
-              {window.i18n`footer.tech.l4`}
-              <FooterLink type={'bulma'}>{window.i18n`footer.tech.l5`}</FooterLink>.
-              {window.i18n`footer.location`}
+              {i18n`footer.tech.l1`}
+              <FooterLink type={'react'}>{i18n`footer.tech.l2`}</FooterLink>,
+              <FooterLink type={'sass'}>{i18n`footer.tech.l3`}</FooterLink>
+              {i18n`footer.tech.l4`}
+              <FooterLink type={'bulma'}>{i18n`footer.tech.l5`}</FooterLink>.
+              {i18n`footer.location`}
             </p>
           </div>
         </div>

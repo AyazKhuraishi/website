@@ -1,6 +1,7 @@
 // About section
 import React, { Component } from 'react'
 import { Link } from '../Links'
+import i18n from 'lang'
 
 export default class About extends Component {
   render () {
@@ -22,26 +23,26 @@ export default class About extends Component {
     return (
       <section className={'section about'} id={'about'}>
         <div className={'container'}>
-          <h1 className={'title section-title'}>{window.i18n`about.title`}</h1>
+          <h1 className={'title section-title'}>{i18n`about.title`}</h1>
           <div className={'columns'}>
             <div className={'column is-three-quarters about-text'} style={styles.textOverrides}>
-              <h2 className={'section-text-title'}>{window.i18n`about.sectionTitle`}</h2>
+              <h2 className={'section-text-title'}>{i18n`about.sectionTitle`}</h2>
               <div className={'section-text about-text-column'}>
-                <p>{window.i18n`about.p1`}</p>
-                <p>{window.i18n`about.p2`}</p>
-                <p>{window.i18n`about.p3`}</p>
-                <p>{window.i18n`about.p4`}</p>
+                <p>{i18n`about.p1`}</p>
+                <p>{i18n`about.p2`}</p>
+                <p>{i18n`about.p3`}</p>
+                <p>{i18n`about.p4`}</p>
                 <p>
-                  {window.i18n`about.p5.l1`}
+                  {i18n`about.p5.l1`}
                   <Link to={'https://github.com/TheSharks/WildBeast'}>WildBeast</Link>
-                  {window.i18n`about.p5.l2`}
+                  {i18n`about.p5.l2`}
                   <Link to={'https://github.com/js-rcon'}>JS-RCON</Link>
-                  {window.i18n`about.p5.l3`}
+                  {i18n`about.p5.l3`}
                   <Link to={'https://github.com/linuswillner/react-console-emulator'}>react-console-emulator</Link>
-                  {window.i18n`about.p5.l4`}
+                  {i18n`about.p5.l4`}
                   <Link to={'https://github.com/linuswillner/tag-replacer'}>tag-replacer</Link>.
                 </p>
-                <p>{window.i18n`about.p6`}</p>
+                <p>{i18n`about.p6`}</p>
                 <p className={'signature'}>- LW</p>
               </div>
             </div>
