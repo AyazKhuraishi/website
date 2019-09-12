@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import ProjectCard from '../ProjectCard'
 import { Link } from '../Links'
+import { Section, SectionTitle } from '../Section'
 import i18n from 'lang'
 
 export default class Projects extends Component {
@@ -17,10 +18,7 @@ export default class Projects extends Component {
           key={card.title}
           title={card.title}
           text={card.text}
-          links={{
-            github: card.github ? card.github : null,
-            website: card.website ? card.website : null
-          }}
+          links={{ github: card.github, website: card.website }}
         />
       )
     })
@@ -28,17 +26,15 @@ export default class Projects extends Component {
 
   render () {
     return (
-      <section className={'section projects'} id={'projects'}>
-        <div className={'container'}>
-          <h1 className={'title section-title'}>{i18n`projects.title`}</h1>
-          <div className={'tile is-ancestor'}>
-            {this.generateCards()}
-          </div>
-          <h2 className={'subtitle section-subtitle'}>
-            {i18n`projects.p1.l1`}<Link to={'https://github.com/linuswillner'}>{i18n`projects.p1.l2`}</Link>.
-          </h2>
+      <Section className={'section projects'}>
+        <SectionTitle>{i18n`projects.title`}</SectionTitle>
+        <div className={'tile is-ancestor'}>
+          {this.generateCards()}
         </div>
-      </section>
+        <h2 className={'subtitle section-subtitle'}>
+          {i18n`projects.p1.l1`}<Link to={'https://github.com/linuswillner'}>{i18n`projects.p1.l2`}</Link>.
+        </h2>
+      </Section>
     )
   }
 }

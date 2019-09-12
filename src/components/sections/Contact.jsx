@@ -1,9 +1,9 @@
 // Contact section
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import Email from '../Email'
 import { Link } from '../Links'
-import reverseString from 'utils/reverseString'
-import config from 'config'
+import { Section, SectionTitle } from '../Section'
 import i18n from 'lang'
 
 class SocialMediaIcon extends Component {
@@ -24,31 +24,34 @@ class SocialMediaIcon extends Component {
 }
 
 export default class Contact extends Component {
-  render () {
-    const email = <b className={'email'} data-prefix={reverseString('hello')} data-suffix={reverseString('linuswillner.me')}/>
+  icons = [
+    { link: 'https://github.com/linuswillner', iconClassName: 'fab fa-github' },
+    { link: 'https://linkedin.com/in/linuswillner', iconClassName: 'fab fa-linkedin' },
+    { link: 'https://twitter.com/linuswillner', iconClassName: 'fab fa-twitter' },
+    { link: 'https://instagram.com/linuswillner', iconClassName: 'fab fa-instagram' }
+  ]
 
+  render () {
     return (
-      <section className={'section contact'} id={'contact'}>
-        <div className={'container'}>
-          <h1 className={'title section-title'}>{i18n`contact.title`}</h1>
-          <div className={'columns'}>
-            <div className={'column section-text contact-text'}>
-              <div className={'contact-pre'}>
-                <p>{i18n`contact.p1.l1`}<br/>{i18n`contact.p1.l2`}</p>
-                <p>{i18n`contact.p2.l1`}<Link to={'https://discordapp.com'}>{i18n`contact.p2.l2`}</Link>{i18n`contact.p2.l3`}</p>
-                <p>{i18n`contact.p3`}</p>
-              </div>
-              <div className={'contact-methods'}>
-                <h2 className={'contact-method'}>{i18n`contact.email`}: {email}</h2>
-                <h2 className={'contact-method'}>Discord: <b>LWTech#0005</b></h2>
-                <p className={'field'}>
-                  {config.contact.icons.map(icon => <SocialMediaIcon key={icon.link} link={icon.link} iconClassName={icon.iconClassName}/>)}
-                </p>
-              </div>
+      <Section className={'section contact'}>
+        <SectionTitle>{i18n`contact.title`}</SectionTitle>
+        <div className={'columns'}>
+          <div className={'column section-text contact-text'}>
+            <div className={'contact-pre'}>
+              <p>{i18n`contact.p1.l1`}<br/>{i18n`contact.p1.l2`}</p>
+              <p>{i18n`contact.p2.l1`}<Link to={'https://discordapp.com'}>{i18n`contact.p2.l2`}</Link>{i18n`contact.p2.l3`}</p>
+              <p>{i18n`contact.p3`}</p>
+            </div>
+            <div className={'contact-methods'}>
+              <h2 className={'contact-method'}>{i18n`contact.email`}: <Email prefix={'hello'} suffix={'linuswillner.me'}/></h2>
+              <h2 className={'contact-method'}>Discord: <b>LWTech#0005</b></h2>
+              <p className={'field'}>
+                {this.icons.map(icon => <SocialMediaIcon key={icon.link} link={icon.link} iconClassName={icon.iconClassName}/>)}
+              </p>
             </div>
           </div>
         </div>
-      </section>
+      </Section>
     )
   }
 }

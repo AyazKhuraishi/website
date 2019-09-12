@@ -8,9 +8,9 @@ export default {
       'Studerande',
       'Teknikhobbyist',
       'Freelance-programmerare',
-      'Blivande IKT-ingenjör'
+      'Blivande ICT-ingenjör'
     ],
-    typingTextLowWidth: 'Studerande, freelance-programmerare, blivande IKT-ingenjör'
+    typingTextLowWidth: 'Studerande, freelance-programmerare, blivande ICT-ingenjör'
   },
   about: { // About
     title: 'OM MIG',

@@ -1,7 +1,6 @@
 // Hero section (Top of page)
 import React, { Component } from 'react'
 import Typist from 'react-typist-repacked'
-import config from 'config'
 import i18n from 'lang'
 import { dispatcher } from 'utils/dispatcher'
 
@@ -12,20 +11,23 @@ export default class Hero extends Component {
       typing: !window.lowWidth,
       typingEnabled: !window.lowWidth
     }
+
     this.typingDone = this.typingDone.bind(this)
     this.generateContent = this.generateContent.bind(this)
   }
 
+  typingDelay = 1000
+
   typingDone () {
     setTimeout(() => {
       this.setState({ typing: false }, () => { this.setState({ typing: true }) })
-    }, config.hero.typingDelay)
+    }, this.typingDelay)
   }
 
   generateContent () {
     if (this.state.typingEnabled && this.state.typing) {
       const texts = i18n`hero.typingTexts`
-      const delay = config.hero.typingDelay
+      const d = this.typingDelay
 
       return (
         <Typist
@@ -37,16 +39,18 @@ export default class Hero extends Component {
           onTypingDone={this.typingDone}
         >
           echo "{texts[0]}"
-          <Typist.Backspace count={texts[0].length + 1} delay={delay} />
-          {texts[1]}"
-          <Typist.Backspace count={texts[1].length + 1} delay={delay} />
-          {texts[2]}"
-          <Typist.Backspace count={texts[2].length + 1} delay={delay} />
-          {texts[3]}"
-          <Typist.Backspace count={texts[3].length + 8} delay={delay} />
+          <Typist.Backspace count={texts[0].length + 2} delay={d}/>
+          "{texts[1]}"
+          <Typist.Backspace count={texts[1].length + 2} delay={d}/>
+          "{texts[2]}"
+          <Typist.Backspace count={texts[2].length + 2} delay={d}/>
+          "{texts[3]}"
+          <Typist.Backspace count={texts[3].length + 9} delay={d}/>
         </Typist>
       )
-    } else return <h2 className={'subtitle-lowwidth'}>{i18n`hero.typingTextLowWidth`}</h2>
+    } else {
+      return <h2 className={'subtitle-lowwidth'}>{i18n`hero.typingTextLowWidth`}</h2>
+    }
   }
 
   componentDidMount () {
@@ -55,7 +59,7 @@ export default class Hero extends Component {
 
   render () {
     return (
-      <div className={'hero banner is-fullheight'} id={'home'}>
+      <div className={'hero banner is-fullheight'}>
         <div className={'hero-body'}>
           <div className={'container has-text-centered'}>
             <h1 className={'large-title'}>Linus Willner</h1>
