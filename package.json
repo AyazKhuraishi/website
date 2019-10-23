@@ -62,7 +62,7 @@
     "prop-types": "^15.7.2",
     "ramda": "^0.26.1",
     "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react-dom": "^16.11.0",
     "react-sweet-progress": "^1.1.2",
     "react-typist-repacked": "^1.0.0",
     "wolfy87-eventemitter": "^5.2.8"
