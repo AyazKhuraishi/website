@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
-    "@hot-loader/react-dom": "^16.10.2",
+    "@hot-loader/react-dom": "^16.11.0",
     "bulma": "^0.7.5",
     "bulma-divider": "^2.0.1",
     "clean-webpack-plugin": "^3.0.0",
