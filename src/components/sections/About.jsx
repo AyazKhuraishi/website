@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 import { Link } from '../Links'
 import { Section, SectionTitle } from '../Section'
-import profilePicture from '../../assets/images/me.JPG'
+import profilePicture from '../../assets/images/profile.jpg'
 import i18n from 'lang'
 
 export default class About extends Component {
