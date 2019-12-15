@@ -44,7 +44,7 @@ export default class Contact extends Component {
             </div>
             <div className={'contact-methods'}>
               <h2 className={'contact-method'}>{i18n`contact.email`}: <Email prefix={'hello'} suffix={'linuswillner.me'}/></h2>
-              <h2 className={'contact-method'}>Discord: <b>LWTech#0005</b></h2>
+              <h2 className={'contact-method'}>Discord: <b>LW#0005</b></h2>
               <p className={'field'}>
                 {this.icons.map(icon => <SocialMediaIcon key={icon.link} link={icon.link} iconClassName={icon.iconClassName}/>)}
               </p>
