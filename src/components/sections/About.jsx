@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import { Link } from '../Links'
 import { Section, SectionTitle } from '../Section'
+import profilePicture from '../../assets/images/me.JPG'
 import i18n from 'lang'
 
 export default class About extends Component {
@@ -48,7 +49,7 @@ export default class About extends Component {
           </div>
           <div className={'column'} style={styles.columnOverrides}>
             <figure className={'image about-text-image'} style={styles.imageOverrides}>
-              <img src={require('../../assets/images/me.jpg')}/>
+              <img src={profilePicture}/>
             </figure>
           </div>
         </div>
