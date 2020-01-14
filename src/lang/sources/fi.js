@@ -25,7 +25,7 @@ export default {
       l3: ', mutta olen myös kehittänyt lukuisia ohjelmia omin neuvoin. Näistä löytyy kaikkea backend-applikaatioista verkkosivuihin ja työpöytäohjelmiin. Muutamia esimerkkejä töistäni ovat ',
       l4: ' ja '
     },
-    p6: 'Viimeisin tehtäväni oli toimia virtuaalikoulutustukihenkilönä Uudenmaan prikaatissa, jossa työskentelin Puolustusvoimille varusmiesohjelmoijana sekä -järjestelmäylläpitäjänä. Seuraava edesottamukseni on tieto- ja viestintätekniikan opintojen aloitus Metropolia Ammattikorkeakoulussa tammikuussa 2020.'
+    p6: 'Viimeisin tehtäväni oli toimia virtuaalikoulutustukihenkilönä Uudenmaan prikaatissa, jossa työskentelin Puolustusvoimille varusmiesohjelmoijana sekä -järjestelmäylläpitäjänä. Opiskelen tällä hetkellä tieto- ja viestintätekniikkaa Metropolia Ammattikorkeakoulussa, josta valmistun oletettavasti vuoden 2023 lopulla.'
   },
   skills: { // Skills
     title: 'TAITOJA',

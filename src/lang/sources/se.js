@@ -25,7 +25,7 @@ export default {
       l3: ', men jag har även gjort ett antal program på eget bevåg. Dessa innefattar allt från backend-applikationer till nätsidor och fullt funktionerande skrivbordsprogram. Exempel på program jag byggt innefattar ',
       l4: ' och '
     },
-    p6: 'Min senaste uppgift var att fungera som virtualutbildningsassistent vid Nylands brigad, där jag fungerade som beväringsprogrammerare och -systemadministrator för Försvarsmakten. Mitt nästa undertagande är påbörjandet av studier inom informations- och kommunikationsteknik vid Metropolia yrkeshögskola i januari 2020.'
+    p6: 'Min senaste uppgift var att fungera som virtualutbildningsassistent vid Nylands brigad, där jag fungerade som beväringsprogrammerare och -systemadministrator för Försvarsmakten. Jag studerar för tillfället informations- och kommunikationsteknologi vid Metropolia Ammattikorkeakoulu, varifrån jag förväntar mig att bli utexaminerad vid årsslutet 2023.'
   },
   skills: { // Skills
     title: 'KUNSKAPER',
