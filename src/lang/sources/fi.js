@@ -8,7 +8,7 @@ export default {
       'Opiskelija',
       'Tekniikkaharrastaja',
       'Freelance-kehittäjä',
-      'Tuleva ATK-insinööri'
+      'Tuleva TiVi-insinööri'
     ],
     typingTextLowWidth: 'Opiskelija, freelance-kehittäjä, tuleva ATK-insinööri'
   },
@@ -46,7 +46,7 @@ export default {
     },
     cards: [
       { title: 'react-console-emulator', text: 'Monipuolinen ja kustomoitava Unix-terminaaliemulaattori Reactissa.', github: 'https://github.com/js-rcon/react-console-emulator' },
-      { title: 'JagTag-JS', text: 'JavaScriptiin portattu implementaatio JagTag-merkkikielestä.', github: 'https://github.com/TheSharks/JagTag-JS', website: 'https://thesharks.github.io/JagTag-JS' },
+      { title: 'JagTag-JS', text: 'JavaScriptiin portattu implementaatio JagTag-merkkikielestä.', github: 'https://github.com/TheSharks/JagTag-JS' },
       { title: 'JS-RCON', text: 'Kattava ja moderni serverinhallintapaneeli Team Fortress 2:lle.', github: 'https://github.com/js-rcon' },
       { title: 'tag-replacer', text: 'Node.js-moduuli placeholder-sanojen korvaamiseen tekstissä. Tukee myös TagScriptiä.', github: 'https://github.com/linuswillner/tag-replacer' }
     ]

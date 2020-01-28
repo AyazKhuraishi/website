@@ -46,7 +46,7 @@ export default {
     },
     cards: [
       { title: 'react-console-emulator', text: 'En månsidig och "hackable" Unix-terminalemulator i React jag byggt för JS-RCON.', github: 'https://github.com/js-rcon/react-console-emulator' },
-      { title: 'JagTag-JS', text: 'En JavaScript-version av JagTag-teckenspråket som är ursprungligen skrivet i Java.', github: 'https://github.com/TheSharks/JagTag-JS', website: 'https://thesharks.github.io/JagTag-JS' },
+      { title: 'JagTag-JS', text: 'En JavaScript-version av JagTag-teckenspråket som är ursprungligen skrivet i Java.', github: 'https://github.com/TheSharks/JagTag-JS' },
       { title: 'JS-RCON', text: 'En omfattande och modern serveradministrationspanel för Team Fortress 2.', github: 'https://github.com/js-rcon' },
       { title: 'tag-replacer', text: 'En Node.js-modul för ersättande av schabloner i text. Stöder också TagScript.', github: 'https://github.com/linuswillner/tag-replacer' }
     ]
