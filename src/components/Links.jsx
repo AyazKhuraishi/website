@@ -5,8 +5,7 @@ import PropTypes from 'prop-types'
 export class Link extends Component {
   static propTypes = {
     to: PropTypes.string.isRequired,
-    noTab: PropTypes.any,
-    tabIndex: PropTypes.any,
+    noNewTab: PropTypes.any,
     focusable: PropTypes.any
   }
 
@@ -15,7 +14,7 @@ export class Link extends Component {
       <a
         href={this.props.to}
         className={this.props.className || ''}
-        target={this.props.noTab ? '' : '_blank'}
+        target={this.props.noNewTab ? '' : '_blank'}
         tabIndex={this.props.focusable ? '0' : '-1'}
       >{this.props.children}</a>
     )
@@ -29,7 +28,8 @@ export class FooterLink extends Component {
   }
 
   static propTypes = {
-    type: PropTypes.string.isRequired
+    type: PropTypes.string.isRequired,
+    to: PropTypes.string
   }
 
   getMeta () {
@@ -48,6 +48,11 @@ export class FooterLink extends Component {
         return {
           className: 'bulma-link',
           link: 'https://bulma.io'
+        }
+      default:
+        return {
+          className: 'default-link',
+          link: this.props.to
         }
     }
   }

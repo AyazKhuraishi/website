@@ -17,11 +17,31 @@
     color: #61DAFB;
   }
 
+  .react-link:hover {
+    color: #A6E8FA;
+  }
+
   .sass-link {
     color: #EA84B7;
   }
+
+  .sass-link:hover {
+    color: #FABADA;
+  }
   
   .bulma-link {
-    color: #00d1b2;
+    color: #00D1B2;
+  }
+
+  .bulma-link:hover {
+    color: #68f6e1;
+  }
+
+  .default-link {
+    color: #6bb3ff;
+  }
+
+  .default-link:hover {
+    color: #bdddff;
   }
 }

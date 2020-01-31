@@ -66,7 +66,11 @@ export default {
     email: 'Email'
   },
   footer: {
-    copyright: `Copyright (c) ${moment().format('YYYY')} Linus Willner. All rights reserved. Cover photo: Maik Jonietz/Unsplash`,
+    copyright: `Copyright (c) ${moment().format('YYYY')} Linus Willner. All rights reserved.`,
+    photos: {
+      l1: 'Cover photo: ',
+      l2: 'Profile photo: '
+    },
     tech: {
       l1: 'Achieved with ',
       l2: 'React',

@@ -1,6 +1,6 @@
 // Footer section
 import React, { Component } from 'react'
-import { FooterLink } from '../Links'
+import { Link, FooterLink } from '../Links'
 import i18n from 'lang'
 
 export default class Footer extends Component {
@@ -10,6 +10,12 @@ export default class Footer extends Component {
         <div className={'container'}>
           <div className={'footer-text section-text'}>
             <p>{i18n`footer.copyright`}</p>
+            <p>
+              {i18n`footer.photos.l1`}
+              <FooterLink to={'https://unsplash.com'}>Maik Jonietz</FooterLink>.&nbsp;
+              {i18n`footer.photos.l2`}
+              <FooterLink to={'https://taddeodario.com'}>Dario Taddeo</FooterLink>.
+            </p>
             <p>
               {i18n`footer.tech.l1`}
               <FooterLink type={'react'}>{i18n`footer.tech.l2`}</FooterLink>,
