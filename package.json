@@ -51,7 +51,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.12.1",
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "@hot-loader/react-dom": "^16.13.0",
     "bulma": "^0.8.0",
     "bulma-divider": "^2.0.1",
