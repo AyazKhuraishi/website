@@ -58,7 +58,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "flag-icon-css": "^3.4.6",
     "in-viewport": "^3.6.0",
-    "moment": "^2.24.0",
+    "moment": "^2.25.0",
     "prop-types": "^15.7.2",
     "ramda": "^0.26.1",
     "react": "^16.13.1",
