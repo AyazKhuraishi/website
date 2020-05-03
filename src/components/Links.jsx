@@ -28,7 +28,7 @@ export class FooterLink extends Component {
   }
 
   static propTypes = {
-    type: PropTypes.string.isRequired,
+    type: PropTypes.string,
     to: PropTypes.string
   }
 
