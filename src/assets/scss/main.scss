@@ -1,9 +1,9 @@
 @import '~bulma/bulma.sass'; // Bulma
 @import '~bulma-divider/dist/css/bulma-divider.sass'; // Bulma divider
-@import '~react-sweet-progress/lib/style.css'; // react-sweet-progress
-@import '~@fortawesome/fontawesome-free/css/all.min.css'; // Font Awesome
-@import '~flag-icon-css/css/flag-icon.css';
-@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Mono:100|Fira+Mono|Merriweather:300,400|Roboto:100,300,400|Bilbo+Swash+Caps'); // Google Fonts
+@import '~@creativebulma/bulma-tooltip/dist/bulma-tooltip.css';
+@import '~@coreui/icons/css/all.css'; // Core UI Icons
+@import '~flag-icon-css/css/flag-icon.css'; // Flag Icon CSS
+@import url('https://fonts.googleapis.com/css?family=Oswald:400|Roboto+Mono:100|Fira+Mono:400|Merriweather:300|Bilbo+Swash+Caps:400'); // Google Fonts
 
 // Locals
 
@@ -19,12 +19,8 @@
 
 // Typography
 
-%large-title {
-  font-family: 'Oswald', sans-serif;
-}
-
 %title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 %text {
