@@ -21,17 +21,12 @@ const styles = {
 }
 
 class DropdownItem extends Component {
-  constructor (props) {
-    super(props)
-    this.handleClick = this.handleClick.bind(this)
-  }
-
   static propTypes = {
     country: PropTypes.string.isRequired
   }
 
-  handleClick (e) {
-    e.preventDefault()
+  handleClick = (event) => {
+    event.preventDefault()
     emit('LANG_SELECT', this.props.country)
   }
 

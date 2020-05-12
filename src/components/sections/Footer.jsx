@@ -1,6 +1,6 @@
 // Footer section
 import React, { Component } from 'react'
-import { Link, FooterLink } from '../Links'
+import { FooterLink } from '../Links'
 import i18n from 'lang'
 
 export default class Footer extends Component {

@@ -2,11 +2,6 @@
 import React, { Component } from 'react'
 import { dispatcher } from 'utils/dispatcher'
 
-// On low device widths, hide margins on menu toggle
-const styles = {
-  hide: { display: 'none' }
-}
-
 export default class Divider extends Component {
   constructor (props) {
     super(props)
@@ -21,7 +16,14 @@ export default class Divider extends Component {
 
   render () {
     return (
-      <div className='divider is-divider' style={this.state.hidden === false ? {} : styles.hide} />
+      <div
+        className='divider is-divider'
+        style={
+          this.state.hidden === true
+            ? { display: 'none' }
+            : {}
+        }
+      />
     )
   }
 }

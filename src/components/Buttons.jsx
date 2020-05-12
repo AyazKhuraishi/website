@@ -19,18 +19,13 @@ export class ButtonGroup extends Component {
 }
 
 export class ProjectButton extends Component {
-  constructor (props) {
-    super(props)
-    this.getButtonType = this.getButtonType.bind(this)
-  }
-
   static propTypes = {
     type: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
     centerFix: PropTypes.any // No value required
   }
 
-  getButtonType () {
+  getButtonType = () => {
     switch (this.props.type) {
       case 'github':
         return {

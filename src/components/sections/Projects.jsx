@@ -6,12 +6,7 @@ import { Section, SectionTitle } from '../Section'
 import i18n from 'lang'
 
 export default class Projects extends Component {
-  constructor (props) {
-    super(props)
-    this.generateCards = this.generateCards.bind(this)
-  }
-
-  generateCards () {
+  generateCards = () => {
     return i18n`projects.cards`.map(card => {
       return (
         <ProjectCard

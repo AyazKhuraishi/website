@@ -10,11 +10,10 @@ export default class LangButton extends Component {
       lang: localStorage.getItem('lang') || 'gb', // Use English if nothing was set in the previous session
       active: false
     }
-    this.handleClick = this.handleClick.bind(this)
   }
 
-  handleClick (e) {
-    e.preventDefault()
+  handleClick = (event) => {
+    event.preventDefault()
     this.setState({ active: !this.state.active })
   }
 

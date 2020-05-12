@@ -20,9 +20,7 @@ export default function i18n (stringPath) {
   // Check that the lang value is correct
   if (localStorage.getItem('lang') && localStorage.getItem('lang').match(/gb|fi|se/gi) !== null) {
     // Ramda handles the pathfinding in the object
-    const res = R.path(stringPath, lang[localStorage.getItem('lang')])
-
-    return !res ? '' : res
+    return R.path(stringPath, lang[localStorage.getItem('lang')]) || ''
   } else {
     // Backwards compatibility to previous version of the website
     // Old: en/fi/sv

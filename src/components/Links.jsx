@@ -26,18 +26,13 @@ export class Link extends Component {
 }
 
 export class FooterLink extends Component {
-  constructor (props) {
-    super(props)
-    this.getMeta = this.getMeta.bind(this)
-  }
-
   static propTypes = {
     children: PropTypes.node.isRequired,
     type: PropTypes.string,
     to: PropTypes.string
   }
 
-  getMeta () {
+  getMeta = () => {
     switch (this.props.type) {
       case 'react':
         return {
