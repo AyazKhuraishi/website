@@ -52,12 +52,14 @@ const prodPlugins = [
   HTMLInjecterConfig,
   CSSExtracterConfig,
   CSSPurgerConfig,
-  EnvironmentConfig,
-  new webpack.ProgressPlugin()
+  EnvironmentConfig
 ]
 
 // If clean build is desired, add CleanWebpackPlugin
 if (process.argv.indexOf('-c') !== -1) prodPlugins.push(new CleanWebpackPlugin())
+
+// If in CI, don't output progress to stdout to reduce log clutter
+if (!process.env.CI) prodPlugins.push(new webpack.ProgressPlugin())
 
 const createAlias = modulePath => path.resolve(__dirname, modulePath)
 
