@@ -9,4 +9,5 @@ try {
   console.log('Replicated Keybase signature to build folder')
 } catch (err) {
   console.error('Could not replicate Keybase signature to build folder:', err)
+  process.exit(1)
 }
