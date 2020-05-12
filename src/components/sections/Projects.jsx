@@ -26,13 +26,13 @@ export default class Projects extends Component {
 
   render () {
     return (
-      <Section className={'section projects'}>
+      <Section className='section projects'>
         <SectionTitle>{i18n`projects.title`}</SectionTitle>
-        <div className={'tile is-ancestor'}>
+        <div className='tile is-ancestor'>
           {this.generateCards()}
         </div>
-        <h2 className={'subtitle section-subtitle'}>
-          {i18n`projects.p1.l1`}<Link to={'https://github.com/linuswillner'}>{i18n`projects.p1.l2`}</Link>.
+        <h2 className='subtitle section-subtitle'>
+          {i18n`projects.p1.l1`}<Link to='https://github.com/linuswillner'>{i18n`projects.p1.l2`}</Link>.
         </h2>
       </Section>
     )

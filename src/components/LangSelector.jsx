@@ -37,7 +37,7 @@ class DropdownItem extends Component {
 
   render () {
     return (
-      <div className={'dropdown-item item'} onClick={this.handleClick}>
+      <div className='dropdown-item item' onClick={this.handleClick}>
         <span className={`flag-icon flag-icon-${this.props.country}`}/>
       </div>
     )
@@ -52,15 +52,15 @@ export default class LangSelector extends Component {
   render () {
     return (
       <div
-        className={`dropdown-menu dropdown-container`}
+        className='dropdown-menu dropdown-container'
         style={this.props.active ? styles.dropdownOverrides : styles.dropdownHidden}
-        id={'lang-selector'}
-        role={'menu'}
+        id='lang-selector'
+        role='menu'
       >
-        <div className={'dropdown-content dropdown-inner'}>
-          <DropdownItem country={'gb'}/>
-          <DropdownItem country={'fi'}/>
-          <DropdownItem country={'se'}/>
+        <div className='dropdown-content dropdown-inner'>
+          <DropdownItem country='gb'/>
+          <DropdownItem country='fi'/>
+          <DropdownItem country='se'/>
         </div>
       </div>
     )

@@ -30,19 +30,19 @@ export default class LangButton extends Component {
   render () {
     return (
       <div className={`dropdown is-up lang-button ${this.state.active ? 'is-active' : ''}`}>
-        <div className={'dropdown-trigger'}>
+        <div className='dropdown-trigger'>
           <button
-            className={'button inner'}
-            aria-haspopup={'true'}
-            aria-controls={'lang-selector'}
-            data-button={'lang'}
+            className='button inner'
+            aria-haspopup='true'
+            aria-controls='lang-selector'
+            data-button='lang'
             onClick={this.handleClick}
           >
-            <span className={'icon lang-icon'}>
+            <span className='icon lang-icon'>
               <span
                 className={`flag-icon flag-icon-${this.state.lang}`}
-                aria-hidden={'true'}
-                data-button={'lang'}
+                aria-hidden='true'
+                data-button='lang'
                 onClick={this.handleClick}
               />
             </span>

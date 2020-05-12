@@ -21,7 +21,7 @@ export default class Divider extends Component {
 
   render () {
     return (
-      <div className={'divider is-divider'} style={this.state.hidden === false ? {} : styles.hide} />
+      <div className='divider is-divider' style={this.state.hidden === false ? {} : styles.hide} />
     )
   }
 }

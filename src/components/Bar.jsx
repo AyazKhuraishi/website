@@ -27,8 +27,8 @@ export default class Bar extends Component {
         <p>{this.props.text}</p>
         <Progress
           percent={this.props.progress}
-          status={'success'}
-          className={'bar'}
+          status='success'
+          className='bar'
           symbolClassName={`bar-icon ${this.props.className || ''}`}
           theme={theme}
         />

@@ -23,32 +23,32 @@ export default class About extends Component {
     }
 
     return (
-      <Section className={'section about'}>
+      <Section className='section about'>
         <SectionTitle>{i18n`about.title`}</SectionTitle>
-        <div className={'columns'}>
-          <div className={'column is-three-quarters about-text'} style={styles.textOverrides}>
-            <h2 className={'section-text-title'}>{i18n`about.sectionTitle`}</h2>
-            <div className={'section-text about-text-column'}>
+        <div className='columns'>
+          <div className='column is-three-quarters about-text' style={styles.textOverrides}>
+            <h2 className='section-text-title'>{i18n`about.sectionTitle`}</h2>
+            <div className='section-text about-text-column'>
               <p>{i18n`about.p1`}</p>
               <p>{i18n`about.p2`}</p>
               <p>{i18n`about.p3`}</p>
               <p>{i18n`about.p4`}</p>
               <p>
                 {i18n`about.p5.l1`}
-                <Link to={'https://github.com/TheSharks/WildBeast'}>WildBeast</Link>
+                <Link to='https://github.com/TheSharks/WildBeast'>WildBeast</Link>
                 {i18n`about.p5.l2`}
-                <Link to={'https://github.com/js-rcon'}>JS-RCON</Link>
+                <Link to='https://github.com/js-rcon'>JS-RCON</Link>
                 {i18n`about.p5.l3`}
-                <Link to={'https://github.com/linuswillner/react-console-emulator'}>react-console-emulator</Link>
+                <Link to='https://github.com/linuswillner/react-console-emulator'>react-console-emulator</Link>
                 {i18n`about.p5.l4`}
-                <Link to={'https://github.com/linuswillner/tag-replacer'}>tag-replacer</Link>.
+                <Link to='https://github.com/linuswillner/tag-replacer'>tag-replacer</Link>.
               </p>
               <p>{i18n`about.p6`}</p>
-              <p className={'signature'}>- LW</p>
+              <p className='signature'>- LW</p>
             </div>
           </div>
-          <div className={'column'} style={styles.columnOverrides}>
-            <figure className={'image about-text-image'} style={styles.imageOverrides}>
+          <div className='column' style={styles.columnOverrides}>
+            <figure className='image about-text-image' style={styles.imageOverrides}>
               <img src={profilePicture}/>
             </figure>
           </div>

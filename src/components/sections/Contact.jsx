@@ -14,9 +14,9 @@ class SocialMediaIcon extends Component {
 
   render () {
     return (
-      <Link className={'button social is-medium'} to={this.props.link}>
-        <span className={'icon'}>
-          <i className={this.props.iconClassName}></i>
+      <Link className='button social is-medium' to={this.props.link}>
+        <span className='icon'>
+          <i className={this.props.iconClassName} />
         </span>
       </Link>
     )
@@ -33,19 +33,19 @@ export default class Contact extends Component {
 
   render () {
     return (
-      <Section className={'section contact'}>
+      <Section className='section contact'>
         <SectionTitle>{i18n`contact.title`}</SectionTitle>
-        <div className={'columns'}>
-          <div className={'column section-text contact-text'}>
-            <div className={'contact-pre'}>
+        <div className='columns'>
+          <div className='column section-text contact-text'>
+            <div className='contact-pre'>
               <p>{i18n`contact.p1.l1`}<br/>{i18n`contact.p1.l2`}</p>
-              <p>{i18n`contact.p2.l1`}<Link to={'https://discordapp.com'}>{i18n`contact.p2.l2`}</Link>{i18n`contact.p2.l3`}</p>
+              <p>{i18n`contact.p2.l1`}<Link to='https://discordapp.com'>{i18n`contact.p2.l2`}</Link>{i18n`contact.p2.l3`}</p>
               <p>{i18n`contact.p3`}</p>
             </div>
-            <div className={'contact-methods'}>
-              <h2 className={'contact-method'}>{i18n`contact.email`}: <Email prefix={'hello'} suffix={'linuswillner.me'}/></h2>
-              <h2 className={'contact-method'}>Discord: <b>LW#0005</b></h2>
-              <p className={'field'}>
+            <div className='contact-methods'>
+              <h2 className='contact-method'>{i18n`contact.email`}: <Email prefix='hello' suffix='linuswillner.me'/></h2>
+              <h2 className='contact-method'>Discord: <b>LW#0005</b></h2>
+              <p className='field'>
                 {this.icons.map(icon => <SocialMediaIcon key={icon.link} link={icon.link} iconClassName={icon.iconClassName}/>)}
               </p>
             </div>

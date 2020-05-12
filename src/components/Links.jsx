@@ -4,9 +4,11 @@ import PropTypes from 'prop-types'
 
 export class Link extends Component {
   static propTypes = {
+    children: PropTypes.node.isRequired,
     to: PropTypes.string.isRequired,
     noNewTab: PropTypes.any,
-    focusable: PropTypes.any
+    focusable: PropTypes.any,
+    className: PropTypes.string
   }
 
   render () {
@@ -16,7 +18,9 @@ export class Link extends Component {
         className={this.props.className || ''}
         target={this.props.noNewTab ? '' : '_blank'}
         tabIndex={this.props.focusable ? '0' : '-1'}
-      >{this.props.children}</a>
+      >
+        {this.props.children}
+      </a>
     )
   }
 }
@@ -28,6 +32,7 @@ export class FooterLink extends Component {
   }
 
   static propTypes = {
+    children: PropTypes.node.isRequired,
     type: PropTypes.string,
     to: PropTypes.string
   }
@@ -63,8 +68,9 @@ export class FooterLink extends Component {
       <a
         className={className}
         href={link}
-        target={'_blank'}
-        tabIndex={'-1'}
+        target='_blank'
+        rel='noopener noreferrer'
+        tabIndex='-1'
       >
         {this.props.children}
       </a>

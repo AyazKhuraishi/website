@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-export default class Email extends React.Component {
+export default class Email extends Component {
   static propTypes = {
     prefix: PropTypes.string.isRequired,
     suffix: PropTypes.string.isRequired
@@ -17,7 +17,7 @@ export default class Email extends React.Component {
 
     return (
       <b
-        className={'email'}
+        className='email'
         data-prefix={prefix}
         data-suffix={suffix}
       />

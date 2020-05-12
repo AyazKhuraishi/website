@@ -10,9 +10,9 @@ export class ButtonGroup extends Component {
 
   render () {
     return (
-      <div className={'buttons button-group'}>
-        <ProjectButton type={'github'} link={this.props.github} centerFix/>
-        <ProjectButton type={'website'} link={this.props.website} centerFix />
+      <div className='buttons button-group'>
+        <ProjectButton type='github' link={this.props.github} centerFix/>
+        <ProjectButton type='website' link={this.props.website} centerFix />
       </div>
     )
   }
@@ -53,7 +53,7 @@ export class ProjectButton extends Component {
         className={`button ${this.props.centerFix ? 'center-fix' : ''}`}
         to={this.props.link}
       >
-        <span className={'icon'}><i className={icon}></i></span>
+        <span className='icon'><i className={icon} /></span>
         <span>{name}</span>
       </Link>
     )

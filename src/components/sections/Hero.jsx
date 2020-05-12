@@ -31,7 +31,7 @@ export default class Hero extends Component {
 
       return (
         <Typist
-          className={'subtitle-typing'}
+          className='subtitle-typing'
           avgTypingDelay={90}
           stdTypingDelay={0}
           startDelay={1000}
@@ -49,7 +49,7 @@ export default class Hero extends Component {
         </Typist>
       )
     } else {
-      return <h2 className={'subtitle-lowwidth'}>{i18n`hero.typingTextLowWidth`}</h2>
+      return <h2 className='subtitle-lowwidth'>{i18n`hero.typingTextLowWidth`}</h2>
     }
   }
 
@@ -59,10 +59,10 @@ export default class Hero extends Component {
 
   render () {
     return (
-      <div className={'hero banner is-fullheight'}>
-        <div className={'hero-body'}>
-          <div className={'container has-text-centered'}>
-            <h1 className={'large-title'}>Linus Willner</h1>
+      <div className='hero banner is-fullheight'>
+        <div className='hero-body'>
+          <div className='container has-text-centered'>
+            <h1 className='large-title'>Linus Willner</h1>
             {this.generateContent()}
           </div>
         </div>
