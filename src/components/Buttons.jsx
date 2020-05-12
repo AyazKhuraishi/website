@@ -30,12 +30,12 @@ export class ProjectButton extends Component {
       case 'github':
         return {
           name: 'GitHub',
-          icon: 'fab fa-github'
+          icon: 'cib-github'
         }
       case 'website':
         return {
           name: 'Website',
-          icon: 'fas fa-globe'
+          icon: 'cil-globe-alt'
         }
     }
   }

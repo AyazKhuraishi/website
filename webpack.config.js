@@ -30,8 +30,7 @@ const CSSOptimizerConfig = new OptimizeCSSWebpackPlugin({})
 const CSSPurgerConfig = new PurgeCSSWebpackPlugin({
   paths: glob.sync(`${path.join(__dirname, 'src')}/**/*`, { nodir: true }),
   whitelistPatterns: [
-    /react-sweet-progress/,
-    /fa-/,
+    /cil-|cib-|cif-/,
     /flag-icon/
   ]
 })

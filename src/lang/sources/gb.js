@@ -3,7 +3,8 @@ import moment from 'moment'
 // English (GB)
 
 export default {
-  hero: { // Hero
+  // Hero
+  hero: {
     typingTexts: [
       'Student',
       'Tech geek',
@@ -12,7 +13,8 @@ export default {
     ],
     typingTextLowWidth: 'Student, freelance developer, software engineer-to-be'
   },
-  about: { // About
+  // About
+  about: {
     title: 'ABOUT ME',
     sectionTitle: 'Hello there!',
     p1: `I'm Linus Willner, a ${moment().diff(moment('1999-06-18'), 'years')}-year-old student and freelance developer from Finland. Pleasure to meet you!`,
@@ -25,20 +27,23 @@ export default {
       l3: ', but I have also created a fair few programs of my own. These range from backend applications to websites and full-fledged desktop applications. Some examples of my work are ',
       l4: ' and '
     },
-    p6: 'Most recently, I was a Virtual Training Assistant at the Nyland Brigade, where I worked as a conscript programmer and systems administrator for the Finnish Defence Forces. I\'m currently studying Information and Communication Technology at Metropolia University of Applied Sciences, expected to graduate at the end of 2023.'
+    p6: 'I\'m studying Information and Communication Technology at Metropolia University of Applied Sciences, expected to graduate at the end of 2023. Presently, I\'m working for Tarra-Tac as a software engineer. Prior to this, I\'ve worked as a software developer and/or systems administrator for, among others, the Finnish Defence Forces.'
   },
-  skills: { // Skills
+  // Skills
+  skills: {
     title: 'SKILLS',
     p1: 'I\'m a freelance developer with several years of experience in a multitude of environments, in teams both large and small.',
     p2: 'I have developed websites and web applications, backend software and also some simple desktop applications. I additionally have experience in freelance-level DevOps development (Code review, Continuous Integration, etc.). Furthermore, I have a fair chunk of sysadmin experience working with various Linux environments.',
-    p3: 'Attached is a list of the languages and frameworks I know best and have worked with the most, but I am always open for learning new things.',
+    p3: 'Attached in this section is a list of the languages, libraries, frameworks and so on which I know and can work with.',
     p4: {
-      l1: 'Most of the projects I have created or contribute to can be found on my ',
+      l1: 'Most of the projects I have created or contribute to involve some combination of the attached skills. These projects can be found on my ',
       l2: 'GitHub page',
-      l3: ' and I keep all my open source projects on the platform.'
-    }
+      l3: ', and I keep all my open source projects on that platform as well.'
+    },
+    p5: 'Tip: If you don\'t know what a particular icon means, hover over it in the list to see a description of what it stands for!'
   },
-  projects: { // Projects
+  // Projects
+  projects: {
     title: 'PROJECTS',
     p1: {
       l1: 'This is a showcase of projects I have created or contributed to. For the full list, see my ',
@@ -51,7 +56,8 @@ export default {
       { title: 'tag-replacer', text: 'A Node.js module for replacing template tags in strings. Includes TagScript support.', github: 'https://github.com/linuswillner/tag-replacer' }
     ]
   },
-  contact: { // Contact
+  // Contact
+  contact: {
     title: 'CONTACT',
     p1: {
       l1: 'If you want to reach out to me for any sort of inquiry, be it formal or not, email is usually the best way to do that.',
@@ -65,11 +71,12 @@ export default {
     p3: 'Finally, if you want to just see what I\'m up to, I\'ve left some links to my social media here as well.',
     email: 'Email'
   },
+  // Footer
   footer: {
     copyright: `Copyright (c) ${moment().format('YYYY')} Linus Willner. All rights reserved.`,
     photos: {
-      l1: 'Cover photo: ',
-      l2: 'Profile photo: '
+      l1: 'Cover 📸: ',
+      l2: 'Profile 📸: '
     },
     tech: {
       l1: 'Achieved with ',
@@ -78,6 +85,6 @@ export default {
       l4: 'and ',
       l5: 'Bulma'
     },
-    location: ' Created with genuine organic geek.'
+    location: ', along with several cups of ☕.'
   }
 }

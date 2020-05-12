@@ -12,47 +12,28 @@
   }
 }
 
-/* Progress bar column */
-.bars {
-  p {
+.skill-display {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-group {
+  .title {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 5px;
     @extend %title;
   }
-}
 
-/* Progress bar with text */
-.bar {
-  padding-bottom: 10px;
-}
+  .icon-list {
+    font-size: 35px;
 
-/* Progress bar icon */
-.bar-icon {
-  font-size: 35px;
+    span:not(:last-child) {
+      padding-right: 10px;
+    }
 
-  /* Icon centering */
-  .js {
-    color: #83CD29;
-    padding-left: 4px;
-  }
-
-  .react {
-    color: #61DAFB;
-    padding-left: 3px;
-  }
-  
-  .sass {
-    color: #EA84B7;
-    padding-left: 3px;
-  }
-
-  .linux {
-    color: #000000;
-    padding-left: 5px;
-  }
-
-  .golang {
-    color: #375EAB;
-    padding-left: 4px;
+    .icon-container {
+      border: none;
+    }
   }
 }
