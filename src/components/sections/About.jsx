@@ -26,7 +26,8 @@ export default class About extends Component {
       <Section className='section about'>
         <SectionTitle>{i18n`about.title`}</SectionTitle>
         <div className='columns'>
-          <div className='column is-three-quarters about-text' style={styles.textOverrides}>
+          {/* Unset is-three-quarters on low device widths because Bulma does not naturally remove it before 770px or so, but lowWidth triggers at 1030 */}
+          <div className={`column ${!window.lowWidth ? 'is-three-quarters' : ''} about-text`} style={styles.textOverrides}>
             <h2 className='section-text-title'>{i18n`about.sectionTitle`}</h2>
             <div className='section-text about-text-column'>
               <p>{i18n`about.p1`}</p>
