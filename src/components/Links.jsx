@@ -18,6 +18,7 @@ export class Link extends Component {
         className={this.props.className || ''}
         target={this.props.noNewTab ? '' : '_blank'}
         tabIndex={this.props.focusable ? '0' : '-1'}
+        rel='noopener noreferrer'
       >
         {this.props.children}
       </a>
