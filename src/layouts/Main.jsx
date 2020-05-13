@@ -43,8 +43,6 @@ export default class Main extends Component {
       const isLowWidth = checkIfLowWidth()
       window.lowWidth = isLowWidth
 
-      console.log(window.lowWidth)
-
       if (isLowWidth !== this.state.lowWidth) {
         this.setState({ lowWidth: isLowWidth })
         emit('WIDTH_CHANGE', isLowWidth)
