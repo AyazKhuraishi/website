@@ -16,7 +16,7 @@
   font-weight: bold;
   font-weight: 300;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   @extend %title;
 }
 
@@ -29,5 +29,16 @@
 .tile {
   .is-child {
     margin: 15px !important;
+  }
+}
+
+.project-links {
+  .project-button {
+    margin-left: 0px;
+    font-size: 25px;
+  }
+
+  .project-button:not(:last-child) {
+    padding-right: 10px;
   }
 }
