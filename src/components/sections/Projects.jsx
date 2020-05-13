@@ -9,11 +9,15 @@ export default class Projects extends Component {
   generateProjectDisplay = () => {
     const sections = []
     const cards = this.generateCards()
+    let sectionAmount = 0
 
     while (cards.length > 0) {
+      // Section amount is just here to satisfy React
+      sectionAmount = ++sectionAmount
+
       // Limit 1 section to 4 cards for looks' sake
       sections.push(
-        <div className='tile is-ancestor'>
+        <div key={sectionAmount} className='tile is-ancestor'>
           {cards.splice(0, 4)}
         </div>
       )
@@ -32,6 +36,7 @@ export default class Projects extends Component {
           title={card.title}
           text={card.text}
           links={{ github, npm, website }}
+          tags={card.tags}
         />
       )
     })

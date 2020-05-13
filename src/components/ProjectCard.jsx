@@ -11,7 +11,8 @@ export default class ProjectCard extends Component {
       github: PropTypes.string,
       npm: PropTypes.string,
       website: PropTypes.string
-    })
+    }),
+    tags: PropTypes.arrayOf(PropTypes.string)
   }
 
   generateLinks = () => {
@@ -25,6 +26,11 @@ export default class ProjectCard extends Component {
     return buttons
   }
 
+  generateTags = () => {
+    const { tags } = this.props
+    if (tags) return tags.map(tag => <span key={tag} className='project-tech tag is-dark'>{tag}</span>)
+  }
+
   render () {
     return (
       <div className='tile card notification is-child'>
@@ -33,6 +39,7 @@ export default class ProjectCard extends Component {
         </h2>
         <p className='project-links'>{this.generateLinks()}</p>
         <p className='section-text card-text'>{this.props.text}</p>
+        <p className='section-text'>{this.generateTags()}</p>
       </div>
     )
   }
