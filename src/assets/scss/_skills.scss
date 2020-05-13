@@ -1,9 +1,9 @@
-/* Section background */
+// Section background
 .skills {
-  background-color: #FCFCFC;
+  @extend %section-background;
 }
 
-/* Section text */
+// Section text
 .skills-text {
   padding-right: 70px;
 

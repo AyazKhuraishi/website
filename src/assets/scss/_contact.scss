@@ -1,16 +1,16 @@
-/* Section background */
+// Section background 
 .contact {
-  background-color: #FCFCFC;
+  @extend %section-background;
 }
 
-/* Text padding */
+// Text padding
 .contact-text {
   p {
     padding-bottom: 20px;
   }
 }
 
-/* Contact info pre-text */
+// Contact info pre-text
 .contact-pre {
   margin-left: auto;
   margin-right: auto;
@@ -19,23 +19,23 @@
   padding-bottom: 20px;
 }
 
-/* Contact method container */
+// Contact method container
 .contact-methods {
   text-align: center;
 }
 
-/* Contact method text */
+// Contact method text 
 .contact-method {
   font-size: 20px;
   padding-bottom: 10px;
 }
 
-/* Social icon spacing */
+// Social icon spacing
 .social:not(:last-child) {
   margin-right: 10px;
 }
 
-/* Email masking trick */
+// Email masking trick
 .email:before {
   content: attr(data-suffix) "\0040" attr(data-prefix);
   unicode-bidi: bidi-override;

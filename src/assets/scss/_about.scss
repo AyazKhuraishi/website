@@ -1,21 +1,21 @@
-/* Section background */
+// Section background
 .about {
-  background-color: #FCFCFC;
+  @extend %section-background;
 }
 
-/* Section text */
+// Section text
 .about-text {
   padding-right: 70px;
 }
 
-/* Paragraph padding */
+// Paragraph padding
 .about-text-column {
   p {
     padding-bottom: 10px;
   }
 }
 
-/* Image */
+// Image
 .about-text-image {
   width: 100%;
   height: auto;
@@ -25,7 +25,7 @@
   box-shadow: $shadow-3;
 }
 
-/* Signature */
+// Signature
 .signature {
   font-size: 55px;
   @extend %handwriting;

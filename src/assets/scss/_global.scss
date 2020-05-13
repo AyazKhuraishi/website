@@ -1,26 +1,12 @@
-/* Divider */
+// Divider
 .divider {
-  background-color: #FCFCFC;
+  @extend %section-background;
   height: .2rem;
-  margin: 0; /* Remove margin for background color support */
+  margin: 0; // Remove margin for background color support
 }
 
-/* Blurred background on low width menu open */
-.blurred {
-  position: relative;
-}
+// Titles, subtitles and other typography
 
-.blurred:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #F0F0F0;
-}
-
-/* Titles, subtitles and other typography */
 .section-title {
   font-weight: 300;
   font-size: 34px;
@@ -48,4 +34,18 @@
   font-size: 15px;
   font-weight: 300;
   @extend %text;
+}
+
+.link {
+  color: #2174de;
+  border-radius: 5px;
+  @extend %hover-animation;
+}
+
+.link:hover {
+  color: #ffffff;
+  background-color: #2174de;
+  padding: 3px;
+  border-radius: 5px;
+  @extend %hover-animation;
 }

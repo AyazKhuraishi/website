@@ -1,11 +1,11 @@
-/* Section background */
+// Section background
 .page-footer {
-  background-color: #23272A;
-  color: #FFFFFF;
-  padding-bottom: 48px; /* Remove extra padding at the bottom */
+  background-color: #23272a;
+  color: #ffffff;
+  padding-bottom: 48px; // Remove extra padding at the bottom
 }
 
-/* Footer text */
+// Footer text
 .footer-text {
   text-align: center;
 
@@ -14,23 +14,23 @@
   }
 
   .react-link {
-    color: #61DAFB;
+    color: #61dafb;
   }
 
   .react-link:hover {
-    color: #A6E8FA;
+    color: #a6e8fa;
   }
 
   .sass-link {
-    color: #EA84B7;
+    color: #ea84b7;
   }
 
   .sass-link:hover {
-    color: #FABADA;
+    color: #fabada;
   }
   
   .bulma-link {
-    color: #00D1B2;
+    color: #00d1b2;
   }
 
   .bulma-link:hover {
