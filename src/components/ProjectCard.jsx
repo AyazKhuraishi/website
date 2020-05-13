@@ -9,6 +9,7 @@ export default class ProjectCard extends Component {
     text: PropTypes.string.isRequired,
     links: PropTypes.exact({
       github: PropTypes.string,
+      npm: PropTypes.string,
       website: PropTypes.string
     })
   }
