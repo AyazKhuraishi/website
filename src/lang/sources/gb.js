@@ -27,7 +27,7 @@ export default {
       l3: ', but I have also created a fair few programs of my own. These range from backend applications to websites and full-fledged desktop applications. Some examples of my work are ',
       l4: ' and '
     },
-    p6: 'I\'m studying Information and Communication Technology at Metropolia University of Applied Sciences, expected to graduate at the end of 2023. Presently, I\'m working for Tarra-Tac as a software engineer. Prior to this, I\'ve worked as a software developer and/or systems administrator for, among others, the Finnish Defence Forces.'
+    p6: 'I\'m currently studying Information and Communication Technology at Metropolia University of Applied Sciences, expected to graduate at the end of 2023. Presently, I\'m working for Tarra-Tac as a software engineer. Prior to this, I\'ve worked as a software developer and/or systems administrator for, among others, the Finnish Defence Forces.'
   },
   // Skills
   skills: {
@@ -46,14 +46,63 @@ export default {
   projects: {
     title: 'PROJECTS',
     p1: {
-      l1: 'This is a showcase of projects I have created or contributed to. For the full list, see my ',
+      l1: 'This is just a brief showcase of projects I have created or contributed to. For the full list, see my ',
       l2: 'GitHub page'
     },
     cards: [
-      { title: 'react-console-emulator', text: 'A powerful and flexible Unix emulator component for React that I built for JS-RCON.', github: 'https://github.com/js-rcon/react-console-emulator' },
-      { title: 'JagTag-JS', text: 'A JavaScript port of the JagTag text parsing language, which was originally written in Java.', github: 'https://github.com/TheSharks/JagTag-JS' },
-      { title: 'JS-RCON', text: 'An extensive and modern server management interface for Team Fortress 2.', github: 'https://github.com/js-rcon' },
-      { title: 'tag-replacer', text: 'A Node.js module for replacing template tags in strings. Includes TagScript support.', github: 'https://github.com/linuswillner/tag-replacer' }
+      {
+        title: 'react-console-emulator',
+        text: 'A powerful and flexible Unix emulator component for React, with extensive customisation.',
+        github: 'https://github.com/js-rcon/react-console-emulator',
+        npm: 'https://npmjs.com/react-console-emulator',
+        tags: ['React', 'JavaScript', 'Sass', 'NPM']
+      },
+      {
+        title: 'dpkg-status-exporter',
+        text: 'A program to expose key information about packages on Debian-based operating systems.',
+        github: 'https://github.com/linuswillner/dpkg-status-exporter',
+        tags: ['Node.js', 'JavaScript', 'NPM']
+      },
+      {
+        title: 'tag-replacer',
+        text: 'A simple and lightweight Node.js module for replacing various template tags in strings.',
+        github: 'https://github.com/linuswillner/tag-replacer',
+        npm: 'https://npmjs.com/tag-replacer',
+        tags: ['Node.js', 'JavaScript', 'NPM']
+      },
+      {
+        title: 'check-ie',
+        text: 'A lightweight, zero-dependency way to check if a user browser is Internet Explorer.',
+        github: 'https://github.com/js-rcon/check-ie',
+        npm: 'https://npmjs.com/check-ie',
+        tags: ['Node.js', 'TypeScript', 'NPM']
+      },
+      {
+        title: 'Metropolia-Team-Sigma/client',
+        text: 'The Sigma chat client prototype, a project I participated in during my studies at Metropolia UAS.',
+        github: 'https://github.com/Metropolia-Team-Sigma/client',
+        tags: ['Node.js', 'JavaScript', 'Crypto']
+      },
+      {
+        title: 'Metropolia-Team-Sigma/backend',
+        text: 'The Sigma chat backend prototype, a project I participated in during my studies at Metropolia UAS.',
+        github: 'https://github.com/Metropolia-Team-Sigma/backend',
+        tags: ['Node.js', 'JavaScript', 'Express', 'ArangoDB', 'WebSocket']
+      },
+      {
+        title: 'TheSharks/JagTag-JS',
+        text: 'A JavaScript port of the JagTag text parsing language, which was originally written in Java.',
+        github: 'https://github.com/TheSharks/JagTag-JS',
+        npm: 'https://www.npmjs.com/package/@thesharks/jagtag-js',
+        tags: ['Node.js', 'JavaScript', 'NPM']
+      },
+      {
+        title: 'TheSharks/WildBeast',
+        text: 'A multifunctional Discord bot and related framework, intended to be easy to use, extend, and modify.',
+        github: 'https://github.com/TheSharks/WildBeast',
+        website: 'https://docs.thesharks.xyz',
+        tags: ['Node.js', 'JavaScript']
+      }
     ]
   },
   // Contact

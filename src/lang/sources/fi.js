@@ -46,14 +46,63 @@ export default {
   projects: {
     title: 'PROJEKTEJA',
     p1: {
-      l1: 'Tämä on näyte projekteista jotka olen luonut tai joihin olen osallistunut. Nähdäksesi täyden listan, vieraile ',
+      l1: 'Tämä on ainoastaan lyhyt näyte projekteista jotka olen luonut tai joihin olen osallistunut. Nähdäksesi täyden listan, vieraile ',
       l2: 'GitHub-sivullani'
     },
     cards: [
-      { title: 'react-console-emulator', text: 'Monipuolinen ja kustomoitava Unix-terminaaliemulaattori Reactissa.', github: 'https://github.com/js-rcon/react-console-emulator' },
-      { title: 'JagTag-JS', text: 'JavaScriptiin portattu implementaatio JagTag-merkkikielestä.', github: 'https://github.com/TheSharks/JagTag-JS' },
-      { title: 'JS-RCON', text: 'Kattava ja moderni serverinhallintapaneeli Team Fortress 2:lle.', github: 'https://github.com/js-rcon' },
-      { title: 'tag-replacer', text: 'Node.js-moduuli placeholder-sanojen korvaamiseen tekstissä. Tukee myös TagScriptiä.', github: 'https://github.com/linuswillner/tag-replacer' }
+      {
+        title: 'react-console-emulator',
+        text: 'Monipuolinen ja helposti kustomoitavissa oleva Unix-terminaaliemulaattori Reactille.',
+        github: 'https://github.com/js-rcon/react-console-emulator',
+        npm: 'https://npmjs.com/react-console-emulator',
+        tags: ['React', 'JavaScript', 'Sass', 'NPM']
+      },
+      {
+        title: 'dpkg-status-exporter',
+        text: 'Ohjelma, joka vie tietoja järjestelmäpaketeista HTML-muotoon Debian-pohjaisilla käyttöjärjestelmillä.',
+        github: 'https://github.com/linuswillner/dpkg-status-exporter',
+        tags: ['Node.js', 'JavaScript', 'NPM']
+      },
+      {
+        title: 'tag-replacer',
+        text: 'Yksinkertainen ja kevyt Node.js-moduuli alkeellista tekstiohjelmointia varten.',
+        github: 'https://github.com/linuswillner/tag-replacer',
+        npm: 'https://npmjs.com/tag-replacer',
+        tags: ['Node.js', 'JavaScript', 'NPM']
+      },
+      {
+        title: 'check-ie',
+        text: 'Kevyt ja moduuliriippumaton tapa tarkistaa josko käyttäjän selain on Internet Explorer.',
+        github: 'https://github.com/js-rcon/check-ie',
+        npm: 'https://npmjs.com/check-ie',
+        tags: ['Node.js', 'TypeScript', 'NPM']
+      },
+      {
+        title: 'Metropolia-Team-Sigma/client',
+        text: 'Sigma-chatsovelluksen pääteohjelman prototyyppi. Osallistuin tähän projektiin osana opintojani Metropolia AMK:ssa.',
+        github: 'https://github.com/Metropolia-Team-Sigma/client',
+        tags: ['Node.js', 'JavaScript', 'Crypto']
+      },
+      {
+        title: 'Metropolia-Team-Sigma/backend',
+        text: 'Sigma-chatsovelluksen serverikomponentin prototyyppi. Osallistuin tähän projektiin osana opintojani Metropolia AMK:ssa.',
+        github: 'https://github.com/Metropolia-Team-Sigma/backend',
+        tags: ['Node.js', 'JavaScript', 'Express', 'ArangoDB', 'WebSocket']
+      },
+      {
+        title: 'TheSharks/JagTag-JS',
+        text: 'JavaScriptiin käännetty versio JagTag-merkkikielestä, joka on alunperin lähtöisin Javasta.',
+        github: 'https://github.com/TheSharks/JagTag-JS',
+        npm: 'https://www.npmjs.com/package/@thesharks/jagtag-js',
+        tags: ['Node.js', 'JavaScript', 'NPM']
+      },
+      {
+        title: 'TheSharks/WildBeast',
+        text: 'Monitoiminnallinen Discord-botti ja siihen liittyvä ohjelmisto, jonka tarkoitus on olla helppo käyttää, jatkaa ja muunnella.',
+        github: 'https://github.com/TheSharks/WildBeast',
+        website: 'https://docs.thesharks.xyz',
+        tags: ['Node.js', 'JavaScript']
+      }
     ]
   },
   // Contact
