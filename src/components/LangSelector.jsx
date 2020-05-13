@@ -7,7 +7,7 @@ import { emit } from 'utils/dispatcher'
 const styles = {
   dropdownOverrides: {
     opacity: 1,
-    transition: 'all 300ms', // Same as %navbar-toggle-animation
+    transition: 'all 300ms',
     WebkitTransition: 'all 300ms', // Browser compat
     transitionTimingFunction: 'ease-in-out'
   },

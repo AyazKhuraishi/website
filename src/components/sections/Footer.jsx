@@ -14,7 +14,7 @@ export default class Footer extends Component {
               {i18n`footer.photos.l1`}
               <FooterLink to='https://unsplash.com'>Maik Jonietz</FooterLink>.&nbsp;
               {i18n`footer.photos.l2`}
-              <FooterLink to='https://taddeo.fi'>Dario Taddeo</FooterLink>.
+              <FooterLink to='https://taddeodario.com'>Dario Taddeo</FooterLink>.
             </p>
             <p>
               {i18n`footer.tech.l1`}

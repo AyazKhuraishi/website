@@ -38,7 +38,7 @@ export default class About extends Component {
                 {i18n`about.p5.l1`}
                 <Link to='https://github.com/TheSharks/WildBeast'>WildBeast</Link>
                 {i18n`about.p5.l2`}
-                <Link to='https://github.com/js-rcon'>JS-RCON</Link>
+                <Link to='https://github.com/TheSharks/JagTag-JS'>JagTag-JS</Link>
                 {i18n`about.p5.l3`}
                 <Link to='https://github.com/linuswillner/react-console-emulator'>react-console-emulator</Link>
                 {i18n`about.p5.l4`}

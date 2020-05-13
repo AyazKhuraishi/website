@@ -14,7 +14,7 @@ class SocialMediaIcon extends Component {
 
   render () {
     return (
-      <Link className='button social is-medium' to={this.props.link}>
+      <Link noDefaultStyle className='button social is-medium' to={this.props.link}>
         <span className='icon'>
           <i className={this.props.iconClassName} />
         </span>

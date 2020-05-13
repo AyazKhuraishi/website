@@ -6,18 +6,21 @@ export class Link extends Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
     to: PropTypes.string.isRequired,
-    noNewTab: PropTypes.any,
-    focusable: PropTypes.any,
+    noDefaultStyle: PropTypes.bool,
+    noNewTab: PropTypes.bool,
+    focusable: PropTypes.bool,
     className: PropTypes.string
   }
 
   render () {
+    const { to, noDefaultStyle, noNewTab, focusable, className } = this.props
+
     return (
       <a
-        href={this.props.to}
-        className={this.props.className || ''}
-        target={this.props.noNewTab ? '' : '_blank'}
-        tabIndex={this.props.focusable ? '0' : '-1'}
+        href={to}
+        className={noDefaultStyle ? className : `link ${className || ''}`}
+        target={noNewTab ? '' : '_blank'}
+        tabIndex={focusable ? '0' : '-1'}
         rel='noopener noreferrer'
       >
         {this.props.children}
@@ -60,6 +63,7 @@ export class FooterLink extends Component {
 
   render () {
     const { className, link } = this.getMeta()
+
     return (
       <a
         className={className}

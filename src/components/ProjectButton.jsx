@@ -36,7 +36,7 @@ export class ProjectButton extends Component {
     const { color, icon } = this.getButtonIcon()
 
     return (
-      <Link className='project-button' to={this.props.link}>
+      <Link noDefaultStyle className='project-button' to={this.props.link}>
         <span className='icon'>
           <i className={icon} style={{ color }}/>
         </span>
