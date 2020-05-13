@@ -9,7 +9,8 @@ class SkillGroup extends Component {
       PropTypes.exact({
         name: PropTypes.string.isRequired,
         icon: PropTypes.string.isRequired,
-        type: PropTypes.oneOf(['cil', 'cib', 'cif'])
+        type: PropTypes.oneOf(['cil', 'cib', 'cif']),
+        color: PropTypes.string
       })
     ).isRequired
   }
@@ -29,7 +30,10 @@ class SkillGroup extends Component {
                 className='icon-container'
                 data-tooltip={skill.name}
               >
-                <span className={`${skill.type || 'cib'}-${skill.icon}`}/>
+                <i
+                  className={`${skill.type || 'cib'}-${skill.icon}`}
+                  style={{ color: skill.color }}
+                />
               </span>
             )
           })}
