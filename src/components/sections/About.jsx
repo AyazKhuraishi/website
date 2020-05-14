@@ -14,17 +14,37 @@ export default class About extends Component {
         textAlign: window.lowWidth ? 'center' : 'left',
         paddingRight: window.lowWidth ? '12px' : '70px'
       },
-      columnOverrides: {
-        display: window.lowWidth ? 'none' : 'block'
-      },
-      imageOverrides: {
-        display: window.lowWidth ? 'none' : 'inline'
+      contentOverrides: {
+        default: {
+          column: {
+            display: window.lowWidth ? 'none' : 'block'
+          },
+          image: {
+            display: window.lowWidth ? 'none' : 'inline'
+          }
+        },
+        lowWidth: {
+          column: {
+            display: !window.lowWidth ? 'none' : 'block'
+          },
+          image: {
+            display: !window.lowWidth ? 'none' : 'inline-block'
+          }
+        }
       }
     }
 
     return (
       <Section id='about' className='section about'>
         <SectionTitle>👨‍💻 {i18n`about.title`} 👨‍💻</SectionTitle>
+        {/* Low width image goes into separate section above the text */}
+        <div className='columns' style={styles.contentOverrides.lowWidth.column}>
+          <div className='column'>
+            <figure className='image about-text-image-lowwidth'>
+              <img src={profilePicture}/>
+            </figure>
+          </div>
+        </div>
         <div className='columns'>
           {/* Unset is-three-quarters on low device widths because Bulma does not naturally remove it before 770px or so, but lowWidth triggers at 1030 */}
           <div className={`column ${!window.lowWidth ? 'is-three-quarters' : ''} about-text`} style={styles.textOverrides}>
@@ -48,8 +68,9 @@ export default class About extends Component {
               <p className='signature'>- LW</p>
             </div>
           </div>
-          <div className='column' style={styles.columnOverrides}>
-            <figure className='image about-text-image' style={styles.imageOverrides}>
+          {/* High width image goes into separate section alongside the text */}
+          <div className='column' style={styles.contentOverrides.default.column}>
+            <figure className='image about-text-image' style={styles.contentOverrides.default.image}>
               <img src={profilePicture}/>
             </figure>
           </div>
