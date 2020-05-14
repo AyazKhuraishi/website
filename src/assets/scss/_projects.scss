@@ -1,29 +1,54 @@
-/* Section background */
+// Section background
 .projects {
-  background-color: #FCFCFC;
+  @extend %section-background;
 }
 
-/* Project card */
+// Project card
 .card {
   box-shadow: $shadow-2;
   text-align: center;
-  padding-right: 24px; /* Fix extra padding */
+  padding-right: 24px; // Fix extra padding
 }
 
-/* Card title */
+// Card title
 .card-title {
   font-size: 20px;
   font-weight: bold;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 0px;
+  @extend %title;
 }
 
-/* Card text */
+// Card text
 .card-text {
   padding-bottom: 10px;
 }
 
-/* Hack to override the Bulma margin (Which uses !important) */
+// Hack to override the Bulma margin (Which uses !important)
 .tile {
   .is-child {
     margin: 15px !important;
   }
+}
+
+// Project links
+.project-links {
+  .project-button {
+    margin-left: 0px;
+    font-size: 25px;
+  }
+
+  .project-button:not(:last-child) {
+    padding-right: 10px;
+  }
+}
+
+// Project technology tag
+.project-tech {
+  margin-bottom: 5px;
+}
+
+.project-tech:not(:last-child) {
+  margin-right: 5px;
 }

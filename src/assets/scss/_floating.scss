@@ -1,7 +1,6 @@
-/* Floating buttons and components */
+// Floating buttons and components
 
-/* Lang selector */
-
+// Lang selector
 .lang-button {
   position: fixed;
   bottom: 5px;
@@ -9,56 +8,92 @@
   z-index: 3;
   
   .inner {
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     font-size: 20px;
-    @extend %item-hover-animation;
+    @extend %hover-animation;
   }
 
   .inner:hover {
-    background-color: #DBDBDB;
-    border-color: #B5B5B5 !important;
-    @extend %item-hover-animation;
+    background-color: #dbdbdb;
+    border-color: #b5b5b5 !important;
+    @extend %hover-animation;
   }
 }
 
-/* Dropdown content */
+// Dropdown content
 .dropdown-inner {
   padding-top: 0;
   padding-bottom: 0;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
-/* Dropdown content container */
+// Dropdown content container 
 .dropdown-container {
   min-width: 0;
-  max-width: 45px;
+  max-width: 50px;
+  border-radius: 4px;
+  border: 1px solid #b5b5b5;
+
+  // Hack to change padding => margin to avoid margin overflow issues
+  padding-bottom: 0px !important;
+  margin-bottom: 5px;
 }
 
-/* Dropdown item */
+// Rounded flag pseudo-class
+%rounded-flag {
+  .flag-icon {
+    border-radius: 4px;
+  }
+}
+
+// Dropdown item
 .item {
   font-size: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  @extend %rounded-flag;
 }
 
 .item:hover {
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
+  border-radius: 5px;
   cursor: pointer;
-  @extend %item-hover-animation;
+  @extend %hover-animation;
 }
 
-/* Hack to disable focusing on the dropdown button */
+// Hack to disable focusing on the dropdown button
 button:focus {
   outline-style: none !important;
   box-shadow: none !important;
   border-color: transparent !important;
 }
 
-/* Hack to enable animated toggle for the dropdown */
+// Hack to enable animated toggle for the dropdown
 .dropdown-menu {
   display: block !important;
 }
 
 .lang-icon {
   height: 20px !important;
+  @extend %rounded-flag;
+}
+
+// Site content pointer
+.content-pointer {
+  color: #ffffff;
+  font-size: 60px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 0;
+
+  .arrow {
+    @extend %hover-animation;
+  }
+
+  &:hover {
+    @extend %hover-animation;
+    margin-bottom: -5px;
+    cursor: pointer;
+  }
 }

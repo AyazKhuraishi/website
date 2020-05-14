@@ -23,10 +23,11 @@ export default class About extends Component {
     }
 
     return (
-      <Section className='section about'>
-        <SectionTitle>{i18n`about.title`}</SectionTitle>
+      <Section id='about' className='section about'>
+        <SectionTitle>👨‍💻 {i18n`about.title`} 👨‍💻</SectionTitle>
         <div className='columns'>
-          <div className='column is-three-quarters about-text' style={styles.textOverrides}>
+          {/* Unset is-three-quarters on low device widths because Bulma does not naturally remove it before 770px or so, but lowWidth triggers at 1030 */}
+          <div className={`column ${!window.lowWidth ? 'is-three-quarters' : ''} about-text`} style={styles.textOverrides}>
             <h2 className='section-text-title'>{i18n`about.sectionTitle`}</h2>
             <div className='section-text about-text-column'>
               <p>{i18n`about.p1`}</p>
@@ -37,7 +38,7 @@ export default class About extends Component {
                 {i18n`about.p5.l1`}
                 <Link to='https://github.com/TheSharks/WildBeast'>WildBeast</Link>
                 {i18n`about.p5.l2`}
-                <Link to='https://github.com/js-rcon'>JS-RCON</Link>
+                <Link to='https://github.com/TheSharks/JagTag-JS'>JagTag-JS</Link>
                 {i18n`about.p5.l3`}
                 <Link to='https://github.com/linuswillner/react-console-emulator'>react-console-emulator</Link>
                 {i18n`about.p5.l4`}

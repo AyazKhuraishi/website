@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { dispatcher, emit } from 'utils/dispatcher'
 
 import LangButton from 'components/LangButton'
+import ContentPointer from 'components/ContentPointer'
 import Divider from 'components/Divider'
 
 // Sections
@@ -16,8 +17,7 @@ export default class Main extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      lowWidth: window.innerWidth < 770,
-      measuring: false
+      lowWidth: window.innerWidth < 1030
     }
   }
 
@@ -28,7 +28,7 @@ export default class Main extends Component {
   }
 
   componentDidMount () {
-    const checkIfLowWidth = () => window.innerWidth < 770
+    const checkIfLowWidth = () => window.innerWidth < 1030
 
     dispatcher.on('LANG_SELECT', () => this.forceUpdate())
 
@@ -41,18 +41,12 @@ export default class Main extends Component {
     }
 
     window.addEventListener('resize', () => {
-      if (!this.state.measuring) {
-        this.setState({ measuring: true }, () => {
-          const isLowWidth = checkIfLowWidth()
-          window.lowWidth = isLowWidth
+      const isLowWidth = checkIfLowWidth()
+      window.lowWidth = isLowWidth
 
-          if (isLowWidth !== this.state.lowWidth) {
-            this.setState({ lowWidth: isLowWidth })
-            emit('WIDTH_CHANGE', isLowWidth)
-          }
-
-          setTimeout(() => this.setState({ measuring: false }), 250) // Lowers congestion on resize
-        })
+      if (isLowWidth !== this.state.lowWidth) {
+        this.setState({ lowWidth: isLowWidth })
+        emit('WIDTH_CHANGE', isLowWidth)
       }
     })
   }
@@ -61,6 +55,7 @@ export default class Main extends Component {
     return (
       <div onClick={this.globalClickHandler}>
         <LangButton/>
+        <ContentPointer/>
         <Hero/>
         <About/>
         <Divider/>

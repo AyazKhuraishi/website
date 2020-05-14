@@ -1,3 +1,4 @@
+require('colors')
 const path = require('path')
 const glob = require('glob')
 const webpack = require('webpack')
@@ -7,6 +8,7 @@ const OptimizeCSSWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const PurgeCSSWebpackPlugin = require('purgecss-webpack-plugin')
 const OptimizeJSWebpackPlugin = require('terser-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 
 const dev = process.env.NODE_ENV !== 'production' || process.argv.indexOf('-p') === -1
 
@@ -30,10 +32,14 @@ const CSSOptimizerConfig = new OptimizeCSSWebpackPlugin({})
 const CSSPurgerConfig = new PurgeCSSWebpackPlugin({
   paths: glob.sync(`${path.join(__dirname, 'src')}/**/*`, { nodir: true }),
   whitelistPatterns: [
-    /react-sweet-progress/,
-    /fa-/,
+    /cil-|cib-|cif-/,
     /flag-icon/
   ]
+})
+
+const ProgressBarConfig = new ProgressBarPlugin({
+  format: `${':msg'.cyan} [:bar] ${':percent'.green} (${':elapsed'.green} seconds)`,
+  clear: false
 })
 
 const EnvironmentConfig = new webpack.DefinePlugin({
@@ -53,12 +59,14 @@ const prodPlugins = [
   HTMLInjecterConfig,
   CSSExtracterConfig,
   CSSPurgerConfig,
-  EnvironmentConfig,
-  new webpack.ProgressPlugin()
+  EnvironmentConfig
 ]
 
 // If clean build is desired, add CleanWebpackPlugin
 if (process.argv.indexOf('-c') !== -1) prodPlugins.push(new CleanWebpackPlugin())
+
+// If in CI, don't output progress to stdout to reduce log clutter
+if (!process.env.CI) prodPlugins.push(ProgressBarConfig)
 
 const createAlias = modulePath => path.resolve(__dirname, modulePath)
 
@@ -138,8 +146,7 @@ module.exports = {
         test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]',
-          outputPath: 'src/assets/fonts/'
+          name: '[name].[ext]'
         }
       },
       { // Exclusions

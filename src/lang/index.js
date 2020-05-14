@@ -1,5 +1,5 @@
 // Lang system core
-import * as R from 'ramda'
+import { path } from 'ramda'
 
 const src = './sources'
 
@@ -20,7 +20,7 @@ export default function i18n (stringPath) {
   // Check that the lang value is correct
   if (localStorage.getItem('lang') && localStorage.getItem('lang').match(/gb|fi|se/gi) !== null) {
     // Ramda handles the pathfinding in the object
-    return R.path(stringPath, lang[localStorage.getItem('lang')]) || ''
+    return path(stringPath, lang[localStorage.getItem('lang')]) || ''
   } else {
     // Backwards compatibility to previous version of the website
     // Old: en/fi/sv

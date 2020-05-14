@@ -1,13 +1,14 @@
 @import '~bulma/bulma.sass'; // Bulma
 @import '~bulma-divider/dist/css/bulma-divider.sass'; // Bulma divider
-@import '~react-sweet-progress/lib/style.css'; // react-sweet-progress
-@import '~@fortawesome/fontawesome-free/css/all.min.css'; // Font Awesome
-@import '~flag-icon-css/css/flag-icon.css';
-@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Mono:100|Fira+Mono|Merriweather:300,400|Roboto:100,300,400|Bilbo+Swash+Caps'); // Google Fonts
+@import '~@creativebulma/bulma-tooltip/dist/bulma-tooltip.css';
+@import '~@coreui/icons/css/brand.css'; // Core UI Icons
+@import '~@coreui/icons/css/free.css'; // Core UI Icons
+@import 'vendor/flag-icon-css/scss/flag-icon.scss'; // Flag Icon CSS
+@import url('https://fonts.googleapis.com/css?family=Oswald:400|Roboto+Mono:100|Fira+Mono:400|Merriweather:300|Bilbo+Swash+Caps:400&display=swap'); // Google Fonts
 
 // Locals
 
-@import 'misc';
+@import 'global';
 @import 'utils';
 @import 'floating';
 @import 'home';
@@ -19,12 +20,8 @@
 
 // Typography
 
-%large-title {
-  font-family: 'Oswald', sans-serif;
-}
-
 %title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 %text {
@@ -43,14 +40,13 @@
   font-family: 'Bilbo Swash Caps', cursive;
 }
 
-/* Animations */
-
-%item-hover-animation {
-  @include transition (all 125ms);
-  transition-timing-function: ease-in-out;
+%section-background {
+  background-color: #fcfcfc;
 }
 
-%navbar-toggle-animation {
-  @include transition (all 300ms);
+// Animations
+
+%hover-animation {
+  @include transition (all 125ms);
   transition-timing-function: ease-in-out;
 }
