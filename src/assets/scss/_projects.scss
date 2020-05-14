@@ -28,8 +28,11 @@
   padding-bottom: 10px;
 }
 
-// Hack to override the Bulma margin (Which uses !important)
 .tile {
+  // Prevent cards from overflowing out of the page while scaling
+  flex-wrap: wrap;
+
+  // Hack to override the Bulma margin (Which uses !important)
   .is-child {
     margin: 15px !important;
   }
