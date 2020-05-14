@@ -48,6 +48,8 @@ export default class ContentPointer extends Component {
   render () {
     const styles = {
       hidden: {
+        // I'm using opacity 0 here, instead of despawning the element or using display: none, because the latter two
+        // reset the element bounding rects (Obviously) and prevent the re-showing of the element once overlapping ends
         opacity: 0
       }
     }
