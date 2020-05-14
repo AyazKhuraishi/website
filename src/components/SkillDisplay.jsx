@@ -16,12 +16,18 @@ class SkillGroup extends Component {
   }
 
   render () {
+    const styles = {
+      iconListOverrides: {
+        justifyContent: 'center'
+      }
+    }
+
     return (
       <div className='skill-group'>
         <div className='title'>
           {this.props.title}
         </div>
-        <div className='icon-list'>
+        <div className='icon-list' style={window.lowWidth ? styles.iconListOverrides : {}}>
           {this.props.skills.map((skill, i) => {
             // Use brand icons per default, but if an icon is marked as different, use that type instead
             return (
