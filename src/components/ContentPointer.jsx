@@ -11,7 +11,7 @@ export default class ContentPointer extends Component {
     const contentPointerRect = document.getElementById('content-pointer')?.getBoundingClientRect()
     const subtitleRect = document.getElementById('subtitle')?.getBoundingClientRect()
 
-    // First check if element is above the description, where it should not be - if so, short-circuit
+    // First check if element is above the subtitle, where it should not be - if so, short-circuit
     const isAbove = ((contentPointerRect.top < subtitleRect.top) && (contentPointerRect.bottom < subtitleRect.bottom))
 
     if (isAbove) return true
@@ -42,7 +42,7 @@ export default class ContentPointer extends Component {
   componentDidMount () {
     // This looks quite stupid, but it works with not letting the arrow appear on page load
     setTimeout(this.checkOverlapState, 0)
-    window.addEventListener('resize', () => this.checkOverlapState())
+    window.addEventListener('resize', this.checkOverlapState)
   }
 
   render () {
