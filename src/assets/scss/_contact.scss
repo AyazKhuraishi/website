@@ -26,8 +26,21 @@
 
 // Contact method text 
 .contact-method {
-  font-size: 20px;
+  font-size: 19px;
   padding-bottom: 10px;
+
+  b:hover {
+    font-size: 20px;
+    @extend .link:hover;
+  }
+}
+
+.social {
+  margin-bottom: 10px;
+
+  .name {
+    font-size: 18px;
+  }
 }
 
 // Social icon spacing
@@ -40,4 +53,29 @@
   content: attr(data-suffix) "\0040" attr(data-prefix);
   unicode-bidi: bidi-override;
   direction: rtl;
+}
+
+// Brand colours
+.discord {
+  color: #7289da;
+}
+
+.github {
+  color: #302f2f;
+}
+
+.npm {
+  color: #ea2039;
+}
+
+.linkedin {
+  color: #0077b5;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.instagram {
+  color: #d72c47;
 }
