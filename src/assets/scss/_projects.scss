@@ -5,6 +5,9 @@
 
 // Project card
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   box-shadow: $shadow-2;
   text-align: center;
   padding-right: 24px; // Fix extra padding
