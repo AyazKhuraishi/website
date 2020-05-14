@@ -23,15 +23,21 @@ export default class Hero extends Component {
   }
 
   render () {
+    const styles = {
+      titleOverrides: {
+        fontSize: '105px'
+      }
+    }
+
     return (
       <div className='hero banner is-fullheight'>
         <div className='hero-body'>
           <div className='container has-text-centered'>
-            <h1 className='large-title'>Linus Willner</h1>
+            <h1 className='large-title' style={this.state.typingEnabled ? {} : styles.titleOverrides}>Linus Willner</h1>
             {
               this.state.typingEnabled
                 ? <Console/>
-                : <h2 className='subtitle-lowwidth'>{i18n`hero.typingTextLowWidth`}</h2>
+                : <div className='subtitle-lowwidth'><h2>{i18n`hero.typingTextLowWidth`}</h2></div>
             }
           </div>
         </div>

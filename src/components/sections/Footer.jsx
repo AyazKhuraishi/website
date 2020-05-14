@@ -12,7 +12,7 @@ export default class Footer extends Component {
             <p>{i18n`footer.copyright`}</p>
             <p>
               {i18n`footer.photos.l1`}
-              <FooterLink to='https://unsplash.com'>Maik Jonietz</FooterLink>.&nbsp;
+              <FooterLink to='https://unsplash.com/@ffstop'>Fotis Fotopoulos</FooterLink>.&nbsp;
               {i18n`footer.photos.l2`}
               <FooterLink to='https://taddeodario.com'>Dario Taddeo</FooterLink>.
             </p>

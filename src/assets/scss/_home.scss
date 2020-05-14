@@ -6,16 +6,17 @@
 
 // Page title
 .large-title {
-  font-size: 100px;
+  font-size: 150px;
   font-weight: bold;
   color: #ffffff;
   padding-bottom: 20px;
+  text-shadow: $shadow-5;
   @extend %title;
 }
 
 // Subtitle (Typing)
 .subtitle-typing {
-  max-width: 900px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   font-size: 30px;
@@ -35,12 +36,17 @@
 }
 
 .subtitle-lowwidth {
-  color: #e3e3e3;
-  font-weight: lighter;
-  font-style: italic;
-  font-size: 23px;
-  text-align: center;
-  padding-bottom: 10px;
+  h2 {
+    color: #ffffff;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    padding: 5px 15px 5px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    display: inline-block;
+  }
 }
 
 .lang-selector {
