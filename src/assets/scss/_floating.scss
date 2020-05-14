@@ -30,7 +30,20 @@
 // Dropdown content container 
 .dropdown-container {
   min-width: 0;
-  max-width: 45px;
+  max-width: 50px;
+  border-radius: 4px;
+  border: 1px solid #b5b5b5;
+
+  // Hack to change padding => margin to avoid margin overflow issues
+  padding-bottom: 0px !important;
+  margin-bottom: 5px;
+}
+
+// Rounded flag pseudo-class
+%rounded-flag {
+  .flag-icon {
+    border-radius: 4px;
+  }
 }
 
 // Dropdown item
@@ -38,10 +51,12 @@
   font-size: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  @extend %rounded-flag;
 }
 
 .item:hover {
   background-color: #dbdbdb;
+  border-radius: 5px;
   cursor: pointer;
   @extend %hover-animation;
 }
@@ -60,4 +75,25 @@ button:focus {
 
 .lang-icon {
   height: 20px !important;
+  @extend %rounded-flag;
+}
+
+// Site content pointer
+.content-pointer {
+  color: #ffffff;
+  font-size: 60px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 0;
+
+  .arrow {
+    @extend %hover-animation;
+  }
+
+  &:hover {
+    @extend %hover-animation;
+    margin-bottom: -5px;
+    cursor: pointer;
+  }
 }

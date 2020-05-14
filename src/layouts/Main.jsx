@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { dispatcher, emit } from 'utils/dispatcher'
 
 import LangButton from 'components/LangButton'
+import ContentPointer from 'components/ContentPointer'
 import Divider from 'components/Divider'
 
 // Sections
@@ -54,6 +55,7 @@ export default class Main extends Component {
     return (
       <div onClick={this.globalClickHandler}>
         <LangButton/>
+        <ContentPointer/>
         <Hero/>
         <About/>
         <Divider/>
