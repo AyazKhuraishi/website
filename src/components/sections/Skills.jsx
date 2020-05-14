@@ -21,7 +21,7 @@ export default class Skills extends Component {
     }
 
     return (
-      <Section className='section skills'>
+      <Section id='skills' className='section skills'>
         <SectionTitle>{i18n`skills.title`}</SectionTitle>
         <div className='columns'>
           <div className='column section-text skills-text' style={styles.leftColumnOverrides}>

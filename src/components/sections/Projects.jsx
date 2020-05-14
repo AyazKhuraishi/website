@@ -44,7 +44,7 @@ export default class Projects extends Component {
 
   render () {
     return (
-      <Section className='section projects'>
+      <Section id='projects' className='section projects'>
         <SectionTitle>{i18n`projects.title`}</SectionTitle>
         {this.generateProjectDisplay()}
         <h2 className='subtitle section-subtitle'>

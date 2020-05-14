@@ -33,7 +33,7 @@ export default class Contact extends Component {
 
   render () {
     return (
-      <Section className='section contact'>
+      <Section id='contact' className='section contact'>
         <SectionTitle>{i18n`contact.title`}</SectionTitle>
         <div className='columns'>
           <div className='column section-text contact-text'>
