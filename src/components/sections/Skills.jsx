@@ -22,7 +22,7 @@ export default class Skills extends Component {
 
     return (
       <Section id='skills' className='section skills'>
-        <SectionTitle>{i18n`skills.title`}</SectionTitle>
+        <SectionTitle>🔧 {i18n`skills.title`} 🔧</SectionTitle>
         <div className='columns'>
           <div className='column section-text skills-text' style={styles.leftColumnOverrides}>
             <p>{i18n`skills.p1`}</p>
