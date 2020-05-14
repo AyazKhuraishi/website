@@ -1,3 +1,4 @@
+require('colors')
 const path = require('path')
 const glob = require('glob')
 const webpack = require('webpack')
@@ -7,6 +8,7 @@ const OptimizeCSSWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const PurgeCSSWebpackPlugin = require('purgecss-webpack-plugin')
 const OptimizeJSWebpackPlugin = require('terser-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 
 const dev = process.env.NODE_ENV !== 'production' || process.argv.indexOf('-p') === -1
 
@@ -35,6 +37,11 @@ const CSSPurgerConfig = new PurgeCSSWebpackPlugin({
   ]
 })
 
+const ProgressBarConfig = new ProgressBarPlugin({
+  format: `${':msg'.cyan} [:bar] ${':percent'.green} (${':elapsed'.green} seconds)`,
+  clear: false
+})
+
 const EnvironmentConfig = new webpack.DefinePlugin({
   'process.env': {
     NODE_ENV: JSON.stringify('production')
@@ -59,7 +66,7 @@ const prodPlugins = [
 if (process.argv.indexOf('-c') !== -1) prodPlugins.push(new CleanWebpackPlugin())
 
 // If in CI, don't output progress to stdout to reduce log clutter
-if (!process.env.CI) prodPlugins.push(new webpack.ProgressPlugin())
+if (!process.env.CI) prodPlugins.push(ProgressBarConfig)
 
 const createAlias = modulePath => path.resolve(__dirname, modulePath)
 
