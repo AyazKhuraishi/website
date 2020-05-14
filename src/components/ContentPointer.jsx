@@ -11,7 +11,7 @@ export default class ContentPointer extends Component {
         className='content-pointer'
         onClick={this.handleClick}
       >
-        <i className='arrow cil-chevron-double-down'/>
+        <i className='cil-chevron-double-down'/>
       </div>
     )
   }

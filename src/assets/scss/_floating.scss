@@ -87,10 +87,6 @@ button:focus {
   margin-left: -30px;
   bottom: 0;
 
-  .arrow {
-    @extend %hover-animation;
-  }
-
   &:hover {
     @extend %hover-animation;
     margin-bottom: -5px;
