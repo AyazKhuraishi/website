@@ -64,7 +64,7 @@
   },
   "dependencies": {
     "@coreui/icons": "^1.0.1",
-    "@creativebulma/bulma-tooltip": "^1.1.0",
+    "@creativebulma/bulma-tooltip": "^1.2.0",
     "@hot-loader/react-dom": "^16.13.0",
     "bulma": "^0.8.2",
     "bulma-divider": "^2.0.1",
