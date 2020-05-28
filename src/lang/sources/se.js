@@ -53,7 +53,7 @@ export default {
       {
         title: 'react-console-emulator',
         text: 'En kraftfull och långtgående ställbar Unix-terminalemulator för React.',
-        github: 'https://github.com/js-rcon/react-console-emulator',
+        github: 'https://github.com/linuswillner/react-console-emulator',
         npm: 'https://npmjs.com/react-console-emulator',
         tags: ['React', 'JavaScript', 'Sass', 'NPM']
       },
@@ -73,7 +73,7 @@ export default {
       {
         title: 'check-ie',
         text: 'A lightweight, zero-dependency way to check if a user browser is Internet Explorer.',
-        github: 'https://github.com/js-rcon/check-ie',
+        github: 'https://github.com/linuswillner/check-ie',
         npm: 'https://npmjs.com/check-ie',
         tags: ['Node.js', 'TypeScript', 'NPM']
       },
