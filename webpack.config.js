@@ -9,6 +9,7 @@ const PurgeCSSWebpackPlugin = require('purgecss-webpack-plugin')
 const OptimizeJSWebpackPlugin = require('terser-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
+const ErrorOverlayWebpackPlugin = require('error-overlay-webpack-plugin')
 
 const dev = process.env.NODE_ENV !== 'production' || process.argv.indexOf('-p') === -1
 
@@ -51,6 +52,7 @@ const EnvironmentConfig = new webpack.DefinePlugin({
 const devPlugins = [
   HTMLInjecterConfig,
   CSSExtracterConfig,
+  new ErrorOverlayWebpackPlugin(),
   new webpack.HotModuleReplacementPlugin(),
   new webpack.NamedModulesPlugin()
 ]
