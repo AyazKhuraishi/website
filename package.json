@@ -70,7 +70,7 @@
     "bulma-divider": "^2.0.1",
     "clean-webpack-plugin": "^3.0.0",
     "in-viewport": "^3.6.0",
-    "moment": "2.25.3",
+    "moment": "2.26.0",
     "prop-types": "^15.7.2",
     "ramda": "^0.27.0",
     "react": "^16.13.1",
