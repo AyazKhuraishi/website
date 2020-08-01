@@ -1,6 +1,8 @@
 import moment from 'moment'
 import TarraTacLogo from '../../assets/images/logos/tarratac.png'
 import FdfLogo from '../../assets/images/logos/fdf.png'
+import TcdLogo from '../../assets/images/logos/tcd.png'
+import WbLogo from '../../assets/images/logos/wb.png'
 
 // Finnish
 export default {
@@ -40,34 +42,77 @@ export default {
       volunteer: 'Vapaaehtoinen',
       conscript: 'Varusmies'
     },
-    positions: [
-      {
-        role: 'Full Stack Engineer',
-        type: 'fullTime',
-        date: 'Kesäkuu - Heinäkuu 2020',
-        company: {
-          name: 'Oy Tarra-Tac Ab',
-          link: 'https://tarratac.fi',
-          icon: TarraTacLogo
+    positions: {
+      work: [
+        {
+          role: 'Full Stack Engineer',
+          type: 'fullTime',
+          date: 'Kesäkuu - Heinäkuu 2020',
+          company: {
+            name: 'Oy Tarra-Tac Ab',
+            link: 'https://tarratac.fi',
+            icon: TarraTacLogo
+          },
+          location: 'Loviisa, Uusimaa',
+          description: 'Työskentelin Full Stack Engineerinä Tarra-Tacilla kesätyönäni vuonna 2020. Työtehtäviini kuului uuden hinnoitteluohjelman luonti työnantajan tarpeiden mukaan, jonka luomisen ansiosta yhtiön työprosessit tehostuivat merkittävästi.',
+          tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Verkotustyöt', 'DevOps']
         },
-        location: 'Loviisa, Uusimaa',
-        description: 'Työskentelin Full Stack Engineerinä Tarra-Tacilla kesätyönäni vuonna 2020. Työtehtäviini kuului uuden hinnoitteluohjelman luonti työnantajan tarpeiden mukaan, jonka luomisen ansiosta yhtiön työprosessit tehostuivat merkittävästi.',
-        tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Verkotustyöt', 'DevOps']
-      },
-      {
-        role: 'Virtuaalikoulutustukihenkilö',
-        type: 'conscript',
-        date: 'Helmikuu - Syyskuu 2019',
-        company: {
-          name: 'Puolustusvoimat',
-          link: 'https://puolustusvoimat.fi',
-          icon: FdfLogo
+        {
+          role: 'Virtuaalikoulutustukihenkilö',
+          type: 'conscript',
+          date: 'Helmikuu - Syyskuu 2019',
+          company: {
+            name: 'Puolustusvoimat',
+            link: 'https://puolustusvoimat.fi',
+            icon: FdfLogo
+          },
+          location: 'Dragsvik, Raasepori',
+          description: 'Varusmiespalvelukseni aikana Uudenmaan Prikaatissa palvelin virtuaalikoulutustukihenkilön tehtävissä. Työtehtäviini kuuluivat ohjelmistokehittäjän, järjestelmä- ja verkkoylläpitäjän sekä IT-teknikon tehtävät. Tämän lisäksi toimin taisteluteorian kouluttajana sekä simulaattoriohjaajana.',
+          tags: ['Frontend', 'Backend', 'Sysadmin', 'DevOps', 'Laitteistot', 'Verkotustyöt', 'Tekniset asennustyöt']
+        }
+      ],
+      volunteer: [
+        {
+          role: 'Vanhempi sisällönhallintahenkilö',
+          type: 'volunteer',
+          date: 'Maaliskuu 2020 - Nyt',
+          company: {
+            name: 'The Coding Den',
+            link: 'https://discord.gg/code',
+            icon: TcdLogo
+          },
+          location: 'discord.gg/code',
+          description: 'The Coding Denissä tehtäväni ylläpitäjänä/vanhempana sisällönhallintahenkilönä on keskustelufoorumien moderoinnin lisäksi johtaa ja mentoroida nuorempia sisällönhallintahenkilöitä, sekä osallistua administratiivisten päätösten tekoon yhteisön tulevaisuutta koskien.',
+          tags: ['Sisällönhallinta', 'Johtamistehtävät', 'Yhteisönhallinta']
         },
-        location: 'Dragsvik, Raasepori',
-        description: 'Varusmiespalvelukseni aikana Uudenmaan Prikaatissa palvelin virtuaalikoulutustukihenkilön tehtävissä. Työtehtäviini kuuluivat ohjelmistokehittäjän, järjestelmä- ja verkkoylläpitäjän sekä IT-teknikon tehtävät. Tämän lisäksi toimin taisteluteorian kouluttajana sekä simulaattoriohjaajana.',
-        tags: ['Frontend', 'Backend', 'Sysadmin', 'DevOps', 'Laitteistot', 'Verkotustyöt', 'Tekniset asennustyöt']
-      }
-    ]
+        {
+          role: 'Sisällönhallintahenkilö',
+          type: 'volunteer',
+          date: 'Helmikuu 2018 - Maaliskuu 2020',
+          company: {
+            name: 'The Coding Den',
+            link: 'https://discord.gg/code',
+            icon: TcdLogo
+          },
+          location: 'discord.gg/code',
+          description: 'The Coding Denissä tehtäväni sisällönhallintahenkilönä sisälsivät keskusteluiden moderointia ja yhteisön siisteyden varmistamista.',
+          tags: ['Sisällönhallinta']
+        },
+        {
+          role: 'Software Developer',
+          type: 'volunteer',
+          date: 'Elokuu 2016 - Nyt',
+          company: {
+            name: 'TheSharks',
+            link: 'https://github.com/TheSharks',
+            icon: WbLogo
+          },
+          location: 'International',
+          description: 'Toimin TheSharksissa avoimen lähdekoodin kollaboraattorina ja kehitän ohjelmistoja kyseiselle ryhmälle. Tämän lisäksi kirjoitan teknistä dokumentaatiota, toimin järjestelmäylläpitäjän tehtävissä sekä ylläpidän käännöksiä niillä kielillä joissa osaamiseni on vahva.',
+          tags: ['Frontend', 'Backend', 'Sysadmin', 'Dokumentaatio', 'Käännöstyöt']
+        }
+      ]
+    }
   },
   // Skills
   skills: {

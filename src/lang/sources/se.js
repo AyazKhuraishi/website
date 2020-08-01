@@ -1,6 +1,8 @@
 import moment from 'moment'
 import TarraTacLogo from '../../assets/images/logos/tarratac.png'
 import FdfLogo from '../../assets/images/logos/fdf.png'
+import TcdLogo from '../../assets/images/logos/tcd.png'
+import WbLogo from '../../assets/images/logos/wb.png'
 
 // Swedish (FI)
 export default {
@@ -40,34 +42,77 @@ export default {
       volunteer: 'Frivilligarbete',
       conscript: 'Beväring'
     },
-    positions: [
-      {
-        role: 'Full Stack Engineer',
-        type: 'fullTime',
-        date: 'Juni - Juli 2020',
-        company: {
-          name: 'Oy Tarra-Tac Ab',
-          link: 'https://tarratac.fi',
-          icon: TarraTacLogo
+    positions: {
+      work: [
+        {
+          role: 'Full Stack Engineer',
+          type: 'fullTime',
+          date: 'Juni - Juli 2020',
+          company: {
+            name: 'Oy Tarra-Tac Ab',
+            link: 'https://tarratac.fi',
+            icon: TarraTacLogo
+          },
+          location: 'Lovisa, Nyland',
+          description: 'Som mitt sommarjobb för år 2020 jobbade jag som Full Stack Engineer för Tarra-Tac. Till mina arbetsuppgifter tillhörde utvecklingen av ett nytt prissättningsprogram på basen av arbetsgivarens specifikationer. I slutändan effektiverades arbetsprocesserna i bolaget märkbart tack vare programmets ibruktagning.',
+          tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Nätverk', 'DevOps']
         },
-        location: 'Lovisa, Nyland',
-        description: 'Som mitt sommarjobb för år 2020 jobbade jag som Full Stack Engineer för Tarra-Tac. Till mina arbetsuppgifter tillhörde utvecklingen av ett nytt prissättningsprogram på basen av arbetsgivarens specifikationer. I slutändan effektiverades arbetsprocesserna i bolaget märkbart tack vare programmets ibruktagning.',
-        tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Nätverk', 'DevOps']
-      },
-      {
-        role: 'Virtualutbildningsassistent',
-        type: 'conscript',
-        date: 'Februari - September 2019',
-        company: {
-          name: 'Försvarsmakten',
-          link: 'https://puolustusvoimat.fi',
-          icon: FdfLogo
+        {
+          role: 'Virtualutbildningsassistent',
+          type: 'conscript',
+          date: 'Februari - September 2019',
+          company: {
+            name: 'Försvarsmakten',
+            link: 'https://puolustusvoimat.fi',
+            icon: FdfLogo
+          },
+          location: 'Dragsvik, Raseborg',
+          description: 'Under min militärtjänstgöring vid Nylands Brigad tjänstgjorde jag som virtualutbildningsassistent. Mina arbetsuppgifter inkluderade det av en programutvecklare, system- och nätverksadministrator samt IT-tekniker. I tillägg till detta fungerade jag som stridstaktikstränare samt simulatorinstruktör.',
+          tags: ['Frontend', 'Backend', 'Sysadmin', 'DevOps', 'Hårdvara', 'Nätverk', 'Tekniska monteringsarbeten']
+        }
+      ],
+      volunteer: [
+        {
+          role: 'Äldre innehållsmoderator',
+          type: 'volunteer',
+          date: 'Mars 2020 - Idag',
+          company: {
+            name: 'The Coding Den',
+            link: 'https://discord.gg/code',
+            icon: TcdLogo
+          },
+          location: 'discord.gg/code',
+          description: 'Som administrator/äldre innehållsmoderator för The Coding Den innehåller mina uppgifter, vid sidan av moderering av diskussionsfora, ledar- och mentorskap för yngre innehållsmoderatorer samt deltagande i fattandet av administrativa beslut kring framtiden av samfundet.',
+          tags: ['Innehållsmoderation', 'Ledarskap', 'Samfundsadministration']
         },
-        location: 'Dragsvik, Raseborg',
-        description: 'Under min militärtjänstgöring vid Nylands Brigad tjänstgjorde jag som virtualutbildningsassistent. Mina arbetsuppgifter inkluderade det av en programutvecklare, system- och nätverksadministrator samt IT-tekniker. I tillägg till detta fungerade jag som stridstaktikstränare samt simulatorinstruktör.',
-        tags: ['Frontend', 'Backend', 'Sysadmin', 'DevOps', 'Hårdvara', 'Nätverk', 'Tekniska monteringsarbeten']
-      }
-    ]
+        {
+          role: 'Innehållsmoderator',
+          type: 'volunteer',
+          date: 'Februari 2018 - Mars 2020',
+          company: {
+            name: 'The Coding Den',
+            link: 'https://discord.gg/code',
+            icon: TcdLogo
+          },
+          location: 'discord.gg/code',
+          description: 'Som innehållsmoderator för The Coding Den tillhörde mig uppgiften av moderering av diskussionsfora samt upprätthållet av en städig diskussionsomgivning som är välkomnande för nybörjar- och veteranprogrammerare likaså.',
+          tags: ['Innehållsmoderation']
+        },
+        {
+          role: 'Software Developer',
+          type: 'volunteer',
+          date: 'Augusti 2016 - Idag',
+          company: {
+            name: 'TheSharks',
+            link: 'https://github.com/TheSharks',
+            icon: WbLogo
+          },
+          location: 'Internationellt',
+          description: 'Jag är en öppen källkodskollaborator för TheSharks och utvecklar dataprogram för gruppen. I tillägg till detta ansvarar jag för teknisk dokumentation, systemadministration, lokalisering och fjärrstyrd infrastruktur.',
+          tags: ['Frontend', 'Backend', 'Sysadmin', 'Dokumentation', 'Lokalisering']
+        }
+      ]
+    }
   },
   // Skills
   skills: {

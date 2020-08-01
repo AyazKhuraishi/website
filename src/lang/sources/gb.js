@@ -1,6 +1,8 @@
 import moment from 'moment'
 import TarraTacLogo from '../../assets/images/logos/tarratac.png'
 import FdfLogo from '../../assets/images/logos/fdf.png'
+import TcdLogo from '../../assets/images/logos/tcd.png'
+import WbLogo from '../../assets/images/logos/wb.png'
 
 // English (GB)
 export default {
@@ -40,34 +42,77 @@ export default {
       volunteer: 'Volunteer',
       conscript: 'Conscript'
     },
-    positions: [
-      {
-        role: 'Full Stack Engineer',
-        type: 'fullTime',
-        date: 'June 2020 - July 2020',
-        company: {
-          name: 'Oy Tarra-Tac Ab',
-          link: 'https://tarratac.fi',
-          icon: TarraTacLogo
+    positions: {
+      work: [
+        {
+          role: 'Full Stack Engineer',
+          type: 'fullTime',
+          date: 'June 2020 - July 2020',
+          company: {
+            name: 'Oy Tarra-Tac Ab',
+            link: 'https://tarratac.fi',
+            icon: TarraTacLogo
+          },
+          location: 'Loviisa, Uusimaa',
+          description: 'As my summer job for 2020, I worked at Tarra-Tac as a Full Stack Engineer, working to create a new billing program based on management-provided specifications. Workflows in the company were greatly effectivised as a result of the adoption of the program.',
+          tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Networking', 'DevOps']
         },
-        location: 'Loviisa, Uusimaa',
-        description: 'As my summer job for 2020, I worked at Tarra-Tac as a Full Stack Engineer, working to create a new billing program based on management-provided specifications. Workflows in the company were greatly effectivised as a result of the adoption of the program.',
-        tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Networking', 'DevOps']
-      },
-      {
-        role: 'Virtual Training Assistant',
-        type: 'conscript',
-        date: 'June 2020 - July 2020',
-        company: {
-          name: 'Finnish Defence Forces',
-          link: 'https://puolustusvoimat.fi',
-          icon: FdfLogo
+        {
+          role: 'Virtual Training Assistant',
+          type: 'conscript',
+          date: 'June 2020 - July 2020',
+          company: {
+            name: 'Finnish Defence Forces',
+            link: 'https://puolustusvoimat.fi',
+            icon: FdfLogo
+          },
+          location: 'Dragsvik, Raasepori',
+          description: 'During my military service at the Nyland Brigade, I served as a Virtual Training Assistant. My tasks included working as a software developer, systems-/network administrator and IT technician. Alongside this, I also worked as a combat tactics teacher and simulator instructor.',
+          tags: ['Frontend', 'Backend', 'Sysadmin', 'DevOps', 'Hardware', 'Networking', 'Technical installations']
+        }
+      ],
+      volunteer: [
+        {
+          role: 'Senior Content Moderator',
+          type: 'volunteer',
+          date: 'March 2020 - Present',
+          company: {
+            name: 'The Coding Den',
+            link: 'https://discord.gg/code',
+            icon: TcdLogo
+          },
+          location: 'discord.gg/code',
+          description: 'As an administrator/senior content moderator, my task in The Coding Den is to, alongside moderating discussion fora, lead and mentor junior moderators and partake in making administrative decisions regarding the development and future of the community.',
+          tags: ['Content moderation', 'Leadership', 'Community management']
         },
-        location: 'Dragsvik, Raasepori',
-        description: 'During my military service at the Nyland Brigade, I served as a Virtual Training Assistant. My tasks included working as a software developer, systems-/network administrator and IT technician. Alongside this, I also worked as a combat tactics teacher and simulator instructor.',
-        tags: ['Frontend', 'Backend', 'Sysadmin', 'DevOps', 'Hardware', 'Networking', 'Technical installations']
-      }
-    ]
+        {
+          role: 'Content Moderator',
+          type: 'volunteer',
+          date: 'February 2018 - March 2020',
+          company: {
+            name: 'The Coding Den',
+            link: 'https://discord.gg/code',
+            icon: TcdLogo
+          },
+          location: 'discord.gg/code',
+          description: 'As a moderator for The Coding Den on Discord, my task was monitoring chat rooms and ensuring that the community stayed as a clean and welcoming environment for newcomers and veteran programmers alike.',
+          tags: ['Content moderation']
+        },
+        {
+          role: 'Software Developer',
+          type: 'volunteer',
+          date: 'August 2016 - Present',
+          company: {
+            name: 'TheSharks',
+            link: 'https://github.com/TheSharks',
+            icon: WbLogo
+          },
+          location: 'International',
+          description: 'At TheSharks, I am an open source contributor and develop software for the group. In addition, I do technical documentation, system administration, localisation and remote infrastructure management.',
+          tags: ['Frontend', 'Backend', 'Sysadmin', 'Documentation', 'Localisation']
+        }
+      ]
+    }
   },
   // Skills
   skills: {
