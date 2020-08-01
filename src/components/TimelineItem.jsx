@@ -18,7 +18,8 @@ export default class TimelineItem extends Component {
       'fullTime',
       'partTime',
       'freelance',
-      'volunteer'
+      'volunteer',
+      'conscript'
     ]).isRequired,
     description: PropTypes.string,
     tags: PropTypes.arrayOf(PropTypes.string).isRequired
@@ -47,7 +48,7 @@ export default class TimelineItem extends Component {
         contentArrowStyle={styles.contentArrow}
         iconStyle={styles.icon}
         date={this.props.date}
-        icon={<img style={{ width: '70%', height: '70%' }} src={this.props.company.icon}/>}
+        icon={<img src={this.props.company.icon}/>}
       >
         <h3 className='vertical-timeline-element-title role'>{this.props.role}</h3>
         <h4 className='vertical-timeline-element-subtitle company'>

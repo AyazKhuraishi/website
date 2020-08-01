@@ -1,5 +1,6 @@
 import moment from 'moment'
 import TarraTacLogo from '../../assets/images/logos/tarratac.png'
+import FdfLogo from '../../assets/images/logos/fdf.png'
 
 // English (GB)
 export default {
@@ -36,7 +37,8 @@ export default {
       fullTime: 'Full-time',
       partTime: 'Part-time',
       freelance: 'Freelance',
-      volunteer: 'Volunteer'
+      volunteer: 'Volunteer',
+      conscript: 'Conscript'
     },
     positions: [
       {
@@ -48,17 +50,30 @@ export default {
           link: 'https://tarratac.fi',
           icon: TarraTacLogo
         },
-        location: 'Loviisa, Finland',
+        location: 'Loviisa, Uusimaa',
         description: 'As my summer job for 2020, I worked at Tarra-Tac as a Full Stack Engineer, working to create a new billing program based on management-provided specifications. Workflows in the company were greatly effectivised as a result of the adoption of the program.',
-        tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'DevOps']
+        tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Networking', 'DevOps']
+      },
+      {
+        role: 'Virtual Training Assistant',
+        type: 'conscript',
+        date: 'June 2020 - July 2020',
+        company: {
+          name: 'Finnish Defence Forces',
+          link: 'https://puolustusvoimat.fi',
+          icon: FdfLogo
+        },
+        location: 'Dragsvik, Raasepori',
+        description: 'During my military service at the Nyland Brigade, I served as a Virtual Training Assistant. My tasks included working as a software developer, systems-/network administrator and IT technician. Alongside this, I also worked as a combat tactics teacher and simulator instructor.',
+        tags: ['Frontend', 'Backend', 'Sysadmin', 'DevOps', 'Hardware', 'Networking', 'Technical installations']
       }
     ]
   },
   // Skills
   skills: {
     title: 'SKILLS',
-    p1: 'I\'m a freelance developer with several years of experience in a multitude of environments, in teams both large and small.',
-    p2: 'I have developed websites and web applications, backend software and also some simple desktop applications. I additionally have experience in freelance-level DevOps development (Code review, Continuous Integration, etc.). Furthermore, I have a fair chunk of sysadmin experience working with various Linux environments.',
+    p1: 'I\'m a software developer with several years of experience in a multitude of environments, in teams both large and small.',
+    p2: 'I have developed several websites and web applications, backend software and desktop applications. Additionally, I have experience in DevOps tasks (Testing and automation thereof, code review, Continuous Integration and Deployment, etc.). Furthermore, I have a fair chunk of sysadmin experience in working with various server environments, both Windows and Linux.',
     p3: 'Attached in this section is a list of the languages, libraries, frameworks and so on which I know and can work with.',
     p4: {
       l1: 'Most of the projects I have created or contribute to involve some combination of the attached skills. These projects can be found on my ',

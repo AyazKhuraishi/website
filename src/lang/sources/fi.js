@@ -1,5 +1,6 @@
 import moment from 'moment'
 import TarraTacLogo from '../../assets/images/logos/tarratac.png'
+import FdfLogo from '../../assets/images/logos/fdf.png'
 
 // Finnish
 export default {
@@ -36,29 +37,43 @@ export default {
       fullTime: 'Vakituinen',
       partTime: 'Osa-aikainen',
       freelance: 'Freelance',
-      volunteer: 'Vapaaehtoinen'
+      volunteer: 'Vapaaehtoinen',
+      conscript: 'Varusmies'
     },
     positions: [
       {
         role: 'Full Stack Engineer',
         type: 'fullTime',
-        date: 'Kesäkuu 2020 - Heinäkuu 2020',
+        date: 'Kesäkuu - Heinäkuu 2020',
         company: {
           name: 'Oy Tarra-Tac Ab',
           link: 'https://tarratac.fi',
           icon: TarraTacLogo
         },
-        location: 'Loviisa, Suomi',
+        location: 'Loviisa, Uusimaa',
         description: 'Työskentelin Full Stack Engineerinä Tarra-Tacilla kesätyönäni vuonna 2020. Työtehtäviini kuului uuden hinnoitteluohjelman luonti työnantajan tarpeiden mukaan, jonka luomisen ansiosta yhtiön työprosessit tehostuivat merkittävästi.',
-        tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'DevOps']
+        tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Verkotustyöt', 'DevOps']
+      },
+      {
+        role: 'Virtuaalikoulutustukihenkilö',
+        type: 'conscript',
+        date: 'Helmikuu - Syyskuu 2019',
+        company: {
+          name: 'Puolustusvoimat',
+          link: 'https://puolustusvoimat.fi',
+          icon: FdfLogo
+        },
+        location: 'Dragsvik, Raasepori',
+        description: 'Varusmiespalvelukseni aikana Uudenmaan Prikaatissa palvelin virtuaalikoulutustukihenkilön tehtävissä. Työtehtäviini kuuluivat ohjelmistokehittäjän, järjestelmä- ja verkkoylläpitäjän sekä IT-teknikon tehtävät. Tämän lisäksi toimin taisteluteorian kouluttajana sekä simulaattoriohjaajana.',
+        tags: ['Frontend', 'Backend', 'Sysadmin', 'DevOps', 'Laitteistot', 'Verkotustyöt', 'Tekniset asennustyöt']
       }
     ]
   },
   // Skills
   skills: {
     title: 'TAITOJA',
-    p1: 'Olen freelance-kehittäjä jolla on useamman vuoden kokemus monenlaisista ympäristöistä, ',
-    p2: 'Olen kehittänyt verkkosivuja sekä -applikaatioita, backend-ohjelmistoja ja myöskin muutamia yksinkertaisia työpöytäohjelmia. Tämän lisäksi minulla on kokemusta freelance-tason DevOps-kehityksestä (Code review, Continuous Integration, jne.). Minulla on myöskin kiitettävästi sysadmin-kokemusta erinäisistä Linux-ympäristöistä.',
+    p1: 'Olen ohjelmistokehittäjä jolla on useamman vuoden kokemus monenlaisista ympäristöistä, niin suurista kuin pienistäkin tiimeistä.',
+    p2: 'Olen kehittänyt useita verkkosivustoja sekä -applikaatioita, serveriohjelmistoja sekä työpöytäohjelmia. Tämän lisäksi minulla on kokemusta DevOps-tehtävistä (Testaus ja sen automaatio, code review, Continuous Integration and Deployment, jne.). Minulla on myöskin kiitettävästi sysadmin-kokemusta erinäisistä serveriympäristöistä, ja kokemusta löytyy sekä Windows- että Linux-serveriympäristöistä.',
     p3: 'Tästä osiosta löytyy liitettynä lista niistä ohjelmointikielistä, kirjastoista, frameworkeistä jne. jotka tunnen ja joiden kanssa osaan työskennellä.',
     p4: {
       l1: 'Suurin osa projekteista jotka olen luonut tai joihin olen osallistunut sisältävät jonkin asteisen yhdistelmän liitetyistä taidoistani. Nämä projektit ovat löydettävissä ',

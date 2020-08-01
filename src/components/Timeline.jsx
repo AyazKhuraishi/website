@@ -9,7 +9,7 @@ export default class Timeline extends Component {
 
   render () {
     return (
-      <VerticalTimeline>
+      <VerticalTimeline layout='1-column'>
         {this.props.children}
       </VerticalTimeline>
     )

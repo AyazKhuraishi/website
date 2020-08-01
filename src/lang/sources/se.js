@@ -1,5 +1,6 @@
 import moment from 'moment'
 import TarraTacLogo from '../../assets/images/logos/tarratac.png'
+import FdfLogo from '../../assets/images/logos/fdf.png'
 
 // Swedish (FI)
 export default {
@@ -36,29 +37,43 @@ export default {
       fullTime: 'Heltid',
       partTime: 'Deltid',
       freelance: 'Freelance',
-      volunteer: 'Frivilligarbete'
+      volunteer: 'Frivilligarbete',
+      conscript: 'Beväring'
     },
     positions: [
       {
         role: 'Full Stack Engineer',
         type: 'fullTime',
-        date: 'Juni 2020 - Juli 2020',
+        date: 'Juni - Juli 2020',
         company: {
           name: 'Oy Tarra-Tac Ab',
           link: 'https://tarratac.fi',
           icon: TarraTacLogo
         },
-        location: 'Lovisa, Finland',
+        location: 'Lovisa, Nyland',
         description: 'Som mitt sommarjobb för år 2020 jobbade jag som Full Stack Engineer för Tarra-Tac. Till mina arbetsuppgifter tillhörde utvecklingen av ett nytt prissättningsprogram på basen av arbetsgivarens specifikationer. I slutändan effektiverades arbetsprocesserna i bolaget märkbart tack vare programmets ibruktagning.',
-        tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'DevOps']
+        tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Nätverk', 'DevOps']
+      },
+      {
+        role: 'Virtualutbildningsassistent',
+        type: 'conscript',
+        date: 'Februari - September 2019',
+        company: {
+          name: 'Försvarsmakten',
+          link: 'https://puolustusvoimat.fi',
+          icon: FdfLogo
+        },
+        location: 'Dragsvik, Raseborg',
+        description: 'Under min militärtjänstgöring vid Nylands Brigad tjänstgjorde jag som virtualutbildningsassistent. Mina arbetsuppgifter inkluderade det av en programutvecklare, system- och nätverksadministrator samt IT-tekniker. I tillägg till detta fungerade jag som stridstaktikstränare samt simulatorinstruktör.',
+        tags: ['Frontend', 'Backend', 'Sysadmin', 'DevOps', 'Hårdvara', 'Nätverk', 'Tekniska monteringsarbeten']
       }
     ]
   },
   // Skills
   skills: {
     title: 'KUNSKAPER',
-    p1: 'Jag är en freelance-programmerare med flera års erfarenhet i ett brett spektrum av omgivningar, i team stora som små.',
-    p2: 'Jag har utvecklat nätsidor och web-applikationer, backend-program och även några små skrivbordsprogram. Jag har även kunskaper i DevOps-utveckling på freelance-nivå (Code review, Continuous Integration, osv.). Därtill har jag gott kunnande inom sysadmin från diverse Linux-omgivningar.',
+    p1: 'Jag är en programutvecklare med flera års erfarenhet i ett brett spektrum av omgivningar, i team stora som små.',
+    p2: 'Jag har utvecklat ett flertal nätsidor och web-applikationer samt server- och skrivbordsprogram. Jag har även erfarenhet av DevOps-uppgifter (Testning inklusive dess automatisering, code review, Continuous Integration and Deployment, osv.). Därtill har jag gott kunnande inom sysadmin från diverse serveromgivningar, inom både Windows- och Linux-omgivningar.',
     p3: 'I denna sektion finns bifogad en lista på alla programmeringsspråk, system, frameworks osv. jag känner till och kan jobba med.',
     p4: {
       l1: 'De flesta av projekten jag har gjort eller deltagit i innefattar någon kombination av de här bifogade kunskaperna. Dessa projekt kan hittas på min ',
