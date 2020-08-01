@@ -12,6 +12,11 @@
   }
 }
 
+// Add a better box-shadow to timeline element content
+.vertical-timeline-element-content {
+  box-shadow: $shadow-1;
+}
+
 .timeline-item {
   %subtitle {
     font-size: 14px;

@@ -28,7 +28,7 @@ export default class TimelineItem extends Component {
   render () {
     const styles = {
       content: {
-        backgroundColor: '#f5f5f5'
+        backgroundColor: '#ffffff'
       },
       contentArrow: {
         borderRight: '7px solid #cdcdcd'
