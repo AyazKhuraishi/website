@@ -34,7 +34,8 @@ const CSSPurgerConfig = new PurgeCSSWebpackPlugin({
   paths: glob.sync(`${path.join(__dirname, 'src')}/**/*`, { nodir: true }),
   whitelistPatterns: [
     /cil-|cib-|cif-/,
-    /flag-icon/
+    /flag-icon/,
+    /vertical-timeline/
   ]
 })
 
