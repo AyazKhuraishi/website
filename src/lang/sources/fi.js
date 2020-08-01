@@ -1,7 +1,7 @@
 import moment from 'moment'
+import TarraTacLogo from '../../assets/images/logos/tarratac.png'
 
 // Finnish
-
 export default {
   // Hero
   hero: {
@@ -27,7 +27,32 @@ export default {
       l3: ', mutta olen myös kehittänyt lukuisia ohjelmia omin neuvoin. Näistä löytyy kaikkea backend-applikaatioista verkkosivuihin ja työpöytäohjelmiin. Muutamia esimerkkejä töistäni ovat ',
       l4: ' ja '
     },
-    p6: 'Opiskelen tällä hetkellä tieto- ja viestintätekniikkaa Metropolia Ammattikorkeakoulussa, josta valmistun oletettavasti vuoden 2023 lopulla. Nykyisissä työtehtävissäni toimin ohjelmistokehittäjänä Tarra-Tac Oy:lle. Tätä ennen olen toiminut ohjelmoijana ja/tai järjestelmäylläpitäjänä mm. Suomen Puolustusvoimille.'
+    p6: 'Opiskelen tällä hetkellä tieto- ja viestintätekniikkaa Metropolia Ammattikorkeakoulussa, josta valmistun oletettavasti vuoden 2023 lopulla. Edelliset työpaikkani ohjelmistokehittäjänä/-insinöörinä ja/tai järjestelmäylläpitäjänä sisältävät mm. Tarra-Tac Oy:n ja Suomen Puolustusvoimat.'
+  },
+  // Experience
+  experience: {
+    title: 'TYÖKOKEMUS',
+    employmentTypes: {
+      fullTime: 'Vakituinen',
+      partTime: 'Osa-aikainen',
+      freelance: 'Freelance',
+      volunteer: 'Vapaaehtoinen'
+    },
+    positions: [
+      {
+        role: 'Full Stack Engineer',
+        type: 'fullTime',
+        date: 'Kesäkuu 2020 - Heinäkuu 2020',
+        company: {
+          name: 'Oy Tarra-Tac Ab',
+          link: 'https://tarratac.fi',
+          icon: TarraTacLogo
+        },
+        location: 'Loviisa, Suomi',
+        description: 'Työskentelin Full Stack Engineerinä Tarra-Tacilla kesätyönäni vuonna 2020. Työtehtäviini kuului uuden hinnoitteluohjelman luonti työnantajan tarpeiden mukaan, jonka luomisen ansiosta yhtiön työprosessit tehostuivat merkittävästi.',
+        tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'DevOps']
+      }
+    ]
   },
   // Skills
   skills: {
@@ -40,7 +65,7 @@ export default {
       l2: 'GitHub-sivultani',
       l3: ', ja pidän myöskin kaikkien avoimen lähdekoodin ohjelmieni ohjelmistokoodia edellämainitulla alustalla.'
     },
-    p5: 'Vinkki: Jos et tiedä, mitä jokin ikoni tarkoittaa, vie hiiren osoitin sen yläpuolelle saadaksesi tarkemman kuvauksen sen tarkoituksesta!'
+    p5: 'Vinkki: Jos et tiedä, mitä jokin ikoni tarkoittaa, klikkaa sitä!'
   },
   // Projects
   projects: {

@@ -29,7 +29,7 @@ export default class Skills extends Component {
             <p>{i18n`skills.p2`}</p>
             <p>{i18n`skills.p3`}</p>
             <p>{i18n`skills.p4.l1`}<Link to='https://github.com/linuswillner'>{i18n`skills.p4.l2`}</Link>{i18n`skills.p4.l3`}</p>
-            <p>{i18n`skills.p5`}</p>
+            <p><i>{i18n`skills.p5`}</i></p>
           </div>
           <div className='column' style={styles.rightColumnOverrides}>
             <SkillDisplay/>

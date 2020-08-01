@@ -1,0 +1,51 @@
+// Section background
+.experience {
+  @extend %section-background;
+}
+
+// Section text
+.experience-text {
+  padding-right: 70px;
+
+  p {
+    padding-bottom: 10px;
+  }
+}
+
+.timeline-item {
+  %subtitle {
+    font-size: 14px;
+  }
+
+  .role {
+    font-size: 20px;
+    color: #363636;
+    margin-bottom: 12px;
+  }
+
+  .company {
+    @extend %subtitle;
+  }
+
+  .location {
+    @extend %subtitle;
+
+    .position-fix {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+  }
+
+  .type {
+    @extend %subtitle;
+
+    .position-fix {
+      padding-left: 1px;
+      padding-right: 2px;
+    }
+  }
+
+  .tech:not(:last-child) {
+    margin-right: 5px;
+  }  
+}

@@ -1,7 +1,7 @@
 import moment from 'moment'
+import TarraTacLogo from '../../assets/images/logos/tarratac.png'
 
 // English (GB)
-
 export default {
   // Hero
   hero: {
@@ -27,7 +27,32 @@ export default {
       l3: ', but I have also created a fair few programs of my own. These range from backend applications to websites and full-fledged desktop applications. Some examples of my work are ',
       l4: ' and '
     },
-    p6: 'I\'m currently studying Information and Communication Technology at Metropolia University of Applied Sciences, expected to graduate at the end of 2023. Presently, I\'m working for Tarra-Tac as a software engineer. Prior to this, I\'ve worked as a software developer and/or systems administrator for, among others, the Finnish Defence Forces.'
+    p6: 'I\'m currently studying Information and Communication Technology at Metropolia University of Applied Sciences, expected to graduate at the end of 2023. In the past, I have worked as a software developer/engineer and/or systems administrator for, among others, Oy Tarra-Tac Ab and the Finnish Defence Forces.'
+  },
+  // Experience
+  experience: {
+    title: 'EXPERIENCE',
+    employmentTypes: {
+      fullTime: 'Full-time',
+      partTime: 'Part-time',
+      freelance: 'Freelance',
+      volunteer: 'Volunteer'
+    },
+    positions: [
+      {
+        role: 'Full Stack Engineer',
+        type: 'fullTime',
+        date: 'June 2020 - July 2020',
+        company: {
+          name: 'Oy Tarra-Tac Ab',
+          link: 'https://tarratac.fi',
+          icon: TarraTacLogo
+        },
+        location: 'Loviisa, Finland',
+        description: 'As my summer job for 2020, I worked at Tarra-Tac as a Full Stack Engineer, working to create a new billing program based on management-provided specifications. Workflows in the company were greatly effectivised as a result of the adoption of the program.',
+        tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'DevOps']
+      }
+    ]
   },
   // Skills
   skills: {
@@ -40,7 +65,7 @@ export default {
       l2: 'GitHub page',
       l3: ', and I keep all my open source projects on that platform as well.'
     },
-    p5: 'Tip: If you don\'t know what a particular icon means, hover over it in the list to see a description of what it stands for!'
+    p5: '(Tip: If you don\'t know what a particular icon means, click it to find out!)'
   },
   // Projects
   projects: {

@@ -2,7 +2,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Main from './layouts/Main'
-import './assets/scss/main.scss' // Load CSS for availability in the entire application
+
+// CSS
+import 'react-vertical-timeline-component/style.min.css'
+import './assets/scss/main.scss'
 
 class ErrorBoundary extends Component {
   constructor (props) {

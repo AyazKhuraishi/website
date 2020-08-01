@@ -1,7 +1,7 @@
 import moment from 'moment'
+import TarraTacLogo from '../../assets/images/logos/tarratac.png'
 
 // Swedish (FI)
-
 export default {
   // Hero
   hero: {
@@ -27,7 +27,32 @@ export default {
       l3: ', men jag har även gjort ett antal program på eget bevåg. Dessa innefattar allt från backend-applikationer till nätsidor och fullt funktionerande skrivbordsprogram. Exempel på program jag byggt innefattar ',
       l4: ' och '
     },
-    p6: 'För tillfället studerar jag informations- och kommunikationsteknologi vid Metropolia Ammattikorkeakoulu, varifrån jag förväntar mig att bli utexaminerad vid årsslutet 2023. I mina nuvarande arbetsuppgifter fungerar jag som programutvecklare för Tarra-Tac Ab. Före detta har jag fungerat som programmerare och/eller systemadministrator för bl.a. Försvarsmakten.'
+    p6: 'För tillfället studerar jag informations- och kommunikationsteknologi vid Metropolia Ammattikorkeakoulu, varifrån jag förväntar mig att bli utexaminerad vid årsslutet 2023. I det förflutna har jag jobbat som programutvecklare/-ingenjör och/eller systemadministrator för bl.a. Tarra-Tac Ab och Försvarsmakten.'
+  },
+  // Experience
+  experience: {
+    title: 'EXPERIENCE',
+    employmentTypes: {
+      fullTime: 'Heltid',
+      partTime: 'Deltid',
+      freelance: 'Freelance',
+      volunteer: 'Frivilligarbete'
+    },
+    positions: [
+      {
+        role: 'Full Stack Engineer',
+        type: 'fullTime',
+        date: 'Juni 2020 - Juli 2020',
+        company: {
+          name: 'Oy Tarra-Tac Ab',
+          link: 'https://tarratac.fi',
+          icon: TarraTacLogo
+        },
+        location: 'Lovisa, Finland',
+        description: 'Som mitt sommarjobb för år 2020 jobbade jag som Full Stack Engineer för Tarra-Tac. Till mina arbetsuppgifter tillhörde utvecklingen av ett nytt prissättningsprogram på basen av arbetsgivarens specifikationer. I slutändan effektiverades arbetsprocesserna i bolaget märkbart tack vare programmets ibruktagning.',
+        tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'DevOps']
+      }
+    ]
   },
   // Skills
   skills: {
@@ -40,7 +65,7 @@ export default {
       l2: 'GitHub-sida',
       l3: ', och jag har även alla mina projekt med öppen källkod på den plattformen.'
     },
-    p5: 'Tips: Ifall du inte känner till någon viss ikon, för muspekaren ovanom den för att få en mer utförlig beskrivning av vad den står för!'
+    p5: 'Tips: Ifall du inte känner till någon viss ikon, klicka på den!'
   },
   // Projects
   projects: {
