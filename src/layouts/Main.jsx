@@ -60,9 +60,9 @@ export default class Main extends Component {
         <Hero/>
         <About/>
         <Divider/>
-        <Experience/>
-        <Divider/>
         <Skills/>
+        <Divider/>
+        <Experience/>
         <Divider/>
         <Projects/>
         <Divider/>
