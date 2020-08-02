@@ -16,9 +16,40 @@
   box-shadow: $shadow-1;
 }
 
+// Remove "line" between positions
+.vertical-timeline::before {
+  display: none;
+}
+
 .timeline-item {
+  @extend %text;
+
   %subtitle {
     font-size: 14px;
+  }
+
+  .role-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .meta {
+    display: flex;
+    flex-direction: row;
+
+    .icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 5px;
+    }
+  
+    .texts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 24px; // Bring texts in line with the emojis by spacing them out more
+    }
   }
 
   .role {
@@ -49,11 +80,16 @@
     }
   }
 
+  .description {
+    font-size: 14px;
+  }
+
   .tech {
     margin-bottom: 5px;
+    font-size: 11px
   }
 
   .tech:not(:last-child) {
     margin-right: 5px;
-  }  
+  }
 }

@@ -41,6 +41,7 @@
 // Project links
 .project-links {
   .project-button {
+    text-decoration: none; // Remove underline on Webkit browsers
     margin-left: 0px;
     font-size: 25px;
   }

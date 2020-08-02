@@ -50,22 +50,29 @@ export default class TimelineItem extends Component {
         date={this.props.date}
         icon={<img src={this.props.company.icon}/>}
       >
-        <h3 className='vertical-timeline-element-title role'>{this.props.role}</h3>
-        <h4 className='vertical-timeline-element-subtitle company'>
-          <span>🏢</span> {
-            this.props.company.link
-              ? <Link to={this.props.company.link}>{this.props.company.name}</Link>
-              : this.props.company.name
-          }
-        </h4>
-        <h4 className='vertical-timeline-element-subtitle location'>
-          <span className='position-fix'>📍</span> {this.props.location}
-        </h4>
-        <h4 className='vertical-timeline-element-subtitle type'>
-          <span className='position-fix'>👨‍💼</span> {i18n`experience.employmentTypes`[this.props.type]}
-        </h4>
-        <p>{this.props.description}</p>
-        <p>{this.props.tags.map((tag, i) => <span key={i} className='tag tech is-dark'>{tag}</span>)}</p>
+        <div className='role-content'>
+          <h3 className='vertical-timeline-element-title role'>{this.props.role}</h3>
+          <div className='meta'>
+            <div className='icons'>
+              <span>🏢</span>
+              <span>📍</span>
+              <span>👨‍💼</span>
+            </div>
+            <div className='texts'>
+              <h4 className='vertical-timeline-element-subtitle company'>
+                {
+                  this.props.company.link
+                    ? <Link to={this.props.company.link}>{this.props.company.name}</Link>
+                    : this.props.company.name
+                }
+              </h4>
+              <h4 className='vertical-timeline-element-subtitle location'>{this.props.location}</h4>
+              <h4 className='vertical-timeline-element-subtitle type'>{i18n`experience.employmentTypes`[this.props.type]}</h4>
+            </div>
+          </div>
+          <p className='description'>{this.props.description}</p>
+          <p>{this.props.tags.map((tag, i) => <span key={i} className='tag tech is-dark'>{tag}</span>)}</p>
+        </div>
       </VerticalTimelineElement>
     )
   }
