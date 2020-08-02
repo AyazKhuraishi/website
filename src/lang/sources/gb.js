@@ -47,7 +47,7 @@ export default {
         {
           role: 'Full Stack Engineer',
           type: 'fullTime',
-          date: 'June 2020 - July 2020',
+          date: 'June - July 2020',
           company: {
             name: 'Oy Tarra-Tac Ab',
             link: 'https://tarratac.fi',
@@ -60,7 +60,7 @@ export default {
         {
           role: 'Virtual Training Assistant',
           type: 'conscript',
-          date: 'June 2020 - July 2020',
+          date: 'February - September 2019',
           company: {
             name: 'Finnish Defence Forces',
             link: 'https://puolustusvoimat.fi',
