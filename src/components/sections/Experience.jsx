@@ -12,11 +12,11 @@ export default class Experience extends Component {
         <SectionTitle>🛠️ {i18n`experience.title`} 🛠️</SectionTitle>
         <div className='columns'>
           <div className='column'>
-            <h2 className='experience-category-title'>Work experience</h2>
+            <h2 className='experience-category-title'>{i18n`experience.workCategoryTitle`}</h2>
             <Timeline>{i18n`experience.positions.work`.map((position, i) => <TimelineItem key={i} {...position} />)}</Timeline>
           </div>
           <div className='column'>
-            <h2 className='experience-category-title'>Volunteer experience</h2>
+            <h2 className='experience-category-title'>{i18n`experience.volunteerCategoryTitle`}</h2>
             <Timeline>{i18n`experience.positions.volunteer`.map((position, i) => <TimelineItem key={i} {...position} />)}</Timeline>
           </div>
         </div>

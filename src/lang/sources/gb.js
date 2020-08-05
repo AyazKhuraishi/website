@@ -35,6 +35,8 @@ export default {
   // Experience
   experience: {
     title: 'EXPERIENCE',
+    workCategoryTitle: 'Work experience',
+    volunteerCategoryTitle: 'Volunteer experience',
     employmentTypes: {
       fullTime: 'Full-time',
       partTime: 'Part-time',

@@ -34,7 +34,9 @@ export default {
   },
   // Experience
   experience: {
-    title: 'EXPERIENCE',
+    title: 'ARBETSERFARENHET',
+    workCategoryTitle: 'Arbetsplatser',
+    volunteerCategoryTitle: 'Frivilligarbeten',
     employmentTypes: {
       fullTime: 'Heltid',
       partTime: 'Deltid',

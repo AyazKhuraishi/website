@@ -35,6 +35,8 @@ export default {
   // Experience
   experience: {
     title: 'TYÖKOKEMUS',
+    workCategoryTitle: 'Työpaikat',
+    volunteerCategoryTitle: 'Vapaaehtoistyöt',
     employmentTypes: {
       fullTime: 'Vakituinen',
       partTime: 'Osa-aikainen',
