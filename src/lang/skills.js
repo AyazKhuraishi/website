@@ -6,7 +6,7 @@ export default {
     { name: 'TypeScript', icon: 'typescript', color: '#0076C6' },
     { name: 'Node.js', icon: 'node-js', color: '#6CA25D' },
     { name: 'Go', icon: 'go', color: '#00A7D0' },
-    { name: 'C# and .NET', icon: 'dot-net', color: '#6D13E0' }
+    { name: 'C#/.NET', icon: 'dot-net', color: '#6D13E0' }
   ],
   libraries: [
     { name: 'React', icon: 'react', color: '#5ED3F3' },
@@ -32,7 +32,9 @@ export default {
     { name: 'PowerShell', icon: 'powershell', color: '#086FBF' },
     { name: 'ESLint', icon: 'eslint', color: '#482FBD' },
     { name: 'Jest', icon: 'jest', color: '#944058' },
-    { name: 'Redis', icon: 'redis', color: '#C7281C' }
+    { name: 'Redis', icon: 'redis', color: '#C7281C' },
+    { name: 'Terraform', icon: 'terraform', color: '#5C4EE5' },
+    { name: 'Kubernetes', icon: 'kubernetes', color: '#326DE6' }
   ],
   services: [
     { name: 'CloudFlare', icon: 'cloudflare', color: '#EC7D1F' },
