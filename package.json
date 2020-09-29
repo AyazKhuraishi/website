@@ -67,7 +67,7 @@
     "@coreui/icons": "^1.0.1",
     "@creativebulma/bulma-tooltip": "^1.2.0",
     "@hot-loader/react-dom": "^16.13.0",
-    "bulma": "^0.9.0",
+    "bulma": "^0.9.1",
     "bulma-divider": "^2.0.1",
     "clean-webpack-plugin": "^3.0.0",
     "in-viewport": "^3.6.0",
