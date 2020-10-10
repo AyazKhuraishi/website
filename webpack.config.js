@@ -32,11 +32,13 @@ const CSSOptimizerConfig = new OptimizeCSSWebpackPlugin({})
 
 const CSSPurgerConfig = new PurgeCSSWebpackPlugin({
   paths: glob.sync(`${path.join(__dirname, 'src')}/**/*`, { nodir: true }),
-  whitelistPatterns: [
-    /cil-|cib-|cif-/,
-    /flag-icon/,
-    /vertical-timeline/
-  ]
+  safelist: {
+    standard: [
+      /cil-|cib-|cif-/,
+      /flag-icon/,
+      /vertical-timeline/
+    ]
+  }
 })
 
 const ProgressBarConfig = new ProgressBarPlugin({
@@ -54,8 +56,7 @@ const devPlugins = [
   HTMLInjecterConfig,
   CSSExtracterConfig,
   new ErrorOverlayWebpackPlugin(),
-  new webpack.HotModuleReplacementPlugin(),
-  new webpack.NamedModulesPlugin()
+  new webpack.HotModuleReplacementPlugin()
 ]
 
 const prodPlugins = [
@@ -88,6 +89,7 @@ module.exports = {
 
   // Production optimisers
   optimization: {
+    namedModules: true,
     minimizer: dev ? [] : [JSOptimizerConfig, CSSOptimizerConfig],
     splitChunks: {
       cacheGroups: {
