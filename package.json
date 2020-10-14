@@ -74,7 +74,7 @@
     "moment": "2.29.1",
     "prop-types": "^15.7.2",
     "ramda": "^0.27.1",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-dom": "^16.13.1",
     "react-sweet-progress": "^1.1.2",
     "react-typist-repacked": "^1.0.0",
