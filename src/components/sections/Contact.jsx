@@ -30,8 +30,7 @@ export default class Contact extends Component {
     { link: 'https://github.com/linuswillner', class: 'cib-github github', name: 'GitHub' },
     { link: 'https://www.npmjs.com/~linuswillner', class: 'cib-npm npm', name: 'NPM' },
     { link: 'https://linkedin.com/in/linuswillner', class: 'cib-linkedin linkedin', name: 'LinkedIn' },
-    { link: 'https://twitter.com/linuswillner', class: 'cib-twitter twitter', name: 'Twitter' },
-    { link: 'https://instagram.com/linuswillner', class: 'cib-instagram instagram', name: 'Instagram' }
+    { link: 'https://twitter.com/linuswillner', class: 'cib-twitter twitter', name: 'Twitter' }
   ]
 
   render () {
