@@ -11,7 +11,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 const ErrorOverlayWebpackPlugin = require('error-overlay-webpack-plugin')
 
-const dev = process.env.NODE_ENV !== 'production' || process.argv.indexOf('-p') === -1
+const dev = process.env.NODE_ENV !== 'production'
 
 const HTMLInjecterConfig = new HTMLWebpackPlugin({
   template: path.join(__dirname, '/src/index.html'),
@@ -67,7 +67,7 @@ const prodPlugins = [
 ]
 
 // If clean build is desired, add CleanWebpackPlugin
-if (process.argv.indexOf('-c') !== -1) prodPlugins.push(new CleanWebpackPlugin())
+if (process.env.CLEAN_BUILD) prodPlugins.push(new CleanWebpackPlugin())
 
 // If in CI, don't output progress to stdout to reduce log clutter
 if (!process.env.CI) prodPlugins.push(ProgressBarConfig)
