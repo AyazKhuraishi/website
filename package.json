@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server",
+    "start": "cross-env NODE_ENV=development webpack serve",
     "test": "eslint . && stylelint **/*.scss",
     "test-fix": "eslint . --fix && stylelint **/*.scss --fix",
     "build": "cross-env NODE_ENV=production webpack && npm run copy-keybase",
