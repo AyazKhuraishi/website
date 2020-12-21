@@ -56,15 +56,16 @@ export default class About extends Component {
               <p>{i18n`about.p4`}</p>
               <p>
                 {i18n`about.p5.l1`}
-                <Link to='https://github.com/TheSharks/WildBeast'>WildBeast</Link>
+                <Link to='https://github.com/TheSharks/WildBeast'>TheSharks/WildBeast</Link>
                 {i18n`about.p5.l2`}
-                <Link to='https://github.com/TheSharks/JagTag-JS'>JagTag-JS</Link>
+                <Link to='https://github.com/TheCodingDen/projects-bot'>TheCodingDen/projects-bot</Link>
                 {i18n`about.p5.l3`}
                 <Link to='https://github.com/linuswillner/react-console-emulator'>react-console-emulator</Link>
                 {i18n`about.p5.l4`}
-                <Link to='https://github.com/linuswillner/tag-replacer'>tag-replacer</Link>.
+                <Link to='https://github.com/TheSharks/JagTag-JS'>TheSharks/JagTag-JS</Link>.
               </p>
               <p>{i18n`about.p6`}</p>
+              <p>{i18n`about.p7`}</p>
               <p className='signature'>- LW</p>
             </div>
           </div>

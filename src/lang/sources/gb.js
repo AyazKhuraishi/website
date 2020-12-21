@@ -25,12 +25,13 @@ export default {
     p3: 'Since 2017, I\'ve been doing software development, mostly in the field of open source software. I have worked as a programmer and systems administrator for the most part, and aside of that in areas like documentation, localisation and quality assurance.',
     p4: 'I\'m a multilingual person, being equally proficient in three languages - namely, Finnish, Swedish, and English. I\'m a native speaker of the former two.',
     p5: {
-      l1: 'I\'m perhaps best known for my contributions to projects like ',
+      l1: 'I\'m perhaps best known for my maintenance of and contributions to projects like ',
       l2: ' and ',
       l3: ', but I have also created a fair few programs of my own. These range from backend applications to websites and full-fledged desktop applications. Some examples of my work are ',
       l4: ' and '
     },
-    p6: 'I\'m currently studying Information and Communication Technology at Metropolia University of Applied Sciences, expected to graduate at the end of 2023. In the past, I have worked as a software developer/engineer and/or systems administrator for, among others, Oy Tarra-Tac Ab and the Finnish Defence Forces.'
+    p6: 'In the past, I have worked as a software developer and/or systems administrator for, among others, Oy Tarra-Tac Ab and the Finnish Defence Forces.',
+    p7: 'I\'m currently studying Information and Communication Technology at Metropolia University of Applied Sciences. I\'m majoring in Software Engineering, and am expected to graduate at the end of 2023.'
   },
   // Experience
   experience: {

@@ -6,7 +6,9 @@ export default {
     { name: 'TypeScript', icon: 'typescript', color: '#0076C6' },
     { name: 'Node.js', icon: 'node-js', color: '#6CA25D' },
     { name: 'Go', icon: 'go', color: '#00A7D0' },
-    { name: 'C#/.NET', icon: 'dot-net', color: '#6D13E0' }
+    { name: 'C#/.NET', icon: 'dot-net', color: '#6D13E0' },
+    { name: 'Java', icon: 'java', color: '#E76F00' },
+    { name: 'C', icon: 'c', color: '#5C6BC0' }
   ],
   libraries: [
     { name: 'React', icon: 'react', color: '#5ED3F3' },
@@ -14,7 +16,8 @@ export default {
     { name: 'Webpack', icon: 'webpack', color: '#8ACFF3' },
     { name: 'Babel', icon: 'babel', color: '#F9DC3E' },
     { name: 'Electron', icon: 'electron', color: '#A0EBF9' },
-    { name: 'Unity', icon: 'unity', color: '#050608' }
+    { name: 'Unity', icon: 'unity', color: '#050608' },
+    { name: 'Android', icon: 'android', color: '#30D780' }
   ],
   operatingSystems: [
     { name: 'Windows', icon: 'windows', color: '#0173D0' },
@@ -22,7 +25,8 @@ export default {
     { name: 'Manjaro', icon: 'manjaro', color: '#33B959' },
     { name: 'Ubuntu', icon: 'ubuntu', color: '#D74614' },
     { name: 'Debian', icon: 'debian', color: '#D0074E' },
-    { name: 'Raspbian', icon: 'raspberry-pi', color: '#B21241' }
+    { name: 'Raspbian', icon: 'raspberry-pi', color: '#B21241' },
+    { name: 'CentOS', icon: 'centos', color: '#050608' }
   ],
   tools: [
     { name: 'Docker', icon: 'docker', color: '#0E90D2' },

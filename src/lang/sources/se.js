@@ -25,12 +25,13 @@ export default {
     p3: 'Sedan 2017 har jag sysslat med programutveckling, mestadels inom s.k. open source software. Jag har jobbat som programmerare och systemadministrator för det mesta, och därtill innehaft roller inom dokumentation, lokalisation och kvalitetskontroll.',
     p4: 'Jag är en flerspråkig person med likjämn kunskapsnivå i tre språk - närmare sagt finska, svenska och engelska. Mina modersmål är de två förstnämnda.',
     p5: {
-      l1: 'Jag är mest känd för mitt arbete inom projekt som ',
+      l1: 'Jag är mest känd för mitt upprätthåll av och arbete inom projekt som ',
       l2: ' och ',
       l3: ', men jag har även gjort ett antal program på eget bevåg. Dessa innefattar allt från backend-applikationer till nätsidor och fullt funktionerande skrivbordsprogram. Exempel på program jag byggt innefattar ',
       l4: ' och '
     },
-    p6: 'För tillfället studerar jag informations- och kommunikationsteknologi vid Metropolia Ammattikorkeakoulu, varifrån jag förväntar mig att bli utexaminerad vid årsslutet 2023. I det förflutna har jag jobbat som programutvecklare/-ingenjör och/eller systemadministrator för bl.a. Tarra-Tac Ab och Försvarsmakten.'
+    p6: 'I det förflutna har jag jobbat som programvaruutvecklare och/eller systemadministrator för bl.a. Tarra-Tac Ab och Försvarsmakten.',
+    p7: 'För tillfället studerar jag informations- och kommunikationsteknologi vid Metropolia Ammattikorkeakoulu. Mitt huvudämne är programvaruutveckling, varifrån jag förväntar mig att bli utexaminerad vid årsslutet 2023.'
   },
   // Experience
   experience: {

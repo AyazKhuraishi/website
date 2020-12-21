@@ -25,12 +25,13 @@ export default {
     p3: 'Olen toiminut ohjelmistokehittäjänä vuodesta 2017 lähtien, suurimmaksi osaksi avoimen lähdekoodin saralla. Olen työskennellyt enimmäkseen ohjelmoijana sekä järjestelmäylläpitäjänä, jonka lisäksi olen toiminut dokumentaatio-, käännös- ja laadunvalvontatehtävissä.',
     p4: 'Olen monikielinen persoona joka hallitsee samantasoisesti kolmea kieltä - tarkemmin sanottuna suomea, ruotsia sekä englantia. Äidinkieleni ovat listan kaksi ensimmäistä kieltä.',
     p5: {
-      l1: 'Minut tunnetaan arvatenkin parhaimmin projekteista kuten ',
-      l2: ' sekä ',
-      l3: ', mutta olen myös kehittänyt lukuisia ohjelmia omin neuvoin. Näistä löytyy kaikkea backend-applikaatioista verkkosivuihin ja työpöytäohjelmiin. Muutamia esimerkkejä töistäni ovat ',
+      l1: 'Suurimmat saavutukseni sisältävät projektien kuten ',
+      l2: ' ja ',
+      l3: ' ylläpidon ja kehityksen, mutta olen myös kehittänyt lukuisia ohjelmia omin neuvoin. Näistä löytyy kaikkea backend-applikaatioista verkkosivuihin ja työpöytäohjelmiin. Muutamia esimerkkejä töistäni ovat ',
       l4: ' ja '
     },
-    p6: 'Opiskelen tällä hetkellä tieto- ja viestintätekniikkaa Metropolia Ammattikorkeakoulussa, josta valmistun oletettavasti vuoden 2023 lopulla. Edelliset työpaikkani ohjelmistokehittäjänä/-insinöörinä ja/tai järjestelmäylläpitäjänä sisältävät mm. Tarra-Tac Oy:n ja Suomen Puolustusvoimat.'
+    p6: 'Edelliset työpaikkani ohjelmistokehittäjänä ja/tai järjestelmäylläpitäjänä sisältävät mm. Tarra-Tac Oy:n ja Suomen Puolustusvoimat.',
+    p7: 'Opiskelen tällä hetkellä tieto- ja viestintätekniikkaa Metropolia Ammattikorkeakoulussa. Pääaineohjelmanani on Ohjelmistotuotanto, josta valmistun oletettavasti vuoden 2023 lopulla.'
   },
   // Experience
   experience: {
