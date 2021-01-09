@@ -48,7 +48,7 @@ export default {
     positions: {
       work: [
         {
-          role: 'Full Stack Engineer',
+          role: 'Full Stack Developer',
           type: 'fullTime',
           date: 'Juni - Juli 2020',
           company: {
@@ -57,7 +57,7 @@ export default {
             icon: TarraTacLogo
           },
           location: 'Lovisa, Nyland',
-          description: 'Som mitt sommarjobb för år 2020 jobbade jag som Full Stack Engineer för Tarra-Tac. Till mina arbetsuppgifter tillhörde utvecklingen av ett nytt prissättningsprogram på basen av arbetsgivarens specifikationer. I slutändan effektiverades arbetsprocesserna i bolaget märkbart tack vare programmets ibruktagning.',
+          description: 'Som mitt sommarjobb för år 2020 jobbade jag som Full Stack Developer för Tarra-Tac. Till mina arbetsuppgifter tillhörde utvecklingen av ett nytt prissättningsprogram på basen av arbetsgivarens specifikationer. I slutändan effektiverades arbetsprocesserna i bolaget märkbart tack vare programmets ibruktagning.',
           tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Nätverk', 'DevOps']
         },
         {
@@ -76,30 +76,30 @@ export default {
       ],
       volunteer: [
         {
-          role: 'Äldre innehållsmoderator',
+          role: 'Delägare',
           type: 'volunteer',
-          date: 'Mars 2020 - Idag',
+          date: 'Oktober 2020 - Idag',
           company: {
             name: 'The Coding Den',
             link: 'https://discord.gg/code',
             icon: TcdLogo
           },
           location: 'discord.gg/code',
-          description: 'Som administrator/äldre innehållsmoderator för The Coding Den innehåller mina uppgifter, vid sidan av moderering av diskussionsfora, ledar- och mentorskap för yngre innehållsmoderatorer samt deltagande i fattandet av administrativa beslut kring framtiden av samfundet.',
+          description: 'Som andra delägare i The Coding Den innefattar mina uppgifter ledarskap av moderatorteamet samt funktion som högsta beslutsfattande organ i samfundet.',
           tags: ['Innehållsmoderation', 'Ledarskap', 'Samfundsadministration']
         },
         {
-          role: 'Innehållsmoderator',
+          role: 'Innehållsmoderator (Yngre, äldre)',
           type: 'volunteer',
-          date: 'Februari 2018 - Mars 2020',
+          date: 'Yngre februari 2018 - mars 2020, äldre mars - oktober 2020',
           company: {
             name: 'The Coding Den',
             link: 'https://discord.gg/code',
             icon: TcdLogo
           },
           location: 'discord.gg/code',
-          description: 'Som innehållsmoderator för The Coding Den tillhörde mig uppgiften av moderering av diskussionsfora samt upprätthållet av en städig diskussionsomgivning som är välkomnande för nybörjar- och veteranprogrammerare likaså.',
-          tags: ['Innehållsmoderation']
+          description: 'Som moderator (Först yngre, senare äldre) för The Coding Den innehölll mina uppgifter, vid sidan av moderering av diskussionsfora, ledar- och mentorskap för yngre innehållsmoderatorer samt deltagande i fattandet av administrativa beslut kring framtiden av samfundet.',
+          tags: ['Innehållsmoderation', 'Ledarskap', 'Samfundsadministration']
         },
         {
           role: 'Software Developer',

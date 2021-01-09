@@ -48,7 +48,7 @@ export default {
     positions: {
       work: [
         {
-          role: 'Full Stack Engineer',
+          role: 'Full Stack Developer',
           type: 'fullTime',
           date: 'June - July 2020',
           company: {
@@ -57,7 +57,7 @@ export default {
             icon: TarraTacLogo
           },
           location: 'Loviisa, Uusimaa',
-          description: 'As my summer job for 2020, I worked at Tarra-Tac as a Full Stack Engineer, working to create a new billing program based on management-provided specifications. Workflows in the company were greatly effectivised as a result of the adoption of the program.',
+          description: 'As my summer job for 2020, I worked at Tarra-Tac as a Full Stack Developer, working to create a new billing program based on management-provided specifications. Workflows in the company were greatly effectivised as a result of the adoption of the program.',
           tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Networking', 'DevOps']
         },
         {
@@ -76,30 +76,30 @@ export default {
       ],
       volunteer: [
         {
-          role: 'Senior Content Moderator',
+          role: 'Co-owner',
           type: 'volunteer',
-          date: 'March 2020 - Present',
+          date: 'October 2020 - Present',
           company: {
             name: 'The Coding Den',
             link: 'https://discord.gg/code',
             icon: TcdLogo
           },
           location: 'discord.gg/code',
-          description: 'As an administrator/senior content moderator, my task in The Coding Den is to, alongside moderating discussion fora, lead and mentor junior moderators and partake in making administrative decisions regarding the development and future of the community.',
-          tags: ['Content moderation', 'Leadership', 'Community management']
+          description: 'As the second co-owner of The Coding Den, I\'m tasked with leading the community administration and moderation teams, along with functioning as the highest executive authority in the community.',
+          tags: ['Leadership', 'Community management']
         },
         {
-          role: 'Content Moderator',
+          role: 'Content Moderator (Junior, senior)',
           type: 'volunteer',
-          date: 'February 2018 - March 2020',
+          date: 'Junior Feb 2018 - Mar 2020, senior Mar - Oct 2020',
           company: {
             name: 'The Coding Den',
             link: 'https://discord.gg/code',
             icon: TcdLogo
           },
           location: 'discord.gg/code',
-          description: 'As a moderator for The Coding Den on Discord, my task was monitoring chat rooms and ensuring that the community stayed as a clean and welcoming environment for newcomers and veteran programmers alike.',
-          tags: ['Content moderation']
+          description: 'As a junior (and eventually senior) content moderator, my task in The Coding Den was to, alongside moderating discussion fora, leading and mentoring junior moderators and partaking in making administrative decisions regarding the development and future of the community.',
+          tags: ['Content moderation', 'Leadership', 'Community management']
         },
         {
           role: 'Software Developer',

@@ -48,7 +48,7 @@ export default {
     positions: {
       work: [
         {
-          role: 'Full Stack Engineer',
+          role: 'Full Stack Developer',
           type: 'fullTime',
           date: 'Kesäkuu - Heinäkuu 2020',
           company: {
@@ -57,7 +57,7 @@ export default {
             icon: TarraTacLogo
           },
           location: 'Loviisa, Uusimaa',
-          description: 'Työskentelin Full Stack Engineerinä Tarra-Tacilla kesätyönäni vuonna 2020. Työtehtäviini kuului uuden hinnoitteluohjelman luonti työnantajan tarpeiden mukaan, jonka luomisen ansiosta yhtiön työprosessit tehostuivat merkittävästi.',
+          description: 'Työskentelin Full Stack Developerina Tarra-Tacilla kesätyönäni vuonna 2020. Työtehtäviini kuului uuden hinnoitteluohjelman luonti työnantajan tarpeiden mukaan, jonka luomisen ansiosta yhtiön työprosessit tehostuivat merkittävästi.',
           tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Verkotustyöt', 'DevOps']
         },
         {
@@ -76,30 +76,30 @@ export default {
       ],
       volunteer: [
         {
-          role: 'Vanhempi sisällönhallintahenkilö',
+          role: 'Osaomistaja',
           type: 'volunteer',
-          date: 'Maaliskuu 2020 - Nyt',
+          date: 'Lokakuu 2020 - Nyt',
           company: {
             name: 'The Coding Den',
             link: 'https://discord.gg/code',
             icon: TcdLogo
           },
           location: 'discord.gg/code',
-          description: 'The Coding Denissä tehtäväni ylläpitäjänä/vanhempana sisällönhallintahenkilönä on keskustelufoorumien moderoinnin lisäksi johtaa ja mentoroida nuorempia sisällönhallintahenkilöitä, sekä osallistua administratiivisten päätösten tekoon yhteisön tulevaisuutta koskien.',
-          tags: ['Sisällönhallinta', 'Johtamistehtävät', 'Yhteisönhallinta']
+          description: 'Toimiessani The Coding Denin toisena omistajana tehtäväni on johtaa moderaattoriryhmää ja toimia yhteisön korkeimman päätösvallan asemassa.',
+          tags: ['Johtamistehtävät', 'Yhteisönhallinta']
         },
         {
-          role: 'Sisällönhallintahenkilö',
+          role: 'Moderaattori (Nuorempi, vanhempi)',
           type: 'volunteer',
-          date: 'Helmikuu 2018 - Maaliskuu 2020',
+          date: 'Nuor. helmi 2018 - maalis 2020, vanh. maalis - loka 2020',
           company: {
             name: 'The Coding Den',
             link: 'https://discord.gg/code',
             icon: TcdLogo
           },
           location: 'discord.gg/code',
-          description: 'The Coding Denissä tehtäväni sisällönhallintahenkilönä sisälsivät keskusteluiden moderointia ja yhteisön siisteyden varmistamista.',
-          tags: ['Sisällönhallinta']
+          description: 'The Coding Denissä tehtäväni moderaattorina (Sekä nuoremman että myöhemmin vanhemman asemassa) moderaattoreiden mentorointi ja johto, sekä osallistuminen administratiivisten päätösten tekoon yhteisön tulevaisuutta koskien.',
+          tags: ['Sisällönhallinta', 'Johtamistehtävät', 'Yhteisönhallinta']
         },
         {
           role: 'Software Developer',
