@@ -21,6 +21,11 @@
   display: none;
 }
 
+// Fix scroll jumping around
+.is-hidden {
+  display: inherit !important;
+}
+
 .timeline-item {
   @extend %text;
 
