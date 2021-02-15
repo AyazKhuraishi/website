@@ -140,46 +140,46 @@ export default {
     cards: [
       {
         title: 'react-console-emulator',
-        text: 'Monipuolinen ja helposti kustomoitavissa oleva Unix-terminaaliemulaattori Reactille.',
+        text: 'Monipuolinen Unix-terminaaliemulaattori Reactille, tällä hetkellä Facebookin, Microsoftin sekä Amazonin avoimen lähdekoodin projekteissa.',
         github: 'https://github.com/linuswillner/react-console-emulator',
         npm: 'https://npmjs.com/react-console-emulator',
-        tags: ['React', 'JavaScript', 'Sass', 'NPM']
+        tags: ['React', 'JavaScript', 'NPM']
       },
       {
         title: 'dpkg-status-exporter',
-        text: 'Ohjelma, joka vie tietoja järjestelmäpaketeista HTML-muotoon Debian-pohjaisilla käyttöjärjestelmillä.',
+        text: 'Ohjelma, joka vie tietoja järjestelmäpaketeista HTML-muotoon Debian-pohjaisilla käyttöjärjestelmillä. (Ratkaisuni Reaktorin junioritehtävään 2020)',
         github: 'https://github.com/linuswillner/dpkg-status-exporter',
         tags: ['Node.js', 'JavaScript', 'NPM']
       },
       {
-        title: 'tag-replacer',
-        text: 'Yksinkertainen ja kevyt Node.js-moduuli alkeellista tekstiohjelmointia varten.',
-        github: 'https://github.com/linuswillner/tag-replacer',
-        npm: 'https://npmjs.com/tag-replacer',
-        tags: ['Node.js', 'JavaScript', 'NPM']
+        title: 'reaktor-assignment-2021',
+        text: 'Ratkaisuni Reaktorin junioritehtävän 2021 (huonosti suunniteltujen API:jen kanssa). Rakennettu Sveltellä, Expressillä ja Socket.IO:lla.',
+        github: 'https://github.com/linuswillner/reaktor-assignment-2021',
+        website: 'https://sheltered-reef-26200.herokuapp.com',
+        tags: ['Node.js', 'Svelte', 'JavaScript', 'Web']
       },
       {
-        title: 'check-ie',
-        text: 'Kevyt ja moduuliriippumaton tapa tarkistaa josko käyttäjän selain on Internet Explorer.',
-        github: 'https://github.com/linuswillner/check-ie',
-        npm: 'https://npmjs.com/check-ie',
-        tags: ['Node.js', 'TypeScript', 'NPM']
+        title: 'TheCodingDen/projects-bot',
+        text: 'Discord-botti projektiesittelyilmoituksien prosessointiin The Coding Denissä, joka on itseni ja muiden ylläpitämä ohjelmointiyhteisö.',
+        github: 'https://github.com/TheCodingDen/projects-bot',
+        tags: ['Node.js', 'TypeScript']
       },
       {
-        title: 'Metropolia-Team-Sigma/client',
-        text: 'Sigma-chatsovelluksen pääteohjelman prototyyppi. Osallistuin tähän projektiin osana opintojani Metropolia AMK:ssa.',
-        github: 'https://github.com/Metropolia-Team-Sigma/client',
-        tags: ['Node.js', 'JavaScript', 'Crypto']
+        title: 'TheCodingDen/infra',
+        text: 'The Coding Denin IaC-konfiguraatiot, implementoitu Terraformilla, Kuberneteksellä ja DigitalOceanin IaaS-ratkaisuilla.',
+        github: 'https://github.com/TheCodingDen/infra',
+        tags: ['IaC', 'Terraform', 'Kubernetes']
       },
       {
-        title: 'Metropolia-Team-Sigma/backend',
-        text: 'Sigma-chatsovelluksen serverikomponentin prototyyppi. Osallistuin tähän projektiin osana opintojani Metropolia AMK:ssa.',
-        github: 'https://github.com/Metropolia-Team-Sigma/backend',
-        tags: ['Node.js', 'JavaScript', 'Express', 'ArangoDB', 'WebSocket']
+        title: 'watr-app/app',
+        text: 'Android-sovellus nesteytyksen seurantaan, rakennettu Metropolia AMK:n Mobiilit Terveyssovellukset-kurssilla.',
+        github: 'https://github.com/watr-app/app',
+        website: 'https://watr-app.github.io/app',
+        tags: ['Java', 'Android']
       },
       {
         title: 'TheSharks/JagTag-JS',
-        text: 'JavaScriptiin käännetty versio JagTag-merkkikielestä, joka on alunperin lähtöisin Javasta.',
+        text: 'JavaScriptiin (myöhemmin TypeScriptiin) käännetty versio JagTag-merkkikielestä, joka on alunperin lähtöisin Javasta.',
         github: 'https://github.com/TheSharks/JagTag-JS',
         npm: 'https://www.npmjs.com/package/@thesharks/jagtag-js',
         tags: ['Node.js', 'JavaScript', 'NPM']
