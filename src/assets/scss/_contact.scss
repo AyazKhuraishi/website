@@ -33,6 +33,11 @@
     font-size: 20px;
     @extend .link:hover;
   }
+
+  b:hover.copied {
+    background-color: #2173ded0;
+    transition: all 150ms;
+  }
 }
 
 .social {

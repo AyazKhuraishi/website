@@ -1,6 +1,8 @@
 import moment from 'moment'
+import ReaktorLogo from '../../assets/images/logos/reaktor.png'
 import TarraTacLogo from '../../assets/images/logos/tarratac.png'
 import FdfLogo from '../../assets/images/logos/fdf.png'
+import DiscordLogo from '../../assets/images/logos/discord.png'
 import TcdLogo from '../../assets/images/logos/tcd.png'
 import WbLogo from '../../assets/images/logos/wb.png'
 
@@ -48,6 +50,19 @@ export default {
     positions: {
       work: [
         {
+          role: 'Software Developer',
+          type: 'fullTime',
+          date: 'Kesäkuu - Elokuu 2021',
+          company: {
+            name: 'Reaktor',
+            link: 'https://reaktor.com',
+            icon: ReaktorLogo
+          },
+          location: 'Helsinki',
+          description: 'Tämän vuoden toukokuussa aloitan uuden työn Reaktorilla Software Developerina kesän 2021 ajaksi.',
+          tags: ['Uusi', 'Ohjelmistokehitys']
+        },
+        {
           role: 'Full Stack Developer',
           type: 'fullTime',
           date: 'Kesäkuu - Heinäkuu 2020',
@@ -56,7 +71,7 @@ export default {
             link: 'https://tarratac.fi',
             icon: TarraTacLogo
           },
-          location: 'Loviisa, Uusimaa',
+          location: 'Loviisa',
           description: 'Työskentelin Full Stack Developerina Tarra-Tacilla kesätyönäni vuonna 2020. Työtehtäviini kuului uuden hinnoitteluohjelman luonti työnantajan tarpeiden mukaan, jonka luomisen ansiosta yhtiön työprosessit tehostuivat merkittävästi.',
           tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Verkotustyöt', 'DevOps']
         },
@@ -75,6 +90,19 @@ export default {
         }
       ],
       volunteer: [
+        {
+          role: 'Virallinen moderaattori',
+          type: 'volunteer',
+          date: 'Joulukuu 2020 - Tänään',
+          company: {
+            name: 'Discord',
+            link: 'https://discord.com',
+            icon: DiscordLogo
+          },
+          location: 'Kansainvälinen',
+          description: 'Tehtävässäni virallisena moderaattorina Discord Moderator Programin (DMP) jäsenenä toimin ylläpitäjänä sekä moderaattorina erinäisille virallisille yhteisöille. Olen auttanut moderoimaan yhteisöjä - sekä pysyviä että väliaikaisia (pop-up) - joiden jäsenmäärät ovat enimmillään olleet sadoissa tuhansissa. Moderoimani yhteisöt sisältävät mm. Discord Townhallin sekä Snowsgiving-tapahtuman.',
+          tags: ['Moderointi']
+        },
         {
           role: 'Osaomistaja',
           type: 'volunteer',
@@ -99,7 +127,7 @@ export default {
           },
           location: 'discord.gg/code',
           description: 'The Coding Denissä tehtäväni moderaattorina (Sekä nuoremman että myöhemmin vanhemman asemassa) moderaattoreiden mentorointi ja johto, sekä osallistuminen administratiivisten päätösten tekoon yhteisön tulevaisuutta koskien.',
-          tags: ['Sisällönhallinta', 'Johtamistehtävät', 'Yhteisönhallinta']
+          tags: ['Moderointi', 'Johtamistehtävät', 'Yhteisönhallinta']
         },
         {
           role: 'Software Developer',
@@ -110,7 +138,7 @@ export default {
             link: 'https://github.com/TheSharks',
             icon: WbLogo
           },
-          location: 'International',
+          location: 'Kansainvälinen',
           description: 'Toimin TheSharksissa avoimen lähdekoodin kollaboraattorina ja kehitän ohjelmistoja kyseiselle ryhmälle. Tämän lisäksi kirjoitan teknistä dokumentaatiota, toimin järjestelmäylläpitäjän tehtävissä sekä ylläpidän käännöksiä niillä kielillä joissa osaamiseni on vahva.',
           tags: ['Frontend', 'Backend', 'Sysadmin', 'Dokumentaatio', 'Käännöstyöt']
         }
@@ -200,11 +228,7 @@ export default {
       l1: 'Jos haluat ottaa yhteyttä minuun kysyäksesi jotain, oli se muodollista tai ei, sähköposti on paras tapa siihen.',
       l2: 'Voit myös huudella suuntaani Twitterissä, linkki löytyy alta.'
     },
-    p2: {
-      l1: 'Epävirallisempaa keskustelua varten yksityisviestini ',
-      l2: 'Discordissa',
-      l3: ' ovat aina avoinna.'
-    },
+    p2: 'Huom: Estääkseni roskapostitulvan sähköpostilaatikkooni, allaolevassa sähköpostiosoitteessa on erinäisiä estoja sähköpostiraapijoiden harhauttamiseksi. Tästä syystä sitä ei ole mahdollista kopioida käsin. Ole hyvä ja klikkaa osoitetta kopioidaksesi se leikepöydällesi.',
     p3: 'Lopuksi, jos haluat vain seurata mitä teen, olen jättänyt tähän muutaman linkin sosiaalisiin medioihini.',
     email: 'Sähköposti'
   },

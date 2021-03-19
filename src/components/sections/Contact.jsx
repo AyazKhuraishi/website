@@ -41,7 +41,7 @@ export default class Contact extends Component {
           <div className='column section-text contact-text'>
             <div className='contact-pre'>
               <p>{i18n`contact.p1.l1`}<br/>{i18n`contact.p1.l2`}</p>
-              <p>{i18n`contact.p2.l1`}<Link to='https://discord.com'>{i18n`contact.p2.l2`}</Link>{i18n`contact.p2.l3`}</p>
+              <p>{i18n`contact.p2`}</p>
               <p>{i18n`contact.p3`}</p>
             </div>
             <div className='contact-methods'>

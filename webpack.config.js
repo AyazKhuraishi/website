@@ -24,9 +24,7 @@ const CSSExtracterConfig = new ExtractCSSWebpackPlugin({
   chunkFilename: dev ? '[id].css' : '[id].[hash].css'
 })
 
-const JSOptimizerConfig = new OptimizeJSWebpackPlugin({
-  sourceMap: true
-})
+const JSOptimizerConfig = new OptimizeJSWebpackPlugin({})
 
 const CSSOptimizerConfig = new OptimizeCSSWebpackPlugin({})
 
@@ -52,16 +50,17 @@ const EnvironmentConfig = new webpack.DefinePlugin({
   }
 })
 
-const devPlugins = [
+const sharedPlugins = [
   HTMLInjecterConfig,
-  CSSExtracterConfig,
+  CSSExtracterConfig
+]
+
+const devPlugins = [
   new ErrorOverlayWebpackPlugin(),
   new webpack.HotModuleReplacementPlugin()
 ]
 
 const prodPlugins = [
-  HTMLInjecterConfig,
-  CSSExtracterConfig,
   CSSPurgerConfig,
   EnvironmentConfig
 ]
@@ -89,7 +88,8 @@ module.exports = {
 
   // Production optimisers
   optimization: {
-    namedModules: true,
+    moduleIds: 'named',
+    sideEffects: false,
     minimizer: dev ? [] : [JSOptimizerConfig, CSSOptimizerConfig],
     splitChunks: {
       cacheGroups: {
@@ -108,14 +108,6 @@ module.exports = {
     'react-hot-loader/webpack',
     path.join(__dirname, '/src/index.jsx')
   ],
-
-  // Dummies for native Node modules not present in browser scope
-  node: {
-    fs: 'empty',
-    net: 'empty',
-    tls: 'empty',
-    crypto: 'empty'
-  },
 
   // Loaders
   module: {
@@ -173,15 +165,26 @@ module.exports = {
       components: createAlias('src/components'),
       sections: createAlias('src/components/sections'),
       lang: createAlias('src/lang')
+    },
+    fallback: {
+      "fs": false,
+      "tls": false,
+      "net": false,
+      "path": false,
+      "zlib": false,
+      "http": false,
+      "https": false,
+      "stream": false,
+      "crypto": false
     }
   },
 
   // Production build
   output: {
-    filename: 'index.js',
+    filename: '[name].js',
     path: path.join(__dirname, '/build')
   },
 
   mode: dev ? 'development' : 'production',
-  plugins: dev ? devPlugins : prodPlugins
+  plugins: sharedPlugins.concat(dev ? devPlugins : prodPlugins)
 }

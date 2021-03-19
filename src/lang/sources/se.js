@@ -1,6 +1,8 @@
 import moment from 'moment'
+import ReaktorLogo from '../../assets/images/logos/reaktor.png'
 import TarraTacLogo from '../../assets/images/logos/tarratac.png'
 import FdfLogo from '../../assets/images/logos/fdf.png'
+import DiscordLogo from '../../assets/images/logos/discord.png'
 import TcdLogo from '../../assets/images/logos/tcd.png'
 import WbLogo from '../../assets/images/logos/wb.png'
 
@@ -30,8 +32,9 @@ export default {
       l3: ', men jag har även gjort ett antal program på eget bevåg. Dessa innefattar allt från backend-applikationer till nätsidor och fullt funktionerande skrivbordsprogram. Exempel på program jag byggt innefattar ',
       l4: ' och '
     },
-    p6: 'I det förflutna har jag jobbat som programvaruutvecklare och/eller systemadministrator för bl.a. Tarra-Tac Ab och Försvarsmakten.',
-    p7: 'För tillfället studerar jag informations- och kommunikationsteknologi vid Metropolia Ammattikorkeakoulu. Mitt huvudämne är programvaruutveckling, varifrån jag förväntar mig att bli utexaminerad vid årsslutet 2023.'
+    p6: 'För tillfället studerar jag informations- och kommunikationsteknologi vid Metropolia Ammattikorkeakoulu. Mitt huvudämne är programvaruutveckling, varifrån jag förväntar mig att bli utexaminerad vid årsslutet 2023.',
+    p7: 'I maj 2021 kommer jag att påbörja min nyaste position som Software Developer på Reaktor. I det förflutna har jag jobbat som programvaruutvecklare och/eller systemadministrator för bl.a. Tarra-Tac Ab och Försvarsmakten.',
+    p8: 'Utöveralla arbetsgrejer har jag ett intresse '
   },
   // Experience
   experience: {
@@ -47,6 +50,19 @@ export default {
     },
     positions: {
       work: [
+        {
+          role: 'Software Developer',
+          type: 'fullTime',
+          date: 'Maj - Augusti 2021',
+          company: {
+            name: 'Reaktor',
+            link: 'https://reaktor.com',
+            icon: ReaktorLogo
+          },
+          location: 'Helsinki',
+          description: 'I maj påbörjar jag en ny position som Software Developer på Reaktor för sommaren 2021.',
+          tags: ['Ny', 'Programutveckling']
+        },
         {
           role: 'Full Stack Developer',
           type: 'fullTime',
@@ -75,6 +91,19 @@ export default {
         }
       ],
       volunteer: [
+        {
+          role: 'Officiell moderator',
+          type: 'volunteer',
+          date: 'December 2020 - Idag',
+          company: {
+            name: 'Discord',
+            link: 'https://discord.com',
+            icon: DiscordLogo
+          },
+          location: 'Internationell',
+          description: 'Som officiell moderator inom Discord Moderator Program (DMP) fungerar jag som innehållsmoderator i tjänst av Discord för diverse officiella samfund. Jag har hjälpt i modereringen av samfund - både permanenta och temporära (pop-up) - vars medlemskap har som mest mäts i hundratusentals medlemmar. Listan av samfund jag modererat inkluderar bl. a. Discord Townhall och Snowsgiving-evenemanget.',
+          tags: ['Innehållsmoderation']
+        },
         {
           role: 'Delägare',
           type: 'volunteer',
@@ -200,11 +229,7 @@ export default {
       l1: 'Om du vill ta kontakt med mig för att fråga något, formellt eller ej, är e-post oftast den bästa metoden för det.',
       l2: 'Du kan även kasta ett meddelande i min riktning på Twitter om du föredrar, länk nedan.'
     },
-    p2: {
-      l1: 'För mer informell konversation är mina direktmeddelanden på ',
-      l2: 'Discord',
-      l3: ' alltid öppna.'
-    },
+    p2: 'Märk: För att förhindra en flod av skräppost i min e-postlåda har nedanstående e-postaddress fifflats med på diverse sätt för att förbrylla e-postskrapare. Som en konsekvens kan den inte kopieras för hand. Var vänlig och klicka på den i stället för att kopiera den till klippbordet.',
     p3: 'Slutligen, ifall du vill bara följa med vad jag gör, har jag lämnat några länkar till mina sociala media här.',
     email: 'E-post'
   },

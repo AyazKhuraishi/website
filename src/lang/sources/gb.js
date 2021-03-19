@@ -1,6 +1,8 @@
 import moment from 'moment'
+import ReaktorLogo from '../../assets/images/logos/reaktor.png'
 import TarraTacLogo from '../../assets/images/logos/tarratac.png'
 import FdfLogo from '../../assets/images/logos/fdf.png'
+import DiscordLogo from '../../assets/images/logos/discord.png'
 import TcdLogo from '../../assets/images/logos/tcd.png'
 import WbLogo from '../../assets/images/logos/wb.png'
 
@@ -48,6 +50,19 @@ export default {
     positions: {
       work: [
         {
+          role: 'Software Developer',
+          type: 'fullTime',
+          date: 'May - August 2021',
+          company: {
+            name: 'Reaktor',
+            link: 'https://reaktor.com',
+            icon: ReaktorLogo
+          },
+          location: 'Helsinki',
+          description: 'In May, I\'m starting a new position as a Software Developer at Reaktor for the summer of 2021.',
+          tags: ['New', 'Software']
+        },
+        {
           role: 'Full Stack Developer',
           type: 'fullTime',
           date: 'June - July 2020',
@@ -56,7 +71,7 @@ export default {
             link: 'https://tarratac.fi',
             icon: TarraTacLogo
           },
-          location: 'Loviisa, Uusimaa',
+          location: 'Loviisa',
           description: 'As my summer job for 2020, I worked at Tarra-Tac as a Full Stack Developer, working to create a new billing program based on management-provided specifications. Workflows in the company were greatly effectivised as a result of the adoption of the program.',
           tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Networking', 'DevOps']
         },
@@ -75,6 +90,19 @@ export default {
         }
       ],
       volunteer: [
+        {
+          role: 'Official Moderator',
+          type: 'volunteer',
+          date: 'December 2020 - Tänään',
+          company: {
+            name: 'Discord',
+            link: 'https://discord.com',
+            icon: DiscordLogo
+          },
+          location: 'International',
+          description: 'As an official moderator for the Discord Moderator Program (DMP), my task is to moderate various official communities run by Discord. Among other things, I have helped moderate communities - both permanent and temporary (pop-up) - with up to hundreds of thousands of participants. Some communities I have moderated include the Discord Townhall and Snowsgiving communities.',
+          tags: ['Content moderator']
+        },
         {
           role: 'Co-owner',
           type: 'volunteer',
@@ -200,11 +228,7 @@ export default {
       l1: 'If you want to reach out to me for any sort of inquiry, be it formal or not, email is usually the best way to do that.',
       l2: 'You can also holler at me on Twitter if you prefer, link below.'
     },
-    p2: {
-      l1: 'For more informal conversation in the form of instant messaging, my DMs on ',
-      l2: 'Discord',
-      l3: ' are open.'
-    },
+    p2: 'Note: To prevent spam of my inbox, the email address below has various obfuscations applied to confuse email crawlers. As a result, it cannot be copied by hand. Please click on it to copy it to your clipboard instead.',
     p3: 'Finally, if you want to just see what I\'m up to, I\'ve left some links to my social media here as well.',
     email: 'Email'
   },
