@@ -33,7 +33,7 @@ export default {
       l4: ' och '
     },
     p6: 'För tillfället studerar jag informations- och kommunikationsteknologi vid Metropolia Ammattikorkeakoulu. Mitt huvudämne är programvaruutveckling, varifrån jag förväntar mig att bli utexaminerad vid årsslutet 2023.',
-    p7: 'I maj 2021 kommer jag att påbörja min nyaste position som Software Developer på Reaktor. I det förflutna har jag jobbat som programvaruutvecklare och/eller systemadministrator för bl.a. Tarra-Tac Ab och Försvarsmakten.',
+    p7: 'I maj kommer jag att påbörja min nyaste position som Software Developer på Reaktor. I det förflutna har jag jobbat som programvaruutvecklare och/eller systemadministrator för bl.a. Tarra-Tac Ab och Försvarsmakten.',
     p8: 'Utöveralla arbetsgrejer har jag ett intresse '
   },
   // Experience
