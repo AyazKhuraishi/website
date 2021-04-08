@@ -64,7 +64,7 @@ export default {
           tags: ['Ny', 'Programutveckling']
         },
         {
-          role: 'Full Stack Developer',
+          role: 'Full Stack Engineer',
           type: 'fullTime',
           date: 'Juni - Juli 2020',
           company: {
@@ -73,7 +73,7 @@ export default {
             icon: TarraTacLogo
           },
           location: 'Lovisa, Nyland',
-          description: 'Som mitt sommarjobb för år 2020 jobbade jag som Full Stack Developer för Tarra-Tac. Till mina arbetsuppgifter tillhörde utvecklingen av ett nytt prissättningsprogram på basen av arbetsgivarens specifikationer. I slutändan effektiverades arbetsprocesserna i bolaget märkbart tack vare programmets ibruktagning.',
+          description: 'Som mitt sommarjobb för år 2020 jobbade jag som Full Stack Engineer för Tarra-Tac. Till mina arbetsuppgifter tillhörde utvecklingen av ett nytt prissättningsprogram på basen av arbetsgivarens specifikationer. I slutändan effektiverades arbetsprocesserna i bolaget märkbart tack vare programmets ibruktagning.',
           tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Nätverk', 'DevOps']
         },
         {

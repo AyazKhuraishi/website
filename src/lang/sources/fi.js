@@ -63,7 +63,7 @@ export default {
           tags: ['Uusi', 'Ohjelmistokehitys']
         },
         {
-          role: 'Full Stack Developer',
+          role: 'Full Stack Engineer',
           type: 'fullTime',
           date: 'Kesäkuu - Heinäkuu 2020',
           company: {
@@ -72,7 +72,7 @@ export default {
             icon: TarraTacLogo
           },
           location: 'Loviisa',
-          description: 'Työskentelin Full Stack Developerina Tarra-Tacilla kesätyönäni vuonna 2020. Työtehtäviini kuului uuden hinnoitteluohjelman luonti työnantajan tarpeiden mukaan, jonka luomisen ansiosta yhtiön työprosessit tehostuivat merkittävästi.',
+          description: 'Työskentelin Full Stack Engineerinä Tarra-Tacilla kesätyönäni vuonna 2020. Työtehtäviini kuului uuden hinnoitteluohjelman luonti työnantajan tarpeiden mukaan, jonka luomisen ansiosta yhtiön työprosessit tehostuivat merkittävästi.',
           tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Verkotustyöt', 'DevOps']
         },
         {

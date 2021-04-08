@@ -63,7 +63,7 @@ export default {
           tags: ['New', 'Software']
         },
         {
-          role: 'Full Stack Developer',
+          role: 'Full Stack Engineer',
           type: 'fullTime',
           date: 'June - July 2020',
           company: {
@@ -72,7 +72,7 @@ export default {
             icon: TarraTacLogo
           },
           location: 'Loviisa',
-          description: 'As my summer job for 2020, I worked at Tarra-Tac as a Full Stack Developer, working to create a new billing program based on management-provided specifications. Workflows in the company were greatly effectivised as a result of the adoption of the program.',
+          description: 'As my summer job for 2020, I worked at Tarra-Tac as a Full Stack Engineer, working to create a new billing program based on management-provided specifications. Workflows in the company were greatly effectivised as a result of the adoption of the program.',
           tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Networking', 'DevOps']
         },
         {
