@@ -38,6 +38,9 @@ jobs:
       - run:
           name: Deploy
           command: scp -r ./build/* $DEPLOYMENT_USER@$DEPLOYMENT_HOST:$DEPLOYMENT_DIR
+      - run:
+          name: Clear CloudFlare cache
+          command: 'curl -X POST "https://api.cloudflare.com/client/v4/zones/${CLOUDFLARE_ZONE_ID}/purge_cache" -H "X-Auth-Email: ${CLOUDFLARE_EMAIL}" -H "X-Auth-Key: ${CLOUDFLARE_TOKEN}" -H "Content-Type: application/json" --data {"purge_everything":true}'
 
 workflows:
   version: 2
