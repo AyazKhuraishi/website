@@ -12,6 +12,7 @@ export default {
   ],
   libraries: [
     { name: 'React', icon: 'react', color: '#5ED3F3' },
+    { name: 'Vue', icon: 'vue-js', color: '#41B883' },
     { name: 'Sass', icon: 'sass-alt', color: '#C76495' },
     { name: 'Webpack', icon: 'webpack', color: '#8ACFF3' },
     { name: 'Babel', icon: 'babel', color: '#F9DC3E' },
@@ -21,6 +22,7 @@ export default {
   ],
   operatingSystems: [
     { name: 'Windows', icon: 'windows', color: '#0173D0' },
+    { name: 'OS X / iOS', icon: 'apple', color: '#A5A5A5' },
     { name: 'Linux', icon: 'linux', color: '#0C0C0C' },
     { name: 'Manjaro', icon: 'manjaro', color: '#33B959' },
     { name: 'Ubuntu', icon: 'ubuntu', color: '#D74614' },

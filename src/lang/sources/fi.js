@@ -32,8 +32,8 @@ export default {
       l3: ' ylläpidon ja kehityksen, mutta olen myös kehittänyt lukuisia ohjelmia omin neuvoin. Näistä löytyy kaikkea backend-applikaatioista verkkosivuihin ja työpöytäohjelmiin. Muutamia esimerkkejä töistäni ovat ',
       l4: ' ja '
     },
-    p6: 'Opiskelen tällä hetkellä tieto- ja viestintätekniikkaa Metropolia Ammattikorkeakoulussa. Pääaineohjelmanani on Ohjelmistotuotanto, josta valmistun oletettavasti vuoden 2023 lopulla.',
-    p7: 'Toukokuussa aloitan uusimman työni Software Developerina Reaktorilla. Tätä edeltävät työpaikkani ohjelmistokehittäjänä ja/tai järjestelmäylläpitäjänä sisältävät mm. Tarra-Tac Oy:n ja Suomen Puolustusvoimat.'
+    p6: 'Työskentelen tällä hetkellä Software Developerina Reaktorilla kesän 2021 aikana. Tätä edeltävät työpaikkani ohjelmistokehittäjänä ja/tai järjestelmäylläpitäjänä sisältävät mm. Tarra-Tac Oy:n ja Suomen Puolustusvoimat.',
+    p7: 'Opiskelen myöskin tieto- ja viestintätekniikkaa Metropolia Ammattikorkeakoulussa. Pääaineohjelmanani on Ohjelmistotuotanto, josta valmistun oletettavasti vuoden 2023 lopulla.'
   },
   // Experience
   experience: {
@@ -52,15 +52,15 @@ export default {
         {
           role: 'Software Developer',
           type: 'fullTime',
-          date: 'Kesäkuu - Elokuu 2021',
+          date: 'Toukokuu 2021 - Tänään',
           company: {
             name: 'Reaktor',
             link: 'https://reaktor.com',
             icon: ReaktorLogo
           },
           location: 'Helsinki',
-          description: 'Tämän vuoden toukokuussa aloitan uuden työn Reaktorilla Software Developerina kesän 2021 ajaksi.',
-          tags: ['Uusi', 'Ohjelmistokehitys']
+          description: 'Työskentelen tällä hetkellä Reaktorilla Software Developerina kesän 2021 aikana. Työtehtäväni käsittävät asiakkaiden kanssa konsultoinnin heidän tarpeisiinsa sopivien ohjelmistojen luontia varten.',
+          tags: ['Ohjelmistokehitys']
         },
         {
           role: 'Full Stack Engineer',

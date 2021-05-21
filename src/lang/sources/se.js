@@ -32,9 +32,8 @@ export default {
       l3: ', men jag har även gjort ett antal program på eget bevåg. Dessa innefattar allt från backend-applikationer till nätsidor och fullt funktionerande skrivbordsprogram. Exempel på program jag byggt innefattar ',
       l4: ' och '
     },
-    p6: 'För tillfället studerar jag informations- och kommunikationsteknologi vid Metropolia Ammattikorkeakoulu. Mitt huvudämne är programvaruutveckling, varifrån jag förväntar mig att bli utexaminerad vid årsslutet 2023.',
-    p7: 'I maj kommer jag att påbörja min nyaste position som Software Developer på Reaktor. I det förflutna har jag jobbat som programvaruutvecklare och/eller systemadministrator för bl.a. Tarra-Tac Ab och Försvarsmakten.',
-    p8: 'Utöveralla arbetsgrejer har jag ett intresse '
+    p6: 'I nuläget fungerar jag som Software Developer på Reaktor för sommaren 2021. I det förflutna har jag jobbat som programvaruutvecklare och/eller systemadministrator för bl.a. Tarra-Tac Ab och Försvarsmakten.',
+    p7: 'Jag studerar därtill informations- och kommunikationsteknologi vid Metropolia Ammattikorkeakoulu. Mitt huvudämne är programvaruutveckling, varifrån jag förväntar mig att bli utexaminerad vid årsslutet 2023.'
   },
   // Experience
   experience: {
@@ -60,8 +59,8 @@ export default {
             icon: ReaktorLogo
           },
           location: 'Helsinki',
-          description: 'I maj påbörjar jag en ny position som Software Developer på Reaktor för sommaren 2021.',
-          tags: ['Ny', 'Programutveckling']
+          description: 'För tillfället jobbar jag som Software Developer på Reaktor för sommaren 2021. Mina arbetsuppgifter inkluderar konsultering med klienter för att skapa program som möter angivna behov.',
+          tags: ['Programutveckling']
         },
         {
           role: 'Full Stack Engineer',

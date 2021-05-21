@@ -32,8 +32,8 @@ export default {
       l3: ', but I have also created a fair few programs of my own. These range from backend applications to websites and full-fledged desktop applications. Some examples of my work are ',
       l4: ' and '
     },
-    p6: 'I\'m currently studying Information and Communication Technology at Metropolia University of Applied Sciences. I\'m majoring in Software Engineering, and am expected to graduate at the end of 2023.',
-    p7: 'In May, I will start my newest position as a Software Developer at Reaktor. Before this, I have worked as a software developer and/or systems administrator for, among others, Oy Tarra-Tac Ab and the Finnish Defence Forces.'
+    p6: 'At the moment, I\'m working as a Software Developer at Reaktor for the summer of 2021. Before this, I have worked as a software developer and/or systems administrator for, among others, Oy Tarra-Tac Ab and the Finnish Defence Forces.',
+    p7: 'I\'m also studying Information and Communication Technology at Metropolia University of Applied Sciences. I\'m majoring in Software Engineering, and am expected to graduate at the end of 2023.'
   },
   // Experience
   experience: {
@@ -52,15 +52,15 @@ export default {
         {
           role: 'Software Developer',
           type: 'fullTime',
-          date: 'May - August 2021',
+          date: 'May 2021 - Present',
           company: {
             name: 'Reaktor',
             link: 'https://reaktor.com',
             icon: ReaktorLogo
           },
           location: 'Helsinki',
-          description: 'In May, I\'m starting a new position as a Software Developer at Reaktor for the summer of 2021.',
-          tags: ['New', 'Software']
+          description: 'I\'m currently working as a Software Developer at Reaktor for the summer of 2021. My job includes consultation with clients to create software tailored to their specific needs.',
+          tags: ['Software']
         },
         {
           role: 'Full Stack Engineer',
@@ -93,7 +93,7 @@ export default {
         {
           role: 'Official Moderator',
           type: 'volunteer',
-          date: 'December 2020 - Tänään',
+          date: 'December 2020 - Present',
           company: {
             name: 'Discord',
             link: 'https://discord.com',
@@ -101,7 +101,7 @@ export default {
           },
           location: 'International',
           description: 'As an official moderator for the Discord Moderator Program (DMP), my task is to moderate various official communities run by Discord. Among other things, I have helped moderate communities - both permanent and temporary (pop-up) - with up to hundreds of thousands of participants. Some communities I have moderated include the Discord Townhall and Snowsgiving communities.',
-          tags: ['Content moderator']
+          tags: ['Content moderation']
         },
         {
           role: 'Co-owner',
