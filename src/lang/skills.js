@@ -22,7 +22,7 @@ export default {
   ],
   operatingSystems: [
     { name: 'Windows', icon: 'windows', color: '#0173D0' },
-    { name: 'OS X / iOS', icon: 'apple', color: '#A5A5A5' },
+    { name: 'MacOS / iOS', icon: 'apple', color: '#A5A5A5' },
     { name: 'Linux', icon: 'linux', color: '#0C0C0C' },
     { name: 'Manjaro', icon: 'manjaro', color: '#33B959' },
     { name: 'Ubuntu', icon: 'ubuntu', color: '#D74614' },

@@ -20,8 +20,8 @@ const HTMLInjecterConfig = new HTMLWebpackPlugin({
 })
 
 const CSSExtracterConfig = new ExtractCSSWebpackPlugin({
-  filename: dev ? '[name].css' : '[name].[hash].css',
-  chunkFilename: dev ? '[id].css' : '[id].[hash].css'
+  filename: dev ? '[name].css' : '[name].[fullhash].css',
+  chunkFilename: dev ? '[id].css' : '[id].[fullhash].css'
 })
 
 const JSOptimizerConfig = new OptimizeJSWebpackPlugin({})

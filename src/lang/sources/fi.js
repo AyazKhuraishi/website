@@ -22,18 +22,17 @@ export default {
   about: {
     title: 'TIETOJA',
     sectionTitle: 'Terve!',
-    p1: `Minä olen Linus, ja olen ${moment().diff(moment('1999-06-18'), 'years')}-vuotias opiskelija sekä freelance-kehittäjä Suomesta. Mukava tavata!`,
-    p2: 'Olen lähtöisin pienestä kaupungista nimeltä Loviisa itäiseltä Uudeltamaalta, ja olen innokas tekniikan sormeilija sekä ohjelmistotuotannon opiskelija. Web-applikaatioiden kehitys on vahvuuteni, jonka lisäksi kehitän myös backend-applikaatioita ja suoritan järjestelmäylläpitoa.',
-    p3: 'Olen toiminut ohjelmistokehittäjänä vuodesta 2017 lähtien, suurimmaksi osaksi avoimen lähdekoodin saralla. Olen työskennellyt enimmäkseen ohjelmoijana sekä järjestelmäylläpitäjänä, jonka lisäksi olen toiminut dokumentaatio-, käännös- ja laadunvalvontatehtävissä.',
-    p4: 'Olen monikielinen persoona joka hallitsee samantasoisesti kolmea kieltä - tarkemmin sanottuna suomea, ruotsia sekä englantia. Äidinkieleni ovat listan kaksi ensimmäistä kieltä.',
-    p5: {
+    p1: `Olen Linus, ${moment().diff(moment('1999-06-18'), 'years')}-vuotias ohjelmistokehittäjä, innokas tekniikan sormeilija ja ohjelmistotuotannon opiskelija. Erityisalueeni ovat fullstack-kehitys sekä DevOps-toiminta, ja työskentelen myös mieluusti tietoverkkojen sekä järjestelmäylläpidon parissa. Tämän lisäksi olen toiminut dokumentaatio-, käännös- ja laadunvalvontatehtävissä. Minulla on kokonaisvaltaisesti noin viiden vuoden kokemus alalta.`,
+    p2: 'Urani toinen sivuhaara on ollut yhteisöjen moderaatio ja ylläpito. Pääasiallinen tehtäväni on pyörittää Discordissa toimivaa ohjelmointiyhteisöä nimeltä The Coding Den. Tämän lisäksi toimin myös virallisena moderaattorina Discordille Discord Moderator Programin kautta, missä autan heitä pyörittämään heidän omiva virallisia yhteisöjään, kuin myös heidän brand partner-yhteisöjään.',
+    p3: 'Olen monikielinen persoona joka hallitsee samantasoisesti kolmea kieltä - tarkemmin sanottuna suomea, ruotsia sekä englantia. Äidinkieleni ovat listan kaksi ensimmäistä kieltä.',
+    p4: {
       l1: 'Suurimmat saavutukseni sisältävät projektien kuten ',
       l2: ' ja ',
       l3: ' ylläpidon ja kehityksen, mutta olen myös kehittänyt lukuisia ohjelmia omin neuvoin. Näistä löytyy kaikkea backend-applikaatioista verkkosivuihin ja työpöytäohjelmiin. Muutamia esimerkkejä töistäni ovat ',
       l4: ' ja '
     },
-    p6: 'Työskentelen tällä hetkellä Software Developerina Reaktorilla kesän 2021 aikana. Tätä edeltävät työpaikkani ohjelmistokehittäjänä ja/tai järjestelmäylläpitäjänä sisältävät mm. Tarra-Tac Oy:n ja Suomen Puolustusvoimat.',
-    p7: 'Opiskelen myöskin tieto- ja viestintätekniikkaa Metropolia Ammattikorkeakoulussa. Pääaineohjelmanani on Ohjelmistotuotanto, josta valmistun oletettavasti vuoden 2023 lopulla.'
+    p5: 'Työskentelen tällä hetkellä Software Developerina Reaktorilla kesän 2021 aikana. Tätä edeltävät työpaikkani ohjelmistokehittäjänä ja/tai järjestelmäylläpitäjänä sisältävät mm. Tarra-Tac Oy:n ja Suomen Puolustusvoimat.',
+    p6: 'Opiskelen myöskin tieto- ja viestintätekniikkaa Metropolia Ammattikorkeakoulussa. Pääaineohjelmanani on Ohjelmistotuotanto, josta valmistun oletettavasti vuoden 2023 lopulla.'
   },
   // Experience
   experience: {

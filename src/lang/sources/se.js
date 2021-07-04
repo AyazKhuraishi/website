@@ -22,18 +22,17 @@ export default {
   about: {
     title: 'OM MIG',
     sectionTitle: 'Morjens!',
-    p1: `Jag är Linus, och jag är en ${moment().diff(moment('1999-06-18'), 'years')}-årig studerande och freelance-programmerare från Finland. Trevligt att råkas!`,
-    p2: 'Jag kommer från en liten stad vid namnet Lovisa i östra Nyland, och är en ivrig teknikmekare samt programmeringsstuderande. Min bravur är utvecklingen av web-applikationer, och därtill byggandet av backend-applikationer samt systemadministration.',
-    p3: 'Sedan 2017 har jag sysslat med programutveckling, mestadels inom s.k. open source software. Jag har jobbat som programmerare och systemadministrator för det mesta, och därtill innehaft roller inom dokumentation, lokalisation och kvalitetskontroll.',
-    p4: 'Jag är en flerspråkig person med likjämn kunskapsnivå i tre språk - närmare sagt finska, svenska och engelska. Mina modersmål är de två förstnämnda.',
-    p5: {
+    p1: `Jag är Linus, en ${moment().diff(moment('1999-06-18'), 'years')}-årig programmerare, ivrig teknikmekare samt programmeringsstuderande. Min bravur är fullstack-utveckling samt DevOps, och därtill gillar jag att jobba med nätverk och systemadminisration. I övrigt har mina arbetsuppgifter innefattat dokumentation, översättning och kvalitetskontroll. Jag har totalt cirka fem års erfarenhet i fältet.`,
+    p2: 'Mitt andra karriärspår har varit samfundsmoderation och -administration. Primärt driver jag ett programmeringssamfund på Discord vid namnet The Coding Den. I tillägg till detta fungerar jag som officiell moderator för Discord via Discord Moderator Program, där jag hjälper dem driva både sina egna officiella samfund och därtill samfund för deras brandpartners.',
+    p3: 'Jag är en flerspråkig person med likjämn kunskapsnivå i tre språk - närmare sagt finska, svenska och engelska. Mina modersmål är de två förstnämnda.',
+    p4: {
       l1: 'Jag är mest känd för mitt upprätthåll av och arbete inom projekt som ',
       l2: ' och ',
       l3: ', men jag har även gjort ett antal program på eget bevåg. Dessa innefattar allt från backend-applikationer till nätsidor och fullt funktionerande skrivbordsprogram. Exempel på program jag byggt innefattar ',
       l4: ' och '
     },
-    p6: 'I nuläget fungerar jag som Software Developer på Reaktor för sommaren 2021. I det förflutna har jag jobbat som programvaruutvecklare och/eller systemadministrator för bl.a. Tarra-Tac Ab och Försvarsmakten.',
-    p7: 'Jag studerar därtill informations- och kommunikationsteknologi vid Metropolia Ammattikorkeakoulu. Mitt huvudämne är programvaruutveckling, varifrån jag förväntar mig att bli utexaminerad vid årsslutet 2023.'
+    p5: 'I nuläget fungerar jag som Software Developer på Reaktor för sommaren 2021. I det förflutna har jag jobbat som programvaruutvecklare och/eller systemadministrator för bl.a. Tarra-Tac Ab och Försvarsmakten.',
+    p6: 'Jag studerar därtill informations- och kommunikationsteknologi vid Metropolia Ammattikorkeakoulu. Mitt huvudämne är programvaruutveckling, varifrån jag förväntar mig att bli utexaminerad vid årsslutet 2023.'
   },
   // Experience
   experience: {

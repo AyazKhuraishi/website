@@ -22,18 +22,17 @@ export default {
   about: {
     title: 'ABOUT ME',
     sectionTitle: 'Hello there!',
-    p1: `I'm Linus, a ${moment().diff(moment('1999-06-18'), 'years')}-year-old student and freelance developer from Finland. Pleasure to meet you!`,
-    p2: 'Hailing from a small town called Loviisa in Eastern Uusimaa, I\'m an avid tech tinkerer and software engineering student. My forte is developing web applications, and some backend development and systems administration on the side.',
-    p3: 'Since 2017, I\'ve been doing software development, mostly in the field of open source software. I have worked as a programmer and systems administrator for the most part, and aside of that in areas like documentation, localisation and quality assurance.',
-    p4: 'I\'m a multilingual person, being equally proficient in three languages - namely, Finnish, Swedish, and English. I\'m a native speaker of the former two.',
-    p5: {
+    p1: `I'm Linus, a ${moment().diff(moment('1999-06-18'), 'years')}-year-old a software developer, avid tech tinkerer and software engineering student. My fortes are full stack development and DevOps, and I also like to work with networks and systems administration. Outside of this, my job titles have also included documentation, localisation and quality assurance. I have approximately five years of experience in the industry.`,
+    p2: 'My other career track has been community moderation and management. Primarily, I run a programming community on Discord called The Coding Den. Moreover, I\'m also an official moderator for Discord through their Discord Moderator Program, where I help run communities for them and their brand partners.',
+    p3: 'I\'m a multilingual person, being equally proficient in three languages - namely, Finnish, Swedish, and English. I\'m a native speaker of the former two.',
+    p4: {
       l1: 'I\'m perhaps best known for my maintenance of and contributions to projects like ',
       l2: ' and ',
       l3: ', but I have also created a fair few programs of my own. These range from backend applications to websites and full-fledged desktop applications. Some examples of my work are ',
       l4: ' and '
     },
-    p6: 'At the moment, I\'m working as a Software Developer at Reaktor for the summer of 2021. Before this, I have worked as a software developer and/or systems administrator for, among others, Oy Tarra-Tac Ab and the Finnish Defence Forces.',
-    p7: 'I\'m also studying Information and Communication Technology at Metropolia University of Applied Sciences. I\'m majoring in Software Engineering, and am expected to graduate at the end of 2023.'
+    p5: 'At the moment, I\'m working as a Software Developer at Reaktor for the summer of 2021. Before this, I have worked as a software developer and/or systems administrator for, among others, Oy Tarra-Tac Ab and the Finnish Defence Forces.',
+    p6: 'I\'m also studying Information and Communication Technology at Metropolia University of Applied Sciences. I\'m majoring in Software Engineering, and am expected to graduate at the end of 2023.'
   },
   // Experience
   experience: {
