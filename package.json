@@ -50,7 +50,7 @@
     "style-loader": "^2.0.0",
     "stylelint": "^13.13.1",
     "stylelint-config-recommended": "^5.0.0",
-    "stylelint-declaration-block-no-ignored-properties": "^1.1.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
     "stylelint-no-unsupported-browser-features": "^4.1.4",
     "stylelint-no-unused-selectors": "^1.0.36",
     "stylelint-scss": "^3.19.0",
