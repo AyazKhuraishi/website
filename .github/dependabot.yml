@@ -1,0 +1,28 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  versioning-strategy: increase
+  ignore:
+  - dependency-name: mini-css-extract-plugin
+    versions:
+    - 1.5.0
+  - dependency-name: eslint
+    versions:
+    - 7.24.0
+  - dependency-name: css-loader
+    versions:
+    - 5.2.1
+  - dependency-name: "@babel/core"
+    versions:
+    - 7.13.15
+  - dependency-name: "@babel/plugin-transform-runtime"
+    versions:
+    - 7.13.8
+  - dependency-name: purgecss-webpack-plugin
+    versions:
+    - 4.0.0
