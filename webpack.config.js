@@ -4,12 +4,11 @@ const glob = require('glob')
 const webpack = require('webpack')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const ExtractCSSWebpackPlugin = require('mini-css-extract-plugin')
-const OptimizeCSSWebpackPlugin = require('optimize-css-assets-webpack-plugin')
+const OptimizeCSSWebpackPlugin = require('css-minimizer-webpack-plugin')
 const PurgeCSSWebpackPlugin = require('purgecss-webpack-plugin')
 const OptimizeJSWebpackPlugin = require('terser-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
-const ErrorOverlayWebpackPlugin = require('error-overlay-webpack-plugin')
 
 const dev = process.env.NODE_ENV !== 'production'
 
@@ -56,7 +55,6 @@ const sharedPlugins = [
 ]
 
 const devPlugins = [
-  new ErrorOverlayWebpackPlugin(),
   new webpack.HotModuleReplacementPlugin()
 ]
 
@@ -79,7 +77,6 @@ module.exports = {
   devServer: {
     host: 'localhost',
     port: 8000,
-    hot: true,
     open: true,
     headers: {
       'Access-Control-Allow-Origin': '*' // Allow CORS
@@ -127,24 +124,18 @@ module.exports = {
       },
       { // Images
         test: /\.(jpe?g|png|gif)$/i,
-        loader: 'url-loader',
-        options: {
-          limit: 10000
-        }
+        type: 'asset/inline'
       },
       { // SVGs
         test: /\.svg$/,
+        type: 'asset/resource',
         use: [
-          { loader: 'file-loader' },
           { loader: 'svgo-loader' }
         ]
       },
       { // Fonts
         test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]'
-        }
+        type: 'asset/resource'
       },
       { // Exclusions
         exclude: [

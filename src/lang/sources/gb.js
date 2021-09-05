@@ -22,8 +22,8 @@ export default {
   about: {
     title: 'ABOUT ME',
     sectionTitle: 'Hello there!',
-    p1: `I'm Linus, a ${moment().diff(moment('1999-06-18'), 'years')}-year-old a software developer, avid tech tinkerer and software engineering student. My fortes are full stack development and DevOps, and I also like to work with networks and systems administration. Outside of this, my job titles have also included documentation, localisation and quality assurance. I have approximately five years of experience in the industry.`,
-    p2: 'My other career track has been community moderation and management. Primarily, I run a programming community on Discord called The Coding Den. Moreover, I\'m also an official moderator for Discord through their Discord Moderator Program, where I help run communities for them and their brand partners.',
+    p1: `I'm Linus, a ${moment().diff(moment('1999-06-18'), 'years')}-year-old a software developer, avid tech tinkerer and software engineering student. My fortes are full stack development and DevOps, and I also like to work with networks and systems administration. Outside of this, my job titles have also included documentation, localisation and quality assurance. I have over five years of experience in the industry.`,
+    p2: 'My other career track has been community moderation and management. Primarily, I run a programming community on Discord called The Coding Den. Moreover, I\'m also a moderator for Discord through their Discord Moderator Program, where I help run communities for them and their brand partners.',
     p3: 'I\'m a multilingual person, being equally proficient in three languages - namely, Finnish, Swedish, and English. I\'m a native speaker of the former two.',
     p4: {
       l1: 'I\'m perhaps best known for my maintenance of and contributions to projects like ',
@@ -31,8 +31,8 @@ export default {
       l3: ', but I have also created a fair few programs of my own. These range from backend applications to websites and full-fledged desktop applications. Some examples of my work are ',
       l4: ' and '
     },
-    p5: 'At the moment, I\'m working as a Software Developer at Reaktor for the summer of 2021. Before this, I have worked as a software developer and/or systems administrator for, among others, Oy Tarra-Tac Ab and the Finnish Defence Forces.',
-    p6: 'I\'m also studying Information and Communication Technology at Metropolia University of Applied Sciences. I\'m majoring in Software Engineering, and am expected to graduate at the end of 2023.'
+    p5: 'I\'m currently studying Information and Communication Technology at Metropolia University of Applied Sciences. I\'m majoring in Software Engineering, and am expected to graduate at the end of 2023.',
+    p6: 'In May 2022, I will be once again joining Reaktor as a Software Developer for the summer, having worked with them in the same role over the summer of 2021. Before this, I have worked as a software developer and/or systems administrator for, among others, Oy Tarra-Tac Ab and the Finnish Defence Forces.'
   },
   // Experience
   experience: {
@@ -51,15 +51,15 @@ export default {
         {
           role: 'Software Developer',
           type: 'fullTime',
-          date: 'May 2021 - Present',
+          date: 'May - August 2021, May 2022 =>',
           company: {
             name: 'Reaktor',
             link: 'https://reaktor.com',
             icon: ReaktorLogo
           },
           location: 'Helsinki',
-          description: 'I\'m currently working as a Software Developer at Reaktor for the summer of 2021. My job includes consultation with clients to create software tailored to their specific needs.',
-          tags: ['Software']
+          description: 'Working in a software development role, creating programs tailored to client needs. Past project assignments have included security-conscious environments.',
+          tags: ['Full-stack']
         },
         {
           role: 'Full Stack Engineer',
@@ -72,7 +72,7 @@ export default {
           },
           location: 'Loviisa',
           description: 'As my summer job for 2020, I worked at Tarra-Tac as a Full Stack Engineer, working to create a new billing program based on management-provided specifications. Workflows in the company were greatly effectivised as a result of the adoption of the program.',
-          tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Networking', 'DevOps']
+          tags: ['Design', 'Full-stack', 'Sysadmin', 'Networking', 'DevOps']
         },
         {
           role: 'Virtual Training Assistant',
@@ -85,12 +85,12 @@ export default {
           },
           location: 'Dragsvik, Raasepori',
           description: 'During my military service at the Nyland Brigade, I served as a Virtual Training Assistant. My tasks included working as a software developer, systems-/network administrator and IT technician. Alongside this, I also worked as a combat tactics teacher and simulator instructor.',
-          tags: ['Frontend', 'Backend', 'Sysadmin', 'DevOps', 'Hardware', 'Networking', 'Technical installations']
+          tags: ['Full-stack', 'Sysadmin', 'DevOps', 'Hardware', 'Networking', 'Technical installations']
         }
       ],
       volunteer: [
         {
-          role: 'Official Moderator',
+          role: 'DMP Moderator',
           type: 'volunteer',
           date: 'December 2020 - Present',
           company: {
@@ -99,7 +99,7 @@ export default {
             icon: DiscordLogo
           },
           location: 'International',
-          description: 'As an official moderator for the Discord Moderator Program (DMP), my task is to moderate various official communities run by Discord. Among other things, I have helped moderate communities - both permanent and temporary (pop-up) - with up to hundreds of thousands of participants. Some communities I have moderated include the Discord Townhall and Snowsgiving communities.',
+          description: 'As a moderator for the Discord Moderator Program (DMP), my task is to moderate various official communities run by Discord. Among other things, I have helped moderate communities - both permanent and temporary (pop-up) - with up to hundreds of thousands of participants. Some communities I have moderated include the Discord Townhall, Snowsgiving and Games Lab communities.',
           tags: ['Content moderation']
         },
         {
@@ -139,7 +139,7 @@ export default {
           },
           location: 'International',
           description: 'At TheSharks, I am an open source contributor and develop software for the group. In addition, I do technical documentation, system administration, localisation and remote infrastructure management.',
-          tags: ['Frontend', 'Backend', 'Sysadmin', 'Documentation', 'Localisation']
+          tags: ['Full-stack', 'Sysadmin', 'Documentation', 'Localisation']
         }
       ]
     }

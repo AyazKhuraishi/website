@@ -22,8 +22,8 @@ export default {
   about: {
     title: 'TIETOJA',
     sectionTitle: 'Terve!',
-    p1: `Olen Linus, ${moment().diff(moment('1999-06-18'), 'years')}-vuotias ohjelmistokehittäjä, innokas tekniikan sormeilija ja ohjelmistotuotannon opiskelija. Erityisalueeni ovat fullstack-kehitys sekä DevOps-toiminta, ja työskentelen myös mieluusti tietoverkkojen sekä järjestelmäylläpidon parissa. Tämän lisäksi olen toiminut dokumentaatio-, käännös- ja laadunvalvontatehtävissä. Minulla on kokonaisvaltaisesti noin viiden vuoden kokemus alalta.`,
-    p2: 'Urani toinen sivuhaara on ollut yhteisöjen moderaatio ja ylläpito. Pääasiallinen tehtäväni on pyörittää Discordissa toimivaa ohjelmointiyhteisöä nimeltä The Coding Den. Tämän lisäksi toimin myös virallisena moderaattorina Discordille Discord Moderator Programin kautta, missä autan heitä pyörittämään heidän omiva virallisia yhteisöjään, kuin myös heidän brand partner-yhteisöjään.',
+    p1: `Olen Linus, ${moment().diff(moment('1999-06-18'), 'years')}-vuotias ohjelmistokehittäjä, innokas tekniikan sormeilija ja ohjelmistotuotannon opiskelija. Erityisalueeni ovat fullstack-kehitys sekä DevOps-toiminta, ja työskentelen myös mieluusti tietoverkkojen sekä järjestelmäylläpidon parissa. Tämän lisäksi olen toiminut dokumentaatio-, käännös- ja laadunvalvontatehtävissä. Minulla on kokonaisvaltaisesti yli viiden vuoden kokemus alalta.`,
+    p2: 'Urani toinen sivuhaara on ollut yhteisöjen moderaatio ja ylläpito. Pääasiallinen tehtäväni on pyörittää Discordissa toimivaa ohjelmointiyhteisöä nimeltä The Coding Den. Tämän lisäksi toimin myös moderaattorina Discordille Discord Moderator Programin kautta, missä autan heitä pyörittämään heidän omiva virallisia yhteisöjään, kuin myös heidän brand partner-yhteisöjään.',
     p3: 'Olen monikielinen persoona joka hallitsee samantasoisesti kolmea kieltä - tarkemmin sanottuna suomea, ruotsia sekä englantia. Äidinkieleni ovat listan kaksi ensimmäistä kieltä.',
     p4: {
       l1: 'Suurimmat saavutukseni sisältävät projektien kuten ',
@@ -31,8 +31,8 @@ export default {
       l3: ' ylläpidon ja kehityksen, mutta olen myös kehittänyt lukuisia ohjelmia omin neuvoin. Näistä löytyy kaikkea backend-applikaatioista verkkosivuihin ja työpöytäohjelmiin. Muutamia esimerkkejä töistäni ovat ',
       l4: ' ja '
     },
-    p5: 'Työskentelen tällä hetkellä Software Developerina Reaktorilla kesän 2021 aikana. Tätä edeltävät työpaikkani ohjelmistokehittäjänä ja/tai järjestelmäylläpitäjänä sisältävät mm. Tarra-Tac Oy:n ja Suomen Puolustusvoimat.',
-    p6: 'Opiskelen myöskin tieto- ja viestintätekniikkaa Metropolia Ammattikorkeakoulussa. Pääaineohjelmanani on Ohjelmistotuotanto, josta valmistun oletettavasti vuoden 2023 lopulla.'
+    p5: 'Opiskelen tällä hetkellä tieto- ja viestintätekniikkaa Metropolia Ammattikorkeakoulussa. Pääaineohjelmanani on Ohjelmistotuotanto, josta valmistun oletettavasti vuoden 2023 lopulla.',
+    p6: 'Tulen jälleen kerran palaamaan Reaktorille Software Developeriksi toukokuussa 2022, työskenneltyäni samassa roolissa kesän 2021 aikana. Tätä edeltävät työpaikkani ohjelmistokehittäjänä ja/tai järjestelmäylläpitäjänä sisältävät mm. Tarra-Tac Oy:n ja Suomen Puolustusvoimat.',
   },
   // Experience
   experience: {
@@ -51,15 +51,15 @@ export default {
         {
           role: 'Software Developer',
           type: 'fullTime',
-          date: 'Toukokuu 2021 - Tänään',
+          date: 'Toukokuu - Elokuu 2021, Toukukuu 2022 =>',
           company: {
             name: 'Reaktor',
             link: 'https://reaktor.com',
             icon: ReaktorLogo
           },
           location: 'Helsinki',
-          description: 'Työskentelen tällä hetkellä Reaktorilla Software Developerina kesän 2021 aikana. Työtehtäväni käsittävät asiakkaiden kanssa konsultoinnin heidän tarpeisiinsa sopivien ohjelmistojen luontia varten.',
-          tags: ['Ohjelmistokehitys']
+          description: 'Työskentelyä ohjelmistokehittäjän roolissa, luoden asiakkaan tarpeisiin mukautettuja ohjelmia. Projektisijoitukseni ovat sisältäneet turvallisuuden kannalta tärkeitä ympäristöjä.',
+          tags: ['Full-stack']
         },
         {
           role: 'Full Stack Engineer',
@@ -72,7 +72,7 @@ export default {
           },
           location: 'Loviisa',
           description: 'Työskentelin Full Stack Engineerinä Tarra-Tacilla kesätyönäni vuonna 2020. Työtehtäviini kuului uuden hinnoitteluohjelman luonti työnantajan tarpeiden mukaan, jonka luomisen ansiosta yhtiön työprosessit tehostuivat merkittävästi.',
-          tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Verkotustyöt', 'DevOps']
+          tags: ['Full-stack', 'Design', 'Sysadmin', 'Verkotustyöt', 'DevOps']
         },
         {
           role: 'Virtuaalikoulutustukihenkilö',
@@ -85,12 +85,12 @@ export default {
           },
           location: 'Dragsvik, Raasepori',
           description: 'Varusmiespalvelukseni aikana Uudenmaan Prikaatissa palvelin virtuaalikoulutustukihenkilön tehtävissä. Työtehtäviini kuuluivat ohjelmistokehittäjän, järjestelmä- ja verkkoylläpitäjän sekä IT-teknikon tehtävät. Tämän lisäksi toimin taisteluteorian kouluttajana sekä simulaattoriohjaajana.',
-          tags: ['Frontend', 'Backend', 'Sysadmin', 'DevOps', 'Laitteistot', 'Verkotustyöt', 'Tekniset asennustyöt']
+          tags: ['Full-stack', 'Sysadmin', 'DevOps', 'Laitteistot', 'Verkotustyöt', 'Tekniset asennustyöt']
         }
       ],
       volunteer: [
         {
-          role: 'Virallinen moderaattori',
+          role: 'DMP-moderaattori',
           type: 'volunteer',
           date: 'Joulukuu 2020 - Tänään',
           company: {
@@ -99,7 +99,7 @@ export default {
             icon: DiscordLogo
           },
           location: 'Kansainvälinen',
-          description: 'Tehtävässäni virallisena moderaattorina Discord Moderator Programin (DMP) jäsenenä toimin ylläpitäjänä sekä moderaattorina erinäisille virallisille yhteisöille. Olen auttanut moderoimaan yhteisöjä - sekä pysyviä että väliaikaisia (pop-up) - joiden jäsenmäärät ovat enimmillään olleet sadoissa tuhansissa. Moderoimani yhteisöt sisältävät mm. Discord Townhallin sekä Snowsgiving-tapahtuman.',
+          description: 'Tehtävässäni moderaattorina Discord Moderator Programin (DMP) jäsenenä toimin ylläpitäjänä sekä moderaattorina erinäisille virallisille yhteisöille. Olen auttanut moderoimaan yhteisöjä - sekä pysyviä että väliaikaisia (pop-up) - joiden jäsenmäärät ovat enimmillään olleet sadoissa tuhansissa. Moderoimani yhteisöt sisältävät mm. Discord Townhallin, Games Labin sekä Snowsgiving-tapahtuman.',
           tags: ['Moderointi']
         },
         {
@@ -139,7 +139,7 @@ export default {
           },
           location: 'Kansainvälinen',
           description: 'Toimin TheSharksissa avoimen lähdekoodin kollaboraattorina ja kehitän ohjelmistoja kyseiselle ryhmälle. Tämän lisäksi kirjoitan teknistä dokumentaatiota, toimin järjestelmäylläpitäjän tehtävissä sekä ylläpidän käännöksiä niillä kielillä joissa osaamiseni on vahva.',
-          tags: ['Frontend', 'Backend', 'Sysadmin', 'Dokumentaatio', 'Käännöstyöt']
+          tags: ['Full-stack', 'Sysadmin', 'Dokumentaatio', 'Käännöstyöt']
         }
       ]
     }

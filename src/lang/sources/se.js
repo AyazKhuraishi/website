@@ -22,8 +22,8 @@ export default {
   about: {
     title: 'OM MIG',
     sectionTitle: 'Morjens!',
-    p1: `Jag är Linus, en ${moment().diff(moment('1999-06-18'), 'years')}-årig programmerare, ivrig teknikmekare samt programmeringsstuderande. Min bravur är fullstack-utveckling samt DevOps, och därtill gillar jag att jobba med nätverk och systemadminisration. I övrigt har mina arbetsuppgifter innefattat dokumentation, översättning och kvalitetskontroll. Jag har totalt cirka fem års erfarenhet i fältet.`,
-    p2: 'Mitt andra karriärspår har varit samfundsmoderation och -administration. Primärt driver jag ett programmeringssamfund på Discord vid namnet The Coding Den. I tillägg till detta fungerar jag som officiell moderator för Discord via Discord Moderator Program, där jag hjälper dem driva både sina egna officiella samfund och därtill samfund för deras brandpartners.',
+    p1: `Jag är Linus, en ${moment().diff(moment('1999-06-18'), 'years')}-årig programmerare, ivrig teknikmekare samt programmeringsstuderande. Min bravur är fullstack-utveckling samt DevOps, och därtill gillar jag att jobba med nätverk och systemadminisration. I övrigt har mina arbetsuppgifter innefattat dokumentation, översättning och kvalitetskontroll. Jag har totalt över fem års erfarenhet i fältet.`,
+    p2: 'Mitt andra karriärspår har varit samfundsmoderation och -administration. Primärt driver jag ett programmeringssamfund på Discord vid namnet The Coding Den. I tillägg till detta fungerar jag som moderator för Discord via Discord Moderator Program, där jag hjälper dem driva både sina egna officiella samfund och därtill samfund för deras brandpartners.',
     p3: 'Jag är en flerspråkig person med likjämn kunskapsnivå i tre språk - närmare sagt finska, svenska och engelska. Mina modersmål är de två förstnämnda.',
     p4: {
       l1: 'Jag är mest känd för mitt upprätthåll av och arbete inom projekt som ',
@@ -31,8 +31,8 @@ export default {
       l3: ', men jag har även gjort ett antal program på eget bevåg. Dessa innefattar allt från backend-applikationer till nätsidor och fullt funktionerande skrivbordsprogram. Exempel på program jag byggt innefattar ',
       l4: ' och '
     },
-    p5: 'I nuläget fungerar jag som Software Developer på Reaktor för sommaren 2021. I det förflutna har jag jobbat som programvaruutvecklare och/eller systemadministrator för bl.a. Tarra-Tac Ab och Försvarsmakten.',
-    p6: 'Jag studerar därtill informations- och kommunikationsteknologi vid Metropolia Ammattikorkeakoulu. Mitt huvudämne är programvaruutveckling, varifrån jag förväntar mig att bli utexaminerad vid årsslutet 2023.'
+    p5: 'För tillfället studerar jag informations- och kommunikationsteknologi vid Metropolia Ammattikorkeakoulu. Mitt huvudämne är programvaruutveckling, varifrån jag förväntar mig att bli utexaminerad vid årsslutet 2023.',
+    p6: 'I maj 2022 kommer jag att återgå till Reaktor som Software Developer, efter att ha innehavit samma position med dem under sommaren 2021. I det förflutna har jag jobbat som programvaruutvecklare och/eller systemadministrator för bl.a. Tarra-Tac Ab och Försvarsmakten.'
   },
   // Experience
   experience: {
@@ -51,14 +51,14 @@ export default {
         {
           role: 'Software Developer',
           type: 'fullTime',
-          date: 'Maj - Augusti 2021',
+          date: 'Maj - Augusti 2021, Maj 2022 =>',
           company: {
             name: 'Reaktor',
             link: 'https://reaktor.com',
             icon: ReaktorLogo
           },
           location: 'Helsinki',
-          description: 'För tillfället jobbar jag som Software Developer på Reaktor för sommaren 2021. Mina arbetsuppgifter inkluderar konsultering med klienter för att skapa program som möter angivna behov.',
+          description: 'Jobb i programutvecklarroll för att skapa program enligt klienters behov. Förflutna projektplaceringar har inkluderat säkerhetskritiska omgivningar.',
           tags: ['Programutveckling']
         },
         {
@@ -72,7 +72,7 @@ export default {
           },
           location: 'Lovisa, Nyland',
           description: 'Som mitt sommarjobb för år 2020 jobbade jag som Full Stack Engineer för Tarra-Tac. Till mina arbetsuppgifter tillhörde utvecklingen av ett nytt prissättningsprogram på basen av arbetsgivarens specifikationer. I slutändan effektiverades arbetsprocesserna i bolaget märkbart tack vare programmets ibruktagning.',
-          tags: ['Frontend', 'Backend', 'Design', 'Full-stack', 'Sysadmin', 'Nätverk', 'DevOps']
+          tags: ['Full-stack', 'Design', 'Sysadmin', 'Nätverk', 'DevOps']
         },
         {
           role: 'Virtualutbildningsassistent',
@@ -85,12 +85,12 @@ export default {
           },
           location: 'Dragsvik, Raseborg',
           description: 'Under min militärtjänstgöring vid Nylands Brigad tjänstgjorde jag som virtualutbildningsassistent. Mina arbetsuppgifter inkluderade det av en programutvecklare, system- och nätverksadministrator samt IT-tekniker. I tillägg till detta fungerade jag som stridstaktikstränare samt simulatorinstruktör.',
-          tags: ['Frontend', 'Backend', 'Sysadmin', 'DevOps', 'Hårdvara', 'Nätverk', 'Tekniska monteringsarbeten']
+          tags: ['Full-stack', 'Sysadmin', 'DevOps', 'Hårdvara', 'Nätverk', 'Tekniska monteringsarbeten']
         }
       ],
       volunteer: [
         {
-          role: 'Officiell moderator',
+          role: 'DMP-moderator',
           type: 'volunteer',
           date: 'December 2020 - Idag',
           company: {
@@ -99,7 +99,7 @@ export default {
             icon: DiscordLogo
           },
           location: 'Internationell',
-          description: 'Som officiell moderator inom Discord Moderator Program (DMP) fungerar jag som innehållsmoderator i tjänst av Discord för diverse officiella samfund. Jag har hjälpt i modereringen av samfund - både permanenta och temporära (pop-up) - vars medlemskap har som mest mäts i hundratusentals medlemmar. Listan av samfund jag modererat inkluderar bl. a. Discord Townhall och Snowsgiving-evenemanget.',
+          description: 'Som en moderator inom Discord Moderator Program (DMP) fungerar jag som innehållsmoderator i tjänst av Discord för diverse officiella samfund. Jag har hjälpt i modereringen av samfund - både permanenta och temporära (pop-up) - vars medlemskap har som mest mäts i hundratusentals medlemmar. Listan av samfund jag modererat inkluderar bl.a. Discord Townhall, Games Lab och Snowsgiving-evenemanget.',
           tags: ['Innehållsmoderation']
         },
         {
@@ -116,7 +116,7 @@ export default {
           tags: ['Innehållsmoderation', 'Ledarskap', 'Samfundsadministration']
         },
         {
-          role: 'Innehållsmoderator (Yngre, äldre)',
+          role: 'Moderator (Yngre, äldre)',
           type: 'volunteer',
           date: 'Yngre februari 2018 - mars 2020, äldre mars - oktober 2020',
           company: {
