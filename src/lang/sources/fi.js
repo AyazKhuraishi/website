@@ -32,7 +32,7 @@ export default {
       l4: ' ja '
     },
     p5: 'Opiskelen tällä hetkellä tieto- ja viestintätekniikkaa Metropolia Ammattikorkeakoulussa. Pääaineohjelmanani on Ohjelmistotuotanto, josta valmistun oletettavasti vuoden 2023 lopulla.',
-    p6: 'Tulen jälleen kerran palaamaan Reaktorille Software Developeriksi toukokuussa 2022, työskenneltyäni samassa roolissa kesän 2021 aikana. Tätä edeltävät työpaikkani ohjelmistokehittäjänä ja/tai järjestelmäylläpitäjänä sisältävät mm. Tarra-Tac Oy:n ja Suomen Puolustusvoimat.',
+    p6: 'Tulen jälleen kerran palaamaan Reaktorille Software Developeriksi toukokuussa 2022, työskenneltyäni samassa roolissa kesän 2021 aikana. Tätä edeltävät työpaikkani ohjelmistokehittäjänä ja/tai järjestelmäylläpitäjänä sisältävät mm. Tarra-Tac Oy:n ja Suomen Puolustusvoimat.'
   },
   // Experience
   experience: {
