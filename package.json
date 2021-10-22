@@ -45,7 +45,7 @@
     "purgecss-webpack-plugin": "^4.0.3",
     "react-hot-loader": "^4.13.0",
     "sass-loader": "^12.1.0",
-    "style-loader": "^3.2.1",
+    "style-loader": "^3.3.1",
     "svgo-loader": "^3.0.0",
     "terser-webpack-plugin": "^5.2.3",
     "webpack": "^5.52.0",
